@@ -8,8 +8,8 @@ module.exports = {
         source: "options",
         baseUrl: "./",
         aliases: {
-          "@material-ui/styled-engine":
-            "./node_modules/@material-ui/styled-engine-sc",
+          "@mui/styled-engine":
+            "./node_modules/@mui/styled-engine-sc",
         },
       },
     },

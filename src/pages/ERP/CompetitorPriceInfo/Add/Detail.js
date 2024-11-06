@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import { Box, spacing } from "@mui/system";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
-import Carousel from "react-material-ui-carousel";
 import styled from "styled-components/macro";
 // import config from "../../../../utils/ConfigHeader";
 
@@ -157,7 +156,7 @@ export default function Detail(props) {
             </Button>
           </label>
           {imgData && (
-            <Carousel>
+            <div>
               {imgData.map((item, i) => (
                 <Box
                   sx={{
@@ -204,7 +203,7 @@ export default function Detail(props) {
                   </Box>
                 </Box>
               ))}
-            </Carousel>
+            </div>
           )}
         </Grid>
       </Grid>

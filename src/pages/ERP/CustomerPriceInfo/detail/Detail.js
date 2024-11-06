@@ -11,7 +11,6 @@ import {
 } from "@mui/material";
 import Button from "@mui/material/Button";
 import { Box, spacing } from "@mui/system";
-import Carousel from "react-material-ui-carousel";
 import ProdukPopup from "./ProductPopup";
 // import config from "../../../../utils/ConfigHeader";
 
@@ -165,7 +164,7 @@ export default function Detail(props) {
             </Button>
           </label>
           {imgData && (
-            <Carousel autoPlay={false}>
+            <div>
               {imgData.map((item, i) => (
                 <Box
                   sx={{
@@ -212,7 +211,7 @@ export default function Detail(props) {
                   </Box>
                 </Box>
               ))}
-            </Carousel>
+            </div>
           )}
         </Grid>
       </Grid>
