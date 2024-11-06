@@ -1,10 +1,5 @@
 import DeleteIcon from "@mui/icons-material/Delete";
-import {
-  Grid,
-  Card as MuiCard,
-  Paper as MuiPaper,
-  TextField as MuiTextField,
-} from "@mui/material";
+import { Grid, Card as MuiCard } from "@mui/material";
 import Button from "@mui/material/Button";
 import { Box, spacing } from "@mui/system";
 import PropTypes from "prop-types";
@@ -14,8 +9,8 @@ import styled from "styled-components/macro";
 // import config from "../../../../utils/ConfigHeader";
 
 const Card = styled(MuiCard)(spacing);
-const TextField = styled(MuiTextField)(spacing);
-const Paper = styled(MuiPaper)(spacing);
+// const TextField = styled(MuiTextField)(spacing);
+// const Paper = styled(MuiPaper)(spacing);
 
 Detail.propTypes = {
   PromoActID: PropTypes.any,

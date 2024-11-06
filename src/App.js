@@ -6,11 +6,11 @@ import { useRoutes } from "react-router-dom";
 import { ThemeProvider } from "styled-components/macro";
 
 import { StyledEngineProvider } from "@material-ui/styled-engine-sc";
-import StylesProvider from "@material-ui/styles/StylesProvider";
-import jssPreset from "@material-ui/styles/jssPreset";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
+import StylesProvider from "@mui/styles/StylesProvider";
+import jssPreset from "@mui/styles/jssPreset";
 
 import "./i18n";
 import routes from "./routes";
