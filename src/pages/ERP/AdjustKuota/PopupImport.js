@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import Header from "./Header";
 // import TambahManualTable from "./TambahManualTable";
-import CloseIcon from "@material-ui/icons/Close";
 import { spacing } from "@material-ui/system";
+import CloseIcon from "@mui/icons-material/Close";
 import {
   Card,
   Dialog,

@@ -1,7 +1,7 @@
-import { Add, Delete, Refresh, Reply, Save } from "@material-ui/icons";
-import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
-import SearchIcon from "@material-ui/icons/Search";
 import { spacing } from "@material-ui/system";
+import { Add, Delete, Refresh, Reply, Save } from "@mui/icons-material";
+import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   CardContent,
   Dialog,

@@ -1,7 +1,7 @@
-import CloseIcon from "@material-ui/icons/Close";
-import SearchIcon from "@material-ui/icons/Search";
-import { DatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import CloseIcon from "@mui/icons-material/Close";
+import SearchIcon from "@mui/icons-material/Search";
+import { DatePicker } from "@mui/lab";
 import {
   CardContent,
   Dialog,

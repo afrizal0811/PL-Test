@@ -19,11 +19,11 @@ import {
   NotifySuccess,
 } from "../../../services/notification.service";
 
-import Add from "@material-ui/icons/Add";
-import Delete from "@material-ui/icons/Delete";
-import Refresh from "@material-ui/icons/Refresh";
-import Reply from "@material-ui/icons/Reply";
-import SaveIcon from "@material-ui/icons/Save";
+import Add from "@mui/icons-material/Add";
+import Delete from "@mui/icons-material/Delete";
+import Refresh from "@mui/icons-material/Refresh";
+import Reply from "@mui/icons-material/Reply";
+import SaveIcon from "@mui/icons-material/Save";
 import Swal from "sweetalert2";
 import { GetConfig } from "../../../../utils/ConfigHeader";
 

@@ -3,12 +3,12 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   Assignment as AssignmentIcon,
   Folder as FolderIcon,
   Pageview as PageviewIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/icons-material";
 import {
   CardContent,
   Grid,

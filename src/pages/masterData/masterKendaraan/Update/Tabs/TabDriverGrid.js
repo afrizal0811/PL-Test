@@ -1,10 +1,10 @@
-import AddIcon from "@material-ui/icons/Add";
-import CancelIcon from "@material-ui/icons/Clear";
-import DeleteIcon from "@material-ui/icons/Delete";
-import EditIcon from "@material-ui/icons/Edit";
-import SaveIcon from "@material-ui/icons/Save";
-import { TabPanel } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import AddIcon from "@mui/icons-material/Add";
+import CancelIcon from "@mui/icons-material/Clear";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
+import SaveIcon from "@mui/icons-material/Save";
+import { TabPanel } from "@mui/lab";
 import {
   CircularProgress,
   FormControl,

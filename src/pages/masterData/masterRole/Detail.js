@@ -1,7 +1,7 @@
-import Delete from "@material-ui/icons/Delete";
-import Refresh from "@material-ui/icons/Refresh";
-import SaveIcon from "@material-ui/icons/Save";
 import { spacing } from "@material-ui/system";
+import Delete from "@mui/icons-material/Delete";
+import Refresh from "@mui/icons-material/Refresh";
+import SaveIcon from "@mui/icons-material/Save";
 import {
   Backdrop,
   Grid,
@@ -21,8 +21,8 @@ import {
   NotifySuccess,
 } from "../../services/notification.service";
 import Content from "./Content";
-// import Add from "@material-ui/icons/Add";
-import Reply from "@material-ui/icons/Reply";
+// import Add from "@mui/icons-material/Add";
+import Reply from "@mui/icons-material/Reply";
 import axios from "axios";
 import Swal from "sweetalert2";
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);

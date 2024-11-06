@@ -18,8 +18,8 @@ import {
   Typography,
 } from "@mui/material";
 
-import { Close as CloseIcon } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
+import { Close as CloseIcon } from "@mui/icons-material";
 
 const Card = styled(MuiCard)(spacing);
 

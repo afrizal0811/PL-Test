@@ -2,9 +2,9 @@ import axios from "axios";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
-// import AddIcon from "@material-ui/icons/Add";
-import DeleteIcon from "@material-ui/icons/Delete";
+// import AddIcon from "@mui/icons-material/Add";
 import { Box, spacing } from "@material-ui/system";
+import DeleteIcon from "@mui/icons-material/Delete";
 import {
   FormHelperText,
   Grid,

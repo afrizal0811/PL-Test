@@ -1,10 +1,10 @@
-import AddIcon from "@material-ui/icons/Add";
-import CloseIcon from "@material-ui/icons/Close";
-import SaveIcon from "@material-ui/icons/Save";
-import { DatePicker, TabPanel } from "@material-ui/lab";
-import TabContext from "@material-ui/lab/TabContext";
-import TabList from "@material-ui/lab/TabList";
 import { spacing } from "@material-ui/system";
+import AddIcon from "@mui/icons-material/Add";
+import CloseIcon from "@mui/icons-material/Close";
+import SaveIcon from "@mui/icons-material/Save";
+import { DatePicker, TabPanel } from "@mui/lab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
 import {
   CardContent,
   CircularProgress,

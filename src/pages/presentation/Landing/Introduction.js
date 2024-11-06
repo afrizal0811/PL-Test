@@ -3,11 +3,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   ArrowForward as ArrowForwardIcon,
   Visibility as VisibilityIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/icons-material";
 import {
   Box,
   Button,

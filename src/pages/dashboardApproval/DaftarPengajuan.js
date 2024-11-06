@@ -1,6 +1,6 @@
-import { Clear, Search } from "@material-ui/icons";
-import { DatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import { Clear, Search } from "@mui/icons-material";
+import { DatePicker } from "@mui/lab";
 import {
   Autocomplete,
   Grid,

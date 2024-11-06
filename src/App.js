@@ -5,11 +5,11 @@ import { Provider } from "react-redux";
 import { useRoutes } from "react-router-dom";
 import { ThemeProvider } from "styled-components/macro";
 
-import AdapterDateFns from "@material-ui/lab/AdapterDateFns";
-import LocalizationProvider from "@material-ui/lab/LocalizationProvider";
 import { StyledEngineProvider } from "@material-ui/styled-engine-sc";
 import StylesProvider from "@material-ui/styles/StylesProvider";
 import jssPreset from "@material-ui/styles/jssPreset";
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
+import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 
 import "./i18n";

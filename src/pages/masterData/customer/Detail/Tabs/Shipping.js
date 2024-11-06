@@ -1,5 +1,5 @@
-import { TabPanel } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import { TabPanel } from "@mui/lab";
 import { Grid, TextField as MuiTextField } from "@mui/material";
 import React from "react";
 import styled from "styled-components/macro";

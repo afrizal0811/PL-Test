@@ -3,8 +3,8 @@ import React, { forwardRef } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
+import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import { Chip, Collapse, ListItemButton, ListItemText } from "@mui/material";
-import { ExpandLess, ExpandMore } from "@material-ui/icons";
 
 const CustomRouterLink = forwardRef((props, ref) => (
   <div ref={ref}>

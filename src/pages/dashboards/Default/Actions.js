@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   FilterList as FilterListIcon,
   Loop as LoopIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/icons-material";
 import { Menu, MenuItem, Button as MuiButton } from "@mui/material";
 
 const Button = styled(MuiButton)(spacing);

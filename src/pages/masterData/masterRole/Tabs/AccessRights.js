@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { TabPanel } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import { TabPanel } from "@mui/lab";
 import {
   Checkbox,
   Paper as MuiPaper,

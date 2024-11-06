@@ -1,6 +1,6 @@
-import { TabPanel } from "@material-ui/lab";
-import TabContext from "@material-ui/lab/TabContext";
-import TabList from "@material-ui/lab/TabList";
+import { TabPanel } from "@mui/lab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
 import { Tab } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import React, { useState } from "react";

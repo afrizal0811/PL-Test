@@ -1,8 +1,8 @@
-import AddIcon from "@material-ui/icons/Add";
-import ClearIcon from "@material-ui/icons/Clear";
-import EditIcon from "@material-ui/icons/Edit";
-import SearchIcon from "@material-ui/icons/Search";
 import { Box, spacing } from "@material-ui/system";
+import AddIcon from "@mui/icons-material/Add";
+import ClearIcon from "@mui/icons-material/Clear";
+import EditIcon from "@mui/icons-material/Edit";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   CircularProgress,
   Grid,

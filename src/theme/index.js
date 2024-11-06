@@ -1,4 +1,4 @@
-import "@material-ui/lab/themeAugmentation";
+import "@mui/lab/themeAugmentation";
 
 import { createTheme as createMuiTheme } from "@mui/material/styles";
 import breakpoints from "./breakpoints";

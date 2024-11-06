@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import * as Icon from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
+import * as Icon from "@mui/icons-material";
 import {
   CardContent,
   Grid,
@@ -1097,7 +1097,7 @@ function Icons() {
           Material Icons
         </Typography>
         <Typography variant="body2" gutterBottom>
-          Material Icons by @material-ui/icons
+          Material Icons by @mui/icons-material
         </Typography>
         <Paper pt={6}>
           <Grid container spacing={6}>

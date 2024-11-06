@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components/macro";
 
-import { Palette as PaletteIcon } from "@material-ui/icons";
-import { Alert } from "@material-ui/lab";
+import { Palette as PaletteIcon } from "@mui/icons-material";
+import { Alert } from "@mui/lab";
 import {
   Box,
   Button,

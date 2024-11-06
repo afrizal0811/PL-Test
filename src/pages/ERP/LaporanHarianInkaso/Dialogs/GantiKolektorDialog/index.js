@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import Header from "./Header";
-import { Clear, Search } from "@material-ui/icons";
-import CloseIcon from "@material-ui/icons/Close";
 import { spacing } from "@material-ui/system";
+import { Clear, Search } from "@mui/icons-material";
+import CloseIcon from "@mui/icons-material/Close";
 import {
   CardContent,
   CircularProgress,

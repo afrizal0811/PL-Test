@@ -1,9 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Add, Delete } from "@material-ui/icons";
-import AddIcon from "@material-ui/icons/Add";
-import { DatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
-import { Clear, Search } from "@mui/icons-material";
+import { Add, Clear, Delete, Search } from "@mui/icons-material";
+import AddIcon from "@mui/icons-material/Add";
+import { DatePicker } from "@mui/lab";
 import {
   Button,
   CardContent,

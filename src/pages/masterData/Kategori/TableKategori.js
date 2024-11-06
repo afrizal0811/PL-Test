@@ -1,5 +1,5 @@
-import SyncIcon from "@material-ui/icons/Sync";
 import { spacing } from "@material-ui/system";
+import SyncIcon from "@mui/icons-material/Sync";
 import {
   CircularProgress,
   Grid,

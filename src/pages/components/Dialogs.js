@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { Add as AddIcon, Person as PersonIcon } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
+import { Add as AddIcon, Person as PersonIcon } from "@mui/icons-material";
 import {
   Avatar,
   Box,

@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 // import DestinationTable from "./DestinationTable";
-import DeleteIcon from "@material-ui/icons/Delete";
-import { TabPanel } from "@material-ui/lab";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { TabPanel } from "@mui/lab";
 import { Grid, IconButton, Paper, Tooltip, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import DialogAddItem from "./DialogAddItem";
@@ -9,7 +9,7 @@ import DialogAddItem from "./DialogAddItem";
 // import { columnsDestination } from "./ColumnDestination";
 import moment from "moment";
 // import columnsDestination from "./ColumnDestination";
-import { Edit } from "@material-ui/icons";
+import { Edit } from "@mui/icons-material";
 import NumberFormat from "react-number-format";
 import { NotifyError } from "../../../../../services/notification.service";
 import DestinationEdit from "./DestinationPopup";

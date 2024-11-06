@@ -1,5 +1,5 @@
-import DeleteIcon from "@material-ui/icons/Delete";
 import { spacing } from "@material-ui/system";
+import DeleteIcon from "@mui/icons-material/Delete";
 import {
   CircularProgress,
   Grid,

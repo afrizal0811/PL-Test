@@ -1,6 +1,6 @@
-import SearchIcon from "@material-ui/icons/Search";
-import { TabContext, TabList, TabPanel } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import SearchIcon from "@mui/icons-material/Search";
+import { TabContext, TabList, TabPanel } from "@mui/lab";
 import {
   AppBar,
   Card,

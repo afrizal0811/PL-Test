@@ -1,8 +1,8 @@
-import AddIcon from "@material-ui/icons/Add";
-import DeleteIcon from "@material-ui/icons/Delete";
-import EditIcon from "@material-ui/icons/Edit";
-import SyncIcon from "@material-ui/icons/Sync";
 import { spacing } from "@material-ui/system";
+import AddIcon from "@mui/icons-material/Add";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
+import SyncIcon from "@mui/icons-material/Sync";
 import {
   CircularProgress,
   Grid,

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { ExpandMore as ExpandMoreIcon } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
+import { ExpandMore as ExpandMoreIcon } from "@mui/icons-material";
 import {
   Container,
   Grid,

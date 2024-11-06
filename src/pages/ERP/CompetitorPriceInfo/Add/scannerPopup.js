@@ -1,5 +1,5 @@
-import { Close } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
+import { Close } from "@mui/icons-material";
 import {
   Button,
   Dialog,

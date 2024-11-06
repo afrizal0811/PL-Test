@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import DestinationTable from "./DestinationTable";
-import { DatePicker } from "@material-ui/lab";
+import { DatePicker } from "@mui/lab";
 import {
   Button,
   Dialog,

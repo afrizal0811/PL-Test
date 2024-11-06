@@ -1,4 +1,4 @@
-import { Clear, Search } from "@material-ui/icons";
+import { Clear, Search } from "@mui/icons-material";
 import { IconButton, TextField } from "@mui/material";
 import PropTypes from "prop-types";
 

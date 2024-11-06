@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet-async";
 import { NavLink, useNavigate } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import AddIcon from "@material-ui/icons/Add";
+import AddIcon from "@mui/icons-material/Add";
 import {
   CircularProgress,
   Grid,

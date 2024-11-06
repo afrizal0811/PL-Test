@@ -3,13 +3,13 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   Add as AddIcon,
   Archive as ArchiveIcon,
   FilterList as FilterListIcon,
   RemoveRedEye as RemoveRedEyeIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/icons-material";
 import {
   Box,
   Button,

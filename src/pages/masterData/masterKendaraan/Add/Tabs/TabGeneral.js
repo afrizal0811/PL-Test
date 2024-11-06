@@ -1,5 +1,5 @@
-import { DatePicker, TabPanel } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import { DatePicker, TabPanel } from "@mui/lab";
 import {
   FormControl,
   Grid,

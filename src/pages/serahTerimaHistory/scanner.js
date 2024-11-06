@@ -1,5 +1,5 @@
-import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
 import { spacing } from "@material-ui/system";
+import QrCodeScannerIcon from "@mui/icons-material/QrCodeScanner";
 import { InputAdornment, Paper as MuiPaper, TextField } from "@mui/material";
 import IconButton from "@mui/material/IconButton";
 import { DataGrid } from "@mui/x-data-grid";

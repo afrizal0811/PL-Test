@@ -1,6 +1,6 @@
-import CloseIcon from "@material-ui/icons/Close";
-import SaveIcon from "@material-ui/icons/Save";
 import { spacing } from "@material-ui/system";
+import CloseIcon from "@mui/icons-material/Close";
+import SaveIcon from "@mui/icons-material/Save";
 import {
   Checkbox,
   Dialog,

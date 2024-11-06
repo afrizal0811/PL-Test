@@ -1,7 +1,7 @@
-import { TabPanel } from "@material-ui/lab";
-import TabContext from "@material-ui/lab/TabContext";
-import TabList from "@material-ui/lab/TabList";
 import { spacing } from "@material-ui/system";
+import { TabPanel } from "@mui/lab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
 import {
   Autocomplete,
   Box,

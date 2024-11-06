@@ -1,8 +1,8 @@
-import { Clear } from "@material-ui/icons";
-import CloseIcon from "@material-ui/icons/Close";
-import SearchIcon from "@material-ui/icons/Search";
-import { DesktopDatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import { Clear } from "@mui/icons-material";
+import CloseIcon from "@mui/icons-material/Close";
+import SearchIcon from "@mui/icons-material/Search";
+import { DesktopDatePicker } from "@mui/lab";
 import {
   Card,
   CardContent,

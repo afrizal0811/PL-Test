@@ -1,7 +1,7 @@
+import { TabPanel } from "@mui/lab";
 import React from "react";
 import InputFields from "./InputFields";
 import RefreshButton from "./RefreshButton";
-import { TabPanel } from "@material-ui/lab";
 
 export default function TabOtherInformation() {
   return (

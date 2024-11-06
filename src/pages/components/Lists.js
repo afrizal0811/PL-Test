@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   BeachAccess as BeachAccessIcon,
   Drafts as DraftsIcon,
@@ -13,8 +14,7 @@ import {
   Send as SendIcon,
   StarBorder as StarBorderIcon,
   Work as WorkIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/icons-material";
 import {
   Collapse,
   Grid,

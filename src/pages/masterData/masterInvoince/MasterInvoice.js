@@ -1,6 +1,6 @@
-import SynchIcon from "@material-ui/icons/Sync";
-import { DesktopDatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import SynchIcon from "@mui/icons-material/Sync";
+import { DesktopDatePicker } from "@mui/lab";
 import {
   CircularProgress,
   Grid,

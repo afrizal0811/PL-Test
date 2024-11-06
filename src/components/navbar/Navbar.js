@@ -1,4 +1,4 @@
-import { Menu as MenuIcon } from "@material-ui/icons";
+import { Menu as MenuIcon } from "@mui/icons-material";
 import {
   Grid,
   Hidden,

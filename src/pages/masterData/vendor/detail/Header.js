@@ -1,5 +1,5 @@
-import { TabContext, TabList, TabPanel } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import { TabContext, TabList, TabPanel } from "@mui/lab";
 import {
   AppBar,
   Card,

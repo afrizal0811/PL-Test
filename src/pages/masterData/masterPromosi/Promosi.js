@@ -1,7 +1,7 @@
-import AddIcon from "@material-ui/icons/Add";
-import DeleteIcon from "@material-ui/icons/Delete";
-import { DesktopDatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
+import AddIcon from "@mui/icons-material/Add";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { DesktopDatePicker } from "@mui/lab";
 import {
   Autocomplete,
   CircularProgress,

@@ -1,4 +1,4 @@
-import { TabPanel } from "@material-ui/lab";
+import { TabPanel } from "@mui/lab";
 import { Card, CardContent, Grid, TextField } from "@mui/material";
 import React from "react";
 

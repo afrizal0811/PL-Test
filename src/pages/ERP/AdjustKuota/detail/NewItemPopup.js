@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 
-import SearchIcon from "@material-ui/icons/Search";
 import { spacing } from "@material-ui/system";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   Button,
   Dialog,

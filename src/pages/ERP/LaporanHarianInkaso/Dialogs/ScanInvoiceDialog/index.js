@@ -1,6 +1,6 @@
-import CloseIcon from "@material-ui/icons/Close";
 import { makeStyles } from "@material-ui/styles";
 import { Box } from "@material-ui/system";
+import CloseIcon from "@mui/icons-material/Close";
 import {
   Button,
   Card,

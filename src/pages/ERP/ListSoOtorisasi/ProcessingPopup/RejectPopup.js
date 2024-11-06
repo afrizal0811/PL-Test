@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import FakturTabel from "./FakturTabel";
 // import DetailFakturTabel from "./DetailFakturTabel";
-import CloseIcon from "@material-ui/icons/Close";
 import { spacing } from "@material-ui/system";
+import CloseIcon from "@mui/icons-material/Close";
 import {
   Dialog,
   DialogActions,

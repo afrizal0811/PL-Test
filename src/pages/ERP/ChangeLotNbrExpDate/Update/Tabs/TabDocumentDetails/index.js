@@ -1,7 +1,7 @@
+import { TabPanel } from "@mui/lab";
 import React from "react";
-import SourceTable from "./SourceTable";
 import DestinationTable from "./DestinationTable";
-import { TabPanel } from "@material-ui/lab";
+import SourceTable from "./SourceTable";
 
 export default function TabDocumentDetails() {
   return (

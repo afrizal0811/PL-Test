@@ -1,7 +1,7 @@
+import { TabPanel } from "@mui/lab";
 import React from "react";
 import ApprovalDetailsTable from "./ApprovalDetailsTable";
 import RefreshButton from "./RefreshButton";
-import { TabPanel } from "@material-ui/lab";
 
 export default function TabApprovalDetails() {
   return (

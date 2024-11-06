@@ -1,5 +1,5 @@
-import TabContext from "@material-ui/lab/TabContext";
-import TabList from "@material-ui/lab/TabList";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
 import { Tab } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import React from "react";

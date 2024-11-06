@@ -1,3 +1,5 @@
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
+import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import {
   Autocomplete,
   Box,
@@ -5,8 +7,6 @@ import {
   FormHelperText,
   TextField,
 } from "@mui/material";
-import CheckBoxIcon from "@material-ui/icons/CheckBox";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
 import axios from "axios";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";

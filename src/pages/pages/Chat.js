@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import SendIcon from "@material-ui/icons/Send";
 import { spacing } from "@material-ui/system";
+import SendIcon from "@mui/icons-material/Send";
 import {
   Avatar,
   Badge,

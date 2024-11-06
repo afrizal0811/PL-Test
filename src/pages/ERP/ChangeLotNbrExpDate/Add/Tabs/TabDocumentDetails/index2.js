@@ -1,7 +1,7 @@
 import React, { useMemo, useRef, useState } from "react";
 // import DestinationTable from "./DestinationTable";
-import DeleteIcon from "@material-ui/icons/Delete";
-import { TabPanel } from "@material-ui/lab";
+import DeleteIcon from "@mui/icons-material/Delete";
+import { TabPanel } from "@mui/lab";
 import { Button, FormControl, Paper } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import DialogAddItem from "./DialogAddItem";

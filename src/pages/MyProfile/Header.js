@@ -1,9 +1,9 @@
+import { spacing } from "@material-ui/system";
 import {
   Close as CloseIcon,
   Visibility,
   VisibilityOff,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/icons-material";
 import {
   Dialog,
   DialogActions,

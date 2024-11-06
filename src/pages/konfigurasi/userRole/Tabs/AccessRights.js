@@ -1,7 +1,7 @@
-import { TabPanel } from "@material-ui/lab";
 import { Box, spacing } from "@material-ui/system";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { TabPanel } from "@mui/lab";
 import {
   Checkbox,
   Collapse,

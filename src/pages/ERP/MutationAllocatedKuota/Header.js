@@ -1,6 +1,6 @@
-import { Clear } from "@material-ui/icons";
-import SearchIcon from "@material-ui/icons/Search";
 import { spacing } from "@material-ui/system";
+import { Clear } from "@mui/icons-material";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   CardContent,
   Grid,

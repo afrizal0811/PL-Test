@@ -1,7 +1,7 @@
-import ClearIcon from "@material-ui/icons/Clear";
-import CloseIcon from "@material-ui/icons/Close";
-import SearchIcon from "@material-ui/icons/Search";
 import { spacing } from "@material-ui/system";
+import ClearIcon from "@mui/icons-material/Clear";
+import CloseIcon from "@mui/icons-material/Close";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   Box,
   CardContent,

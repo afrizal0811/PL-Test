@@ -7,8 +7,8 @@ import styled from "styled-components/macro";
 
 import "react-dragula/dist/dragula.css";
 
-import { Add as AddIcon } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
+import { Add as AddIcon } from "@mui/icons-material";
 import {
   Avatar,
   Button,

@@ -1,4 +1,4 @@
-import { TabPanel } from "@material-ui/lab";
+import { TabPanel } from "@mui/lab";
 import { Paper } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import moment from "moment";

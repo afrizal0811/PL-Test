@@ -1,6 +1,6 @@
-import EditIcon from "@material-ui/icons/Edit";
-import SaveIcon from "@material-ui/icons/Save";
 import { spacing } from "@material-ui/system";
+import EditIcon from "@mui/icons-material/Edit";
+import SaveIcon from "@mui/icons-material/Save";
 import {
   CircularProgress,
   FormHelperText,

@@ -1,6 +1,6 @@
-import DeleteIcon from "@material-ui/icons/Delete";
-import EditIcon from "@material-ui/icons/Edit";
 import { spacing } from "@material-ui/system";
+import DeleteIcon from "@mui/icons-material/Delete";
+import EditIcon from "@mui/icons-material/Edit";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import {
   Button,

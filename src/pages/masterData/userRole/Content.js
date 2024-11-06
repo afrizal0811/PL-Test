@@ -1,5 +1,5 @@
-import SearchIcon from "@material-ui/icons/Search";
 import { spacing } from "@material-ui/system";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   Card,
   FormControl,

@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import CloseIcon from "@material-ui/icons/Close";
-import { DatePicker } from "@material-ui/lab";
 import { Box, spacing } from "@material-ui/system";
+import CloseIcon from "@mui/icons-material/Close";
+import { DatePicker } from "@mui/lab";
 import {
   Autocomplete,
   CardContent,

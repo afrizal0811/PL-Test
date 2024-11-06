@@ -1,6 +1,6 @@
-import CheckBoxIcon from "@material-ui/icons/CheckBox";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
-import SaveIcon from "@material-ui/icons/Save";
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
+import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
+import SaveIcon from "@mui/icons-material/Save";
 import {
   Button,
   Card,
