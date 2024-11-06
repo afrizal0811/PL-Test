@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   Add as AddIcon,
   Archive as ArchiveIcon,
@@ -35,6 +34,7 @@ import {
   Typography,
 } from "@mui/material";
 import { green, orange } from "@mui/material/colors";
+import { spacing } from "@mui/system";
 
 const Divider = styled(MuiDivider)(spacing);
 

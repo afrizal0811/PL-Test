@@ -10,7 +10,7 @@ import {
   TextField as MuiTextField,
   Typography,
 } from "@mui/material";
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
 import React, { useEffect, useState } from "react";

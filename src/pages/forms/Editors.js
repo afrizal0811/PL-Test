@@ -7,7 +7,6 @@ import ReactQuill from "react-quill";
 import "react-quill/dist/quill.bubble.css";
 import "react-quill/dist/quill.snow.css";
 
-import { spacing } from "@material-ui/system";
 import {
   Box,
   CardContent,
@@ -18,6 +17,7 @@ import {
   Divider as MuiDivider,
   Typography,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)`
   ${spacing};

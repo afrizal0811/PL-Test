@@ -7,7 +7,6 @@ import styled from "styled-components/macro";
 
 import "react-dragula/dist/dragula.css";
 
-import { spacing } from "@material-ui/system";
 import { Add as AddIcon } from "@mui/icons-material";
 import {
   Avatar,
@@ -22,6 +21,7 @@ import {
   Typography as MuiTypography,
 } from "@mui/material";
 import { blue, green, orange } from "@mui/material/colors";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)(spacing);
 

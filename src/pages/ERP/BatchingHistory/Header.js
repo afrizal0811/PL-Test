@@ -1,4 +1,3 @@
-import { spacing } from "@material-ui/system";
 import SearchIcon from "@mui/icons-material/Search";
 import {
   CardContent,
@@ -11,6 +10,7 @@ import {
   Paper as MuiPaper,
   TextField,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 import React, { useState } from "react";
 import styled from "styled-components/macro";
 

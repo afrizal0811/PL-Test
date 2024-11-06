@@ -10,7 +10,7 @@ import {
   Alert as MuiAlert,
   TextField as MuiTextField,
 } from "@mui/material";
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 
 import useAuth from "../../modules/Auth/hooks/useAuth";
 import { signInSchema } from "../../modules/Auth/utils/schema";

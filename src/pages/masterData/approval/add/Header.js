@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import styled from "styled-components/macro";
 import Detail from "./Detail";
 // import { useParams } from "react-router-dom";
-import { spacing } from "@material-ui/system";
 import {
   CardContent,
   Checkbox,
@@ -13,6 +12,7 @@ import {
   Card as MuiCard,
   TextField as MuiTextField,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 import CbData from "../../../../components/shared/dropdown";
 
 import {

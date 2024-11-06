@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import { ExpandMore as ExpandMoreIcon } from "@mui/icons-material";
 import {
   Accordion,
@@ -17,6 +16,7 @@ import {
   Divider as MuiDivider,
   Typography,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)(spacing);
 

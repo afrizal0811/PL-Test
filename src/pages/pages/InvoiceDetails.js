@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { display, spacing } from "@material-ui/system";
 import {
   CardContent,
   Grid,
@@ -19,6 +18,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+import { display, spacing } from "@mui/system";
 
 const Card = styled(MuiCard)`
   ${spacing};

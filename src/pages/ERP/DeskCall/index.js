@@ -6,7 +6,7 @@ import Header from "./Header";
 
 import { Link, Breadcrumbs as MuiBreadcrumbs, Typography } from "@mui/material";
 
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

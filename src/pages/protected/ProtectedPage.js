@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 
 import { Alert as MuiAlert } from "@mui/material";
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 
 import Default from "../dashboards/Default";
 

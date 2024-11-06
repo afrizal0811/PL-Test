@@ -16,7 +16,6 @@ import {
   Twitter,
 } from "react-feather";
 
-import { spacing } from "@material-ui/system";
 import {
   Box,
   CardContent,
@@ -36,6 +35,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

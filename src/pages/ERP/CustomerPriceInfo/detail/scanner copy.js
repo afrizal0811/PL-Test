@@ -1,5 +1,5 @@
-import { spacing } from "@material-ui/system";
 import { Paper as MuiPaper, TextField } from "@mui/material";
+import { spacing } from "@mui/system";
 import React, { Component, useState } from "react";
 import QrReader from "react-qr-scanner";
 import styled from "styled-components/macro";

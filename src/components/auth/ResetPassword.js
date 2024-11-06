@@ -8,7 +8,7 @@ import {
   Alert as MuiAlert,
   TextField as MuiTextField,
 } from "@mui/material";
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 
 import Swal from "sweetalert2";
 import useAuth from "../../modules/Auth/hooks/useAuth";

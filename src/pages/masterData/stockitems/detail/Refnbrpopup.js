@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 // import styled from "styled-components/macro";
-import { Box } from "@material-ui/system";
 import ClearIcon from "@mui/icons-material/Clear";
 import SearchIcon from "@mui/icons-material/Search";
 import {
@@ -15,6 +14,7 @@ import {
   IconButton,
   TextField,
 } from "@mui/material";
+import { Box } from "@mui/system";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
 import PropTypes from "prop-types";

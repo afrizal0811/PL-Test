@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   Button,
   CircularProgress,
@@ -17,6 +16,7 @@ import {
   Paper as MuiPaper,
   TextField,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 import { DataGrid } from "@mui/x-data-grid";
 
 import NumberFormat from "react-number-format";

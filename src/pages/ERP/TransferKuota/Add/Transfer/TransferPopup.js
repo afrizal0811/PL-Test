@@ -1,4 +1,3 @@
-import { spacing } from "@material-ui/system";
 import ClearIcon from "@mui/icons-material/Clear";
 import CloseIcon from "@mui/icons-material/Close";
 import SearchIcon from "@mui/icons-material/Search";
@@ -17,6 +16,7 @@ import {
   Paper as MuiPaper,
   TextField,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 import { DataGrid } from "@mui/x-data-grid";
 import PropTypes from "prop-types";
 import React, { useMemo, useRef, useState } from "react";

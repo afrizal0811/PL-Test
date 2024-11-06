@@ -13,9 +13,9 @@ import { DataGrid } from "@mui/x-data-grid";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 // import { GetConfig } from "../../../../utils/ConfigHeader";
-import { Box } from "@material-ui/system";
 import ClearIcon from "@mui/icons-material/Clear";
 import SearchIcon from "@mui/icons-material/Search";
+import { Box } from "@mui/system";
 import axios from "axios";
 import { GetConfig } from "../../utils/ConfigHeader";
 

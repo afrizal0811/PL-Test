@@ -2,8 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import { green } from "@mui/material/colors";
+import { spacing } from "@mui/system";
 
 import {
   Chip,

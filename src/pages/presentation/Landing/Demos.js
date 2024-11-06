@@ -2,8 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import { Box, Chip, Container, Grid, Typography } from "@mui/material";
+import { spacing } from "@mui/system";
 
 import { THEMES } from "../../../constants";
 import useTheme from "../../../hooks/useTheme";

@@ -4,13 +4,13 @@ import Chart from "react-chartjs-2";
 import { MoreVertical } from "react-feather";
 import styled, { withTheme } from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   CardContent,
   CardHeader,
   IconButton,
   Card as MuiCard,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)(spacing);
 

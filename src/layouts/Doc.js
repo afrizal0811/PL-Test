@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import { CssBaseline, Hidden, Paper as MuiPaper } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { spacing } from "@mui/system";
 
 import GlobalStyle from "../components/GlobalStyle";
 import NavbarSimple from "../components/navbar/NavbarSimple";

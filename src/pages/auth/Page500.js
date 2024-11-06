@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import { Button as MuiButton, Typography } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Button = styled(MuiButton)(spacing);
 

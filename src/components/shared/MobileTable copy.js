@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 import styled from "styled-components/macro";
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
@@ -12,7 +12,7 @@ import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
-import { Box } from "@material-ui/system";
+import { Box } from "@mui/system";
 import ClearIcon from "@mui/icons-material/Clear";
 import SearchIcon from "@mui/icons-material/Search";
 import { GetConfig } from "../../utils/ConfigHeader";

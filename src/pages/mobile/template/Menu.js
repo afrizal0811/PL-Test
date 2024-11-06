@@ -1,4 +1,3 @@
-import { spacing } from "@material-ui/system";
 import {
   Grid,
   Breadcrumbs as MuiBreadcrumbs,
@@ -8,6 +7,7 @@ import {
   Paper as MuiPaper,
   Typography,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";

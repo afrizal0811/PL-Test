@@ -14,7 +14,7 @@ import {
   capitalize,
 } from "@mui/material";
 
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 import useFormIsUpdated from "../../../../hooks/useFormIsUpdated";
 import Header from "../Header";
 import DetailTransfer from "./Transfer";

@@ -1,5 +1,5 @@
-import { spacing } from "@material-ui/system";
 import { Paper as MuiPaper } from "@mui/material";
+import { spacing } from "@mui/system";
 import { DataGrid } from "@mui/x-data-grid";
 import React from "react";
 import styled from "styled-components/macro";

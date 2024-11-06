@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   Drafts as DraftsIcon,
   MoveToInbox as InboxIcon,
@@ -27,6 +26,7 @@ import {
   Paper as MuiPaper,
   Typography,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)(spacing);
 

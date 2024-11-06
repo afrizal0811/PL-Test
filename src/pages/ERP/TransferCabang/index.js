@@ -15,7 +15,7 @@ import {
   Typography,
 } from "@mui/material";
 
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 import { GetConfig } from "../../../utils/ConfigHeader";
 import { getBrach } from "../../../utils/jwt";
 

@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 import LaporanHarianInkasoTable from "./LaporanHarianInkasoTable";
 
-import { spacing } from "@material-ui/system";
+import { spacing } from "@mui/system";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

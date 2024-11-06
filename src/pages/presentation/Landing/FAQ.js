@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import { ExpandMore as ExpandMoreIcon } from "@mui/icons-material";
 import {
   Container,
@@ -12,6 +11,7 @@ import {
   AccordionSummary as MuiAccordionSummary,
   Typography,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Spacer = styled.div(spacing);
 

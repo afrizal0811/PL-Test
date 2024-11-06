@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   Assignment as AssignmentIcon,
   Folder as FolderIcon,
@@ -20,6 +19,7 @@ import {
   Typography,
 } from "@mui/material";
 import { deepOrange, deepPurple, green, pink } from "@mui/material/colors";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)(spacing);
 

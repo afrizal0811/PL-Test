@@ -3,7 +3,6 @@ import Chart from "react-chartjs-2";
 import { MoreVertical } from "react-feather";
 import styled, { withTheme } from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   CardHeader,
   IconButton,
@@ -17,6 +16,7 @@ import {
   Typography,
 } from "@mui/material";
 import { green, orange, red } from "@mui/material/colors";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)(spacing);
 

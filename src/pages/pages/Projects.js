@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   Avatar,
   Button,
@@ -19,6 +18,7 @@ import {
   Divider as MuiDivider,
   Typography as MuiTypography,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

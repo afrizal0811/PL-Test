@@ -2,7 +2,6 @@ import React from "react";
 import { MoreVertical } from "react-feather";
 import styled, { withTheme } from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import {
   CardHeader,
   IconButton,
@@ -15,6 +14,7 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+import { spacing } from "@mui/system";
 
 const Card = styled(MuiCard)(spacing);
 
