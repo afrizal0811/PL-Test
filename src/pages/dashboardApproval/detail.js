@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { tableCellClasses } from "@material-ui/core/TableCell";
 import { spacing } from "@material-ui/system";
 import {
   CardContent,
@@ -23,6 +22,7 @@ import {
   TableRow,
   Typography,
 } from "@mui/material";
+import { tableCellClasses } from "@mui/material/TableCell";
 import axios from "axios";
 import moment from "moment";
 import { useEffect } from "react";
