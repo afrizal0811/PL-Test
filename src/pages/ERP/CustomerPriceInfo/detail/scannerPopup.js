@@ -1,4 +1,3 @@
-import IconButton from "@material-ui/core/IconButton";
 import { Close } from "@material-ui/icons";
 import {
   Button,
@@ -8,6 +7,7 @@ import {
   DialogTitle,
   TextField,
 } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import axios from "axios";
 import React, { useState } from "react";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";

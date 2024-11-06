@@ -1,7 +1,7 @@
-import AppBar from "@material-ui/core/AppBar";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
 import { Tab } from "@mui/material";
+import AppBar from "@mui/material/AppBar";
 import React, { useState } from "react";
 import AccessRights from "./AccessRights";
 import Membership from "./Membership";

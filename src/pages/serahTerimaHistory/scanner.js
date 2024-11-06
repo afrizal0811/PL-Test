@@ -1,7 +1,7 @@
-import IconButton from "@material-ui/core/IconButton";
 import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
 import { spacing } from "@material-ui/system";
 import { InputAdornment, Paper as MuiPaper, TextField } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import { DataGrid } from "@mui/x-data-grid";
 import React, { Component, useState } from "react";
 import QrReader from "react-qr-scanner";

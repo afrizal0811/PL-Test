@@ -1,6 +1,6 @@
-import { useTheme } from "@material-ui/core/styles";
-import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { List } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import React from "react";
 import ReactPerfectScrollbar from "react-perfect-scrollbar";
 import styled, { css } from "styled-components/macro";

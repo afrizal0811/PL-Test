@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
 import { DatePicker } from "@material-ui/lab";
 import { Box, spacing } from "@material-ui/system";
@@ -36,6 +35,7 @@ import {
   Typography,
   Zoom,
 } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
 import moment from "moment";

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled, { css } from "styled-components/macro";
 
+import { Palette as PaletteIcon } from "@material-ui/icons";
+import { Alert } from "@material-ui/lab";
 import {
   Box,
   Button,
@@ -11,9 +13,7 @@ import {
   Fab as MuiFab,
   Typography,
 } from "@mui/material";
-import { green, grey, indigo, orange } from "@material-ui/core/colors";
-import { Palette as PaletteIcon } from "@material-ui/icons";
-import { Alert } from "@material-ui/lab";
+import { green, grey, indigo, orange } from "@mui/material/colors";
 
 import { THEMES } from "../constants";
 import useTheme from "../hooks/useTheme";

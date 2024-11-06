@@ -1,4 +1,3 @@
-import Button from "@material-ui/core/Button";
 import SaveIcon from "@material-ui/icons/Save";
 import { spacing } from "@material-ui/system";
 import {
@@ -13,6 +12,7 @@ import {
   TextField as MuiTextField,
   Typography,
 } from "@mui/material";
+import Button from "@mui/material/Button";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";

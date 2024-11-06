@@ -1,20 +1,20 @@
-import React from "react";
-import { useRoutes } from "react-router-dom";
-import { Provider } from "react-redux";
-import { HelmetProvider, Helmet } from "react-helmet-async";
 import { create } from "jss";
+import React from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Provider } from "react-redux";
+import { useRoutes } from "react-router-dom";
 import { ThemeProvider } from "styled-components/macro";
 
-import { StyledEngineProvider } from "@material-ui/styled-engine-sc";
-import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 import AdapterDateFns from "@material-ui/lab/AdapterDateFns";
 import LocalizationProvider from "@material-ui/lab/LocalizationProvider";
+import { StyledEngineProvider } from "@material-ui/styled-engine-sc";
 import StylesProvider from "@material-ui/styles/StylesProvider";
 import jssPreset from "@material-ui/styles/jssPreset";
+import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
 
 import "./i18n";
-import createTheme from "./theme";
 import routes from "./routes";
+import createTheme from "./theme";
 
 import useTheme from "./hooks/useTheme";
 import { store } from "./redux/store";

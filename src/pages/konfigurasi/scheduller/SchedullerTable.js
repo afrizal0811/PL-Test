@@ -1,4 +1,3 @@
-import Button from "@material-ui/core/Button";
 import { Edit } from "@material-ui/icons";
 import AddIcon from "@material-ui/icons/Add";
 import DeleteIcon from "@material-ui/icons/Delete";
@@ -14,6 +13,7 @@ import {
   Paper as MuiPaper,
   Typography,
 } from "@mui/material";
+import Button from "@mui/material/Button";
 import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
 import axios from "axios";
 import React, { useEffect, useState } from "react";

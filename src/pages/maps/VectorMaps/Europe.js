@@ -2,9 +2,9 @@ import React from "react";
 import { VectorMap } from "react-jvectormap";
 import styled from "styled-components/macro";
 
-import { blue } from "@material-ui/core/colors";
 import { spacing } from "@material-ui/system";
 import { CardContent, Card as MuiCard, Typography } from "@mui/material";
+import { blue } from "@mui/material/colors";
 
 const MapContainer = styled.div`
   height: 300px;

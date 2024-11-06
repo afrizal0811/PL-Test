@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
 // import AddIcon from "@material-ui/icons/Add";
-import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { Box, spacing } from "@material-ui/system";
 import {
@@ -11,6 +10,7 @@ import {
   Paper as MuiPaper,
   TextField as MuiTextField,
 } from "@mui/material";
+import Button from "@mui/material/Button";
 import Carousel from "react-material-ui-carousel";
 import ProdukPopup from "./ProductPopup";
 // import config from "../../../../utils/ConfigHeader";

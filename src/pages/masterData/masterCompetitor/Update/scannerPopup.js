@@ -1,4 +1,3 @@
-import IconButton from "@material-ui/core/IconButton";
 import { Close } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
 import {
@@ -10,6 +9,7 @@ import {
   Paper as MuiPaper,
   TextField,
 } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import QrReader from "modern-react-qr-reader";
 import React, { useState } from "react";
 import styled from "styled-components/macro";

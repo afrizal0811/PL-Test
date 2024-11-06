@@ -3,7 +3,6 @@ import Chart from "react-chartjs-2";
 import { MoreVertical } from "react-feather";
 import styled, { withTheme } from "styled-components/macro";
 
-import { green, orange, red } from "@material-ui/core/colors";
 import { spacing } from "@material-ui/system";
 import {
   CardContent,
@@ -17,6 +16,7 @@ import {
   TableHead,
   Typography,
 } from "@mui/material";
+import { green, orange, red } from "@mui/material/colors";
 
 const Card = styled(MuiCard)(spacing);
 

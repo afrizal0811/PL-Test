@@ -1,4 +1,3 @@
-import AppBar from "@material-ui/core/AppBar";
 import { TabPanel } from "@material-ui/lab";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
@@ -20,6 +19,7 @@ import {
   Tab,
   Typography,
 } from "@mui/material";
+import AppBar from "@mui/material/AppBar";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";

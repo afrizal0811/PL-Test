@@ -1,4 +1,3 @@
-import Button from "@material-ui/core/Button";
 import AddIcon from "@material-ui/icons/Add";
 import EditIcon from "@material-ui/icons/Edit";
 import { spacing } from "@material-ui/system";
@@ -13,6 +12,7 @@ import {
   Paper as MuiPaper,
   Typography,
 } from "@mui/material";
+import Button from "@mui/material/Button";
 import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
 import axios from "axios";
 import React, { useEffect, useState } from "react";

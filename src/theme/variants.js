@@ -1,5 +1,5 @@
+import { green, grey, indigo, orange, red } from "@mui/material/colors";
 import merge from "deepmerge";
-import { green, grey, indigo, red, orange } from "@material-ui/core/colors";
 import { THEMES } from "../constants";
 
 const customBlue = {

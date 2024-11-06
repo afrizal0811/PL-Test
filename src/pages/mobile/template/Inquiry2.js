@@ -1,4 +1,3 @@
-import Button from "@material-ui/core/Button";
 import { spacing } from "@material-ui/system";
 import {
   Grid,
@@ -11,6 +10,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import Button from "@mui/material/Button";
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { NavLink, useNavigate } from "react-router-dom";

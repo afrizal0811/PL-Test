@@ -1,8 +1,8 @@
-import AppBar from "@material-ui/core/AppBar";
 import { TabPanel } from "@material-ui/lab";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
 import { Tab } from "@mui/material";
+import AppBar from "@mui/material/AppBar";
 import React, { useState } from "react";
 import Employment from "./Employment";
 import General from "./General";

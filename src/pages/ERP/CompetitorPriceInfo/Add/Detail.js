@@ -1,4 +1,3 @@
-import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { Box, spacing } from "@material-ui/system";
 import {
@@ -7,6 +6,7 @@ import {
   Paper as MuiPaper,
   TextField as MuiTextField,
 } from "@mui/material";
+import Button from "@mui/material/Button";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import Carousel from "react-material-ui-carousel";
