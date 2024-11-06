@@ -1,25 +1,23 @@
-import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components/macro";
-import axios from "axios";
-import { useParams } from "react-router-dom";
+import { TabContext, TabList, TabPanel } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
+  AppBar,
+  Card,
   CardContent,
+  Checkbox,
+  FormControlLabel,
   Grid,
   TextField as MuiTextField,
-  Typography,
   Tab,
-  Card,
-  AppBar,
-  FormControlLabel,
-  Checkbox,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import { TabContext, TabList, TabPanel } from "@material-ui/lab";
-import TabGeneral from "./General";
+  Typography,
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import CbData from "../../../../components/shared/dropdown";
-import TabFinancial from "./Financial";
-import TabPurchasingSetting from "./PurchasingSetting";
 import { GetConfig } from "../../../../utils/ConfigHeader";
+import TabGeneral from "./General";
 
 const TextField = styled(MuiTextField)(spacing);
 

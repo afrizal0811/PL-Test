@@ -1,9 +1,9 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
 
-import { Box, Chip, Container, Grid, Typography } from "@material-ui/core";
 import { spacing } from "@material-ui/system";
+import { Box, Chip, Container, Grid, Typography } from "@mui/material";
 
 import { THEMES } from "../../../constants";
 import useTheme from "../../../hooks/useTheme";

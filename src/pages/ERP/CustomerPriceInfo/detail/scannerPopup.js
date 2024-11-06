@@ -1,15 +1,15 @@
-import React, { useState } from "react";
 import IconButton from "@material-ui/core/IconButton";
-import {
-  TextField,
-  DialogActions,
-  DialogTitle,
-  Dialog,
-  DialogContent,
-  Button,
-} from "@material-ui/core";
 import { Close } from "@material-ui/icons";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  TextField,
+} from "@mui/material";
 import axios from "axios";
+import React, { useState } from "react";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 import { GetConfig } from "../../../../utils/ConfigHeader";
 

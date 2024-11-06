@@ -1,15 +1,15 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import styled from "styled-components/macro";
 
+import { green, red } from "@material-ui/core/colors";
+import { spacing } from "@material-ui/system";
 import {
   Grid,
   Divider as MuiDivider,
   Typography as MuiTypography,
-} from "@material-ui/core";
-import { green, red } from "@material-ui/core/colors";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 import Actions from "./Actions";
 import BarChart from "./BarChart";

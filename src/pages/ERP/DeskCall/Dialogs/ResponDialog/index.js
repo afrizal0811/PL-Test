@@ -1,23 +1,23 @@
-import Header from "./Header";
-import styled from "styled-components/macro";
+import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
-  IconButton,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import React, { useState } from "react";
-import CloseIcon from "@material-ui/icons/Close";
+  IconButton,
+  Button as MuiButton,
+} from "@mui/material";
 import axios from "axios";
+import moment from "moment";
+import React, { useState } from "react";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../../services/notification.service";
-import moment from "moment";
-import { GetConfig } from "../../../../../utils/ConfigHeader";
+import Header from "./Header";
 
 const Button = styled(MuiButton)(spacing);
 

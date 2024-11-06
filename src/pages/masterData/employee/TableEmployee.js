@@ -1,35 +1,30 @@
-import React, { useState, useEffect } from "react";
 import Button from "@material-ui/core/Button";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import swal from "sweetalert2";
-import axios from "axios";
-import PropTypes from "prop-types";
-import moment from "moment";
-import styled from "styled-components/macro";
-import { spacing } from "@material-ui/system";
 import SyncIcon from "@material-ui/icons/Sync";
+import { spacing } from "@material-ui/system";
 import {
-  Card as MuiCard,
-  CardContent as MuiCardContent,
   CircularProgress,
   Grid,
+  Card as MuiCard,
+  CardContent as MuiCardContent,
   Paper as MuiPaper,
   Typography,
-  TextField,
-  IconButton,
-} from "@material-ui/core";
+} from "@mui/material";
+import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import swal from "sweetalert2";
+import CbData from "../../../components/shared/dropdown";
+import { GetConfig } from "../../../utils/ConfigHeader";
+import QuickSearch from "../../components/QuickSearch";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
-import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
-import { useNavigate } from "react-router-dom";
-import { GetConfig } from "../../../utils/ConfigHeader";
-import { Search } from "react-feather";
-import { Clear } from "@material-ui/icons";
-import CbData from "../../../components/shared/dropdown";
-import QuickSearch from "../../components/QuickSearch";
 
 const Card = styled(MuiCard)(spacing);
 const CardContent = styled(MuiCardContent)(spacing);

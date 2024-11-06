@@ -1,17 +1,17 @@
-import React, { useState } from "react";
+import DeleteIcon from "@material-ui/icons/Delete";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
   IconButton,
+  Button as MuiButton,
   Paper as MuiPaper,
   Tooltip,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import React, { useState } from "react";
 import styled from "styled-components/macro";
-import { spacing } from "@material-ui/system";
-import TransferPopup from "./TransferPopup";
-import DeleteIcon from "@material-ui/icons/Delete";
 import { useTransferKuotaContext } from "../../../../../contexts/Modules/TransferKuota/TransferKuotaContext";
+import TransferPopup from "./TransferPopup";
 
 const Paper = styled(MuiPaper)(spacing);
 const Button = styled(MuiButton)(spacing);

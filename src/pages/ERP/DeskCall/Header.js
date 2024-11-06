@@ -1,38 +1,36 @@
-import React, { useEffect, useState, useRef } from "react";
-import styled from "styled-components/macro";
-import { useNavigate } from "react-router-dom";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
+import SearchIcon from "@material-ui/icons/Search";
+import { spacing } from "@material-ui/system";
 import {
+  CardContent,
+  CircularProgress,
   Grid,
+  IconButton,
+  InputAdornment,
   Button as MuiButton,
   Card as MuiCard,
-  Paper as MuiPaper,
-  CardContent,
-  TextField,
-  CircularProgress,
-  InputAdornment,
-  IconButton,
-  Typography,
   Popover,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import SearchIcon from "@material-ui/icons/Search";
+  TextField,
+  Typography,
+} from "@mui/material";
 import axios from "axios";
-import DeskCallTable from "./DeskCallTable";
 import moment from "moment";
+import React, { useEffect, useState } from "react";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
 import { getBrach } from "../../../utils/jwt";
+import DeskCallTable from "./DeskCallTable";
 
-import Refresh from "@material-ui/icons/Refresh";
-import CbData from "../../../components/shared/dropdown";
-import CustomerPopup from "./CustomerPopup";
-import { Clear } from "@material-ui/icons";
-import SalesPersonPopup from "./SalesPersonPopup";
-import DeskcallPopup from "./DeskcallPopup";
-import { DesktopDatePicker } from "@material-ui/lab";
-import { GetConfig } from "../../../utils/ConfigHeader";
 import { grey } from "@material-ui/core/colors";
+import { Clear } from "@material-ui/icons";
+import Refresh from "@material-ui/icons/Refresh";
+import { DesktopDatePicker } from "@material-ui/lab";
 import Swal from "sweetalert2";
+import CbData from "../../../components/shared/dropdown";
+import { GetConfig } from "../../../utils/ConfigHeader";
+import CustomerPopup from "./CustomerPopup";
+import DeskcallPopup from "./DeskcallPopup";
+import SalesPersonPopup from "./SalesPersonPopup";
 
 const Card = styled(MuiCard)(spacing);
 const Button = styled(MuiButton)(spacing);

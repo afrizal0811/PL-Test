@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-import styled from "styled-components/macro";
 import { Outlet } from "react-router-dom";
+import styled from "styled-components/macro";
 
-import { Hidden, CssBaseline, Paper as MuiPaper } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { spacing } from "@material-ui/system";
+import { CssBaseline, Hidden, Paper as MuiPaper } from "@mui/material";
 
 import GlobalStyle from "../components/GlobalStyle";
 import NavbarSimple from "../components/navbar/NavbarSimple";
+import Settings from "../components/Settings";
 import docItems from "../components/sidebar/docItems";
 import Sidebar from "../components/sidebar/Sidebar";
-import Settings from "../components/Settings";
 
 const drawerWidth = 258;
 

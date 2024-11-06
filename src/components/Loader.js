@@ -1,7 +1,7 @@
+import { Box, CircularProgress, Stack } from "@mui/material";
 import React from "react";
-import { Box, CircularProgress, Stack } from "@material-ui/core";
-import Timer from "react-timer-wrapper";
 import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
 
 function Loader() {
   return (

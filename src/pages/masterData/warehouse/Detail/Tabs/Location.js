@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import { Paper as MuiPaper } from "@material-ui/core";
 import { TabPanel } from "@material-ui/lab";
-import styled from "styled-components/macro";
 import { spacing } from "@material-ui/system";
-import { useParams } from "react-router-dom";
+import { Paper as MuiPaper } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
-import { GetConfig } from "../../../../../utils/ConfigHeader";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import Loader from "../../../../../components/Loader";
+import { GetConfig } from "../../../../../utils/ConfigHeader";
 
 const Paper = styled(MuiPaper)(spacing);
 

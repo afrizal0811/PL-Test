@@ -1,57 +1,55 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
-import styled from "styled-components/macro";
 import {
-  Grid,
-  Card as MuiCard,
-  FormControl,
-  CardContent,
-  TextField,
-  InputAdornment,
-  IconButton,
-  Menu,
-  MenuItem,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  Button,
-  DialogActions,
-} from "@material-ui/core";
-import {
-  Reply,
-  Delete,
-  Save,
-  Refresh,
   Add,
+  Delete,
   MoreHoriz,
+  Refresh,
+  Reply,
+  Save,
 } from "@material-ui/icons";
+import SearchIcon from "@material-ui/icons/Search";
 import { DatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
-import SearchIcon from "@material-ui/icons/Search";
 import {
-  NotifyConfirm,
-  NotifyError,
-  NotifySuccess,
-} from "../../../services/notification.service";
+  Button,
+  CardContent,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  FormControl,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Menu,
+  MenuItem,
+  Card as MuiCard,
+  TextField,
+} from "@mui/material";
+import axios from "axios";
+import moment from "moment";
+import React, { useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import Swal from "sweetalert2";
-import SourceSection from "./Source/index";
-import RefnbrPopup from "./RefnbrPopup";
-import MutasiKuotaPopup from "./MutasiKuotaPopup";
 import CbData from "../../../../components/shared/dropdown";
+import SelectPopup from "../../../../components/shared/SelectPopup";
+import { useTransferKuotaContext } from "../../../../contexts/Modules/TransferKuota/TransferKuotaContext";
+import { GetConfig } from "../../../../utils/ConfigHeader";
 import {
   getBrach,
   getEmployee,
   getEmployeeName,
   getRoleName,
 } from "../../../../utils/jwt";
-import { GetConfig } from "../../../../utils/ConfigHeader";
-import SelectPopup from "../../../../components/shared/SelectPopup";
-import moment from "moment";
-import { useTransferKuotaContext } from "../../../../contexts/Modules/TransferKuota/TransferKuotaContext";
+import {
+  NotifyError,
+  NotifySuccess,
+} from "../../../services/notification.service";
+import MutasiKuotaPopup from "./MutasiKuotaPopup";
+import RefnbrPopup from "./RefnbrPopup";
+import SourceSection from "./Source/index";
 import TransferSection from "./Transfer";
-import Loader from "../../../../components/Loader";
 
 const Card = styled(MuiCard)(spacing);
 

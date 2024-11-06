@@ -1,19 +1,21 @@
-import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { rgba } from "polished";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import {
+  ArrowForward as ArrowForwardIcon,
+  Visibility as VisibilityIcon,
+} from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   Box,
   Button,
   Container,
   Grid,
-  Tooltip,
   Typography as MuiTypography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import { Visibility as VisibilityIcon } from "@material-ui/icons";
-import { ArrowForward as ArrowForwardIcon } from "@material-ui/icons";
+  Tooltip,
+} from "@mui/material";
 
 const Typography = styled(MuiTypography)(spacing);
 

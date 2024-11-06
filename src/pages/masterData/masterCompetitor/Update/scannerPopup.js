@@ -1,24 +1,18 @@
-import React, { Component, useState } from "react";
-import QrReader from "modern-react-qr-reader";
 import IconButton from "@material-ui/core/IconButton";
-import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
-import {
-  InputAdornment,
-  TextField,
-  DialogActions,
-  DialogTitle,
-  Grid,
-  Dialog,
-  Link,
-  Paper as MuiPaper,
-  DialogContent,
-  Button,
-} from "@material-ui/core";
-import { DataGrid } from "@mui/x-data-grid";
-import styled from "styled-components/macro";
-import { spacing } from "@material-ui/system";
 import { Close } from "@material-ui/icons";
-import Scanner from "./scanner";
+import { spacing } from "@material-ui/system";
+import {
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Paper as MuiPaper,
+  TextField,
+} from "@mui/material";
+import QrReader from "modern-react-qr-reader";
+import React, { useState } from "react";
+import styled from "styled-components/macro";
 
 const Paper = styled(MuiPaper)(spacing);
 

@@ -1,13 +1,13 @@
 import * as React from "react";
-import styled from "styled-components/macro";
 import { useTranslation } from "react-i18next";
+import styled from "styled-components/macro";
 
 import {
-  Tooltip,
   Menu,
   MenuItem,
   IconButton as MuiIconButton,
-} from "@material-ui/core";
+  Tooltip,
+} from "@mui/material";
 
 const IconButton = styled(MuiIconButton)`
   svg {

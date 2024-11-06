@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Button, Grid, TextField as MuiTextField } from "@material-ui/core";
-import styled from "styled-components/macro";
 import { spacing } from "@material-ui/system";
+import { Button, Grid, TextField as MuiTextField } from "@mui/material";
+import React, { useState } from "react";
+import styled from "styled-components/macro";
 import DialogChangePassword from "./DialogChangePassword";
 
 const TextField = styled(MuiTextField)(spacing);

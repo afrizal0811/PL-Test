@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
 import {
   Card,
   Dialog,
@@ -11,14 +11,14 @@ import {
   InputAdornment,
   Button as MuiButton,
   TextField,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import CloseIcon from "@material-ui/icons/Close";
-import { Download, Upload } from "react-feather";
+} from "@mui/material";
 import axios from "axios";
+import React from "react";
+import { Download, Upload } from "react-feather";
+import styled from "styled-components";
+import Swal from "sweetalert2";
 import { getBrach } from "../../../utils/jwt";
 import { NotifySuccess } from "../../services/notification.service";
-import Swal from "sweetalert2";
 
 const Button = styled(MuiButton)(spacing);
 

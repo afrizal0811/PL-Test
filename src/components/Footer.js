@@ -5,9 +5,9 @@ import {
   Grid,
   Hidden,
   List,
-  ListItemText as MuiListItemText,
   ListItemButton as MuiListItemButton,
-} from "@material-ui/core";
+  ListItemText as MuiListItemText,
+} from "@mui/material";
 
 const Wrapper = styled.div`
   padding: ${(props) => props.theme.spacing(0.25)}

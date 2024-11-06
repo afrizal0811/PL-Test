@@ -1,17 +1,11 @@
 import React from "react";
 // import Header from "./Header";
 // import Footer from "./Footer";
-import LaporanHarianInkasoTable from "./LaporanHarianInkasoTable";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
+import { Link, Breadcrumbs as MuiBreadcrumbs, Typography } from "@mui/material";
 import { Helmet } from "react-helmet-async";
-import {
-  Grid,
-  Link,
-  Breadcrumbs as MuiBreadcrumbs,
-  Typography,
-  Paper,
-} from "@material-ui/core";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
+import LaporanHarianInkasoTable from "./LaporanHarianInkasoTable";
 
 import { spacing } from "@material-ui/system";
 

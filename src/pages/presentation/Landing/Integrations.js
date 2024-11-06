@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
-import { Button, Box, Container, Typography, Tooltip } from "@material-ui/core";
-import { spacing } from "@material-ui/system";
 import { ArrowForward as ArrowForwardIcon } from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
+import { Box, Button, Container, Tooltip, Typography } from "@mui/material";
 
 const Wrapper = styled.div`
   ${spacing};

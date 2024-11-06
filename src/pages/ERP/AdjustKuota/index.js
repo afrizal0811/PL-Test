@@ -1,16 +1,15 @@
-import React, { useEffect } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { spacing } from "@material-ui/system";
 import {
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Divider as MuiDivider,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import AdjustmentKuotaTable from "./Table";
-import DetailAdjustmentKuota from "./detail";
 
 const Divider = styled(MuiDivider)(spacing);
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);

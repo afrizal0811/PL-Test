@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import { TabPanel } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
   Checkbox,
   Paper as MuiPaper,
@@ -9,10 +11,8 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-} from "@material-ui/core";
-import { TabPanel } from "@material-ui/lab";
+} from "@mui/material";
 import styled from "styled-components/macro";
-import { spacing } from "@material-ui/system";
 
 const Paper = styled(MuiPaper)(spacing);
 

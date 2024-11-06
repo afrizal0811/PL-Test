@@ -1,57 +1,40 @@
-import React, { useEffect, useState } from "react";
-import * as Yup from "yup";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Formik } from "formik";
-import { Helmet } from "react-helmet-async";
-import axios from "axios";
-import AddIcon from "@material-ui/icons/Add";
-import EditIcon from "@material-ui/icons/Edit";
-import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
-import CheckBoxIcon from "@material-ui/icons/CheckBox";
-import SaveIcon from "@material-ui/icons/Save";
+import Button from "@material-ui/core/Button";
 import RefreshIcon from "@material-ui/icons/Refresh";
-import AppBar from "@material-ui/core/AppBar";
-import TabContext from "@material-ui/lab/TabContext";
+import SaveIcon from "@material-ui/icons/Save";
+import { DatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
+import {
+  CardContent,
+  Checkbox,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  FormControlLabel,
+  FormHelperText,
+  Grid,
+  Link,
+  Alert as MuiAlert,
+  Breadcrumbs as MuiBreadcrumbs,
+  Card as MuiCard,
+  Divider as MuiDivider,
+  Paper as MuiPaper,
+  TextField as MuiTextField,
+  Typography,
+} from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
-import TabList from "@material-ui/lab/TabList";
-import DeleteIcon from "@material-ui/icons/Delete";
-import {
-  Alert as MuiAlert,
-  Box,
-  Breadcrumbs as MuiBreadcrumbs,
-  Button as MuiButton,
-  Card as MuiCard,
-  CardContent,
-  CircularProgress,
-  Divider as MuiDivider,
-  Paper as MuiPaper,
-  Grid,
-  Link,
-  TextField as MuiTextField,
-  Typography,
-  Tabs,
-  Tab,
-  FormControlLabel,
-  Checkbox,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  IconButton,
-  Autocomplete,
-  FormHelperText,
-} from "@material-ui/core";
-import Button from "@material-ui/core/Button";
-import moment from "moment";
-import { spacing } from "@material-ui/system";
-import { DatePicker, TabPanel } from "@material-ui/lab";
-import { GetConfig } from "../../../utils/ConfigHeader";
 
 const Divider = styled(MuiDivider)(spacing);
 

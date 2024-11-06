@@ -1,44 +1,38 @@
 import React, { useState } from "react";
 // import FakturTabel from "./FakturTabel";
 // import DetailFakturTabel from "./DetailFakturTabel";
-import styled from "styled-components/macro";
+import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
-  IconButton,
+  Checkbox,
+  CircularProgress,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-  TextField,
-  Grid,
-  CircularProgress,
-  Typography,
-  Paper,
   FormControl,
-  Select,
-  MenuItem,
-  Divider,
   FormControlLabel,
-  Checkbox,
-  FormLabel,
-  RadioGroup,
-  Radio,
   FormGroup,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import CloseIcon from "@material-ui/icons/Close";
+  Grid,
+  IconButton,
+  Button as MuiButton,
+  Paper,
+  TextField,
+  Typography,
+} from "@mui/material";
 import moment from "moment";
+import styled from "styled-components/macro";
 // import CbData from "../../../../../components/shared/dropdown";
-import axios from "axios";
-import { DataGrid } from "@mui/x-data-grid";
-import Swal from "sweetalert2";
 import { Timer } from "@material-ui/icons";
+import { DataGrid } from "@mui/x-data-grid";
+import axios from "axios";
+import NumberFormat from "react-number-format";
+import Swal from "sweetalert2";
+import { GetConfig } from "../../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import NumberFormat from "react-number-format";
-import { GetConfig } from "../../../../utils/ConfigHeader";
 
 const Button = styled(MuiButton)(spacing);
 

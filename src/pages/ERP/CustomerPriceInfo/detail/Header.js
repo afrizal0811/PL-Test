@@ -1,39 +1,39 @@
-import React, { useEffect, useState } from "react";
-import Detail from "./Detail";
-import styled from "styled-components/macro";
-import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
 import { Search } from "@material-ui/icons";
-import { useNavigate, useParams } from "react-router-dom";
+import Add from "@material-ui/icons/Add";
+import DeleteIcon from "@material-ui/icons/Delete";
+import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
+import Refresh from "@material-ui/icons/Refresh";
+import Reply from "@material-ui/icons/Reply";
+import SaveIcon from "@material-ui/icons/Save";
+import { DatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
-  Card as MuiCard,
   CardContent,
   Grid,
-  TextField as MuiTextField,
-  InputAdornment,
   IconButton,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import { DatePicker } from "@material-ui/lab";
-import moment from "moment";
+  InputAdornment,
+  Card as MuiCard,
+  TextField as MuiTextField,
+} from "@mui/material";
 import axios from "axios";
-import PromoPopup from "./PromoPopup";
-import ItemPopup from "./ItemPopup";
-import DeleteIcon from "@material-ui/icons/Delete";
-import SaveIcon from "@material-ui/icons/Save";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import NumberFormat from "react-number-format";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
+import Swal from "sweetalert2";
+import QrBarcodeScanner from "../../../../components/QrBarcodeScanner";
 import CbData from "../../../../components/shared/dropdown";
 import { GetConfig } from "../../../../utils/ConfigHeader";
 import { getBrach } from "../../../../utils/jwt";
-import Refresh from "@material-ui/icons/Refresh";
-import Add from "@material-ui/icons/Add";
-import Reply from "@material-ui/icons/Reply";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import Swal from "sweetalert2";
-import NumberFormat from "react-number-format";
 import CustomerPopup from "../../promoActivity/detail/CustomerPopup";
-import QrBarcodeScanner from "../../../../components/QrBarcodeScanner";
+import Detail from "./Detail";
+import ItemPopup from "./ItemPopup";
+import PromoPopup from "./PromoPopup";
 
 const Card = styled(MuiCard)(spacing);
 const TextField = styled(MuiTextField)(spacing);

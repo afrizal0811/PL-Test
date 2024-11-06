@@ -1,7 +1,7 @@
+import { spacing } from "@material-ui/system";
+import { Button as MuiButton } from "@mui/material";
 import React from "react";
 import styled from "styled-components/macro";
-import { Button as MuiButton } from "@material-ui/core";
-import { spacing } from "@material-ui/system";
 
 const Button = styled(MuiButton)(spacing);
 

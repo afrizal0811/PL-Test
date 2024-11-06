@@ -7,7 +7,7 @@ import {
   AppBar as MuiAppBar,
   IconButton as MuiIconButton,
   Toolbar,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import { Menu as MenuIcon } from "@material-ui/icons";
 

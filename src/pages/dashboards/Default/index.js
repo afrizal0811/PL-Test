@@ -1,23 +1,16 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
+import styled from "styled-components/macro";
 
 import {
+  Alert,
   Grid,
   Divider as MuiDivider,
   Typography as MuiTypography,
-  Alert,
-} from "@material-ui/core";
+} from "@mui/material";
 import { spacing } from "@material-ui/system";
-import { green, red } from "@material-ui/core/colors";
 
-import Actions from "./Actions";
-import BarChart from "./BarChart";
-import LineChart from "./LineChart";
-import DoughnutChart from "./DoughnutChart";
-import Stats from "./Stats";
-import Table from "./Table";
 import { getEmployeeName } from "../../../utils/jwt";
 
 const Divider = styled(MuiDivider)(spacing);

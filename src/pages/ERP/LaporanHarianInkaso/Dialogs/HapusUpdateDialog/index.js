@@ -1,16 +1,16 @@
-import React from "react";
-import Header from "./Header";
-import styled from "styled-components/macro";
+import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
-  IconButton,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import CloseIcon from "@material-ui/icons/Close";
+  IconButton,
+  Button as MuiButton,
+} from "@mui/material";
+import React from "react";
+import styled from "styled-components/macro";
+import Header from "./Header";
 
 const Button = styled(MuiButton)(spacing);
 

@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import { spacing } from "@material-ui/system";
 import {
+  Link,
   Breadcrumbs as MuiBreadcrumbs,
   Divider as MuiDivider,
-  Link,
   Typography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 import Header from "./Header";
 
 const Divider = styled(MuiDivider)(spacing);

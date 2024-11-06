@@ -1,25 +1,24 @@
-import React, { useState, useRef, useEffect } from "react";
-import styled from "styled-components/macro";
-import axios from "axios";
-import { useParams } from "react-router-dom";
-import {
-  CardContent,
-  Grid,
-  TextField as MuiTextField,
-  InputAdornment,
-  IconButton,
-  Typography,
-  Tab,
-  Card,
-  AppBar,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
 import SearchIcon from "@material-ui/icons/Search";
 import { TabContext, TabList, TabPanel } from "@material-ui/lab";
-import TabGeneral from "./General";
-import CbData from "../../../../components/shared/dropdown";
-import RefnbrPopup from "./Refnbrpopup";
+import { spacing } from "@material-ui/system";
+import {
+  AppBar,
+  Card,
+  CardContent,
+  Grid,
+  IconButton,
+  InputAdornment,
+  TextField as MuiTextField,
+  Tab,
+  Typography,
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../../utils/ConfigHeader";
+import TabGeneral from "./General";
+import RefnbrPopup from "./Refnbrpopup";
 
 const TextField = styled(MuiTextField)(spacing);
 

@@ -1,27 +1,25 @@
-import React, { useState } from "react";
-import styled from "styled-components/macro";
+import { DatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
+  CardContent,
+  Checkbox,
+  FormControl,
+  FormControlLabel,
+  Grid,
+  InputLabel,
+  MenuItem,
   Button as MuiButton,
   Card as MuiCard,
   Paper as MuiPaper,
-  CardContent,
-  Box,
-  Tab,
-  Grid,
-  TextField,
-  FormControl,
-  InputLabel,
   Select,
-  MenuItem,
-  FormControlLabel,
-  Checkbox,
-} from "@material-ui/core";
+  TextField,
+} from "@mui/material";
 import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
-import { spacing } from "@material-ui/system";
-import columnSO from "./columnSO";
-import { DatePicker, TabContext, TabList, TabPanel } from "@material-ui/lab";
-import { getBrach } from "../../../utils/jwt";
+import React, { useState } from "react";
+import styled from "styled-components/macro";
 import CbDataPG from "../../../components/shared/dropdownPG";
+import { getBrach } from "../../../utils/jwt";
+import columnSO from "./columnSO";
 
 const Card = styled(MuiCard)(spacing);
 const Paper = styled(MuiPaper)(spacing);

@@ -1,20 +1,9 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Button from "@material-ui/core/Button";
 import SynchIcon from "@material-ui/icons/Sync";
 import { spacing } from "@material-ui/system";
-import Button from "@material-ui/core/Button";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import swal from "sweetalert2";
-import axios from "axios";
-import moment from "moment";
 import {
-  NotifyError,
-  NotifySuccess,
-} from "../../services/notification.service";
-import {
+  CircularProgress,
+  Grid,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
@@ -22,16 +11,22 @@ import {
   Divider as MuiDivider,
   Paper as MuiPaper,
   Typography,
-  Icon,
-  Grid,
-  CircularProgress,
-} from "@material-ui/core";
-import {
-  DataGrid,
-  GridToolbarContainer,
-  GridToolbarDensitySelector,
-} from "@mui/x-data-grid";
+} from "@mui/material";
+import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate } from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import swal from "sweetalert2";
 import { GetConfig } from "../../../utils/ConfigHeader";
+import {
+  NotifyError,
+  NotifySuccess,
+} from "../../services/notification.service";
 
 const Card = styled(MuiCard)(spacing);
 

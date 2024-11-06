@@ -1,31 +1,29 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import axios from "axios";
-import moment from "moment";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
+import { TabContext, TabList } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
   AppBar,
-  Breadcrumbs as MuiBreadcrumbs,
-  Card as MuiCard,
   CardContent,
   CircularProgress,
-  Divider as MuiDivider,
   Grid,
   Link,
-  Paper,
-  Tab,
+  Breadcrumbs as MuiBreadcrumbs,
+  Card as MuiCard,
+  Divider as MuiDivider,
   TextField as MuiTextField,
+  Tab,
   Typography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import { DataGrid } from "@mui/x-data-grid";
-import { TabContext, TabList, TabPanel } from "@material-ui/lab";
-import TabDetail from "./TabDetail";
-import TabApplication from "./TabApplication";
+} from "@mui/material";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../utils/ConfigHeader";
+import TabApplication from "./TabApplication";
+import TabDetail from "./TabDetail";
 
 const Divider = styled(MuiDivider)(spacing);
 

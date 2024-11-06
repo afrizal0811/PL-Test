@@ -1,24 +1,20 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
+import { Box } from "@material-ui/system";
+import ClearIcon from "@mui/icons-material/Clear";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   Button,
   Dialog,
   DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
-  Divider as MuiDivider,
   Grid,
   IconButton,
   TextField,
-} from "@material-ui/core";
-import { DataGrid } from "@mui/x-data-grid";
-import { GetConfig } from "../../../../utils/ConfigHeader";
-import axios from "axios";
-import { Box } from "@material-ui/system";
-import ClearIcon from "@mui/icons-material/Clear";
-import SearchIcon from "@mui/icons-material/Search";
+} from "@mui/material";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 import CbData from "../../../../components/shared/dropdown";
+import { GetConfig } from "../../../../utils/ConfigHeader";
 
 function escapeRegExp(value) {
   return value.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");

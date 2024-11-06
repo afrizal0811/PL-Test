@@ -1,22 +1,18 @@
-import React, { useState, useRef, useEffect } from "react";
-import Detail from "./Detail";
-import styled from "styled-components/macro";
-import axios from "axios";
-import { useParams, useNavigate } from "react-router-dom";
-import {
-  CardContent,
-  Grid,
-  TextField as MuiTextField,
-  Typography,
-  FormControlLabel,
-  Checkbox,
-  IconButton,
-  Card,
-} from "@material-ui/core";
 import { spacing } from "@material-ui/system";
-import CbData from "../../../../components/shared/dropdown";
-import CbDepartment from "../../../../components/shared/cbDepartement";
-import CbBranch from "../../../../components/shared/cbBranch";
+import {
+  Card,
+  CardContent,
+  Checkbox,
+  FormControlLabel,
+  Grid,
+  IconButton,
+  TextField as MuiTextField,
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
+import Detail from "./Detail";
 
 import {
   NotifyError,

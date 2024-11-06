@@ -1,23 +1,23 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   Grid,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Divider as MuiDivider,
   Typography as MuiTypography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
+import DarkStyle from "./DarkStyle";
 import Default from "./Default";
 import Hybrid from "./Hybrid";
 import LightStyle from "./LightStyle";
-import DarkStyle from "./DarkStyle";
-import Streetview from "./Streetview";
 import Markers from "./Markers";
+import Streetview from "./Streetview";
 
 const Divider = styled(MuiDivider)(spacing);
 

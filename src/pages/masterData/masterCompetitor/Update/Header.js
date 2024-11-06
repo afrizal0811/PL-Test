@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components/macro";
-import { useNavigate, useParams } from "react-router-dom";
-import { GetConfig } from "../../../../utils/ConfigHeader";
+import { Add, Delete, Refresh, Reply, Save } from "@material-ui/icons";
+import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
+import SearchIcon from "@material-ui/icons/Search";
+import { spacing } from "@material-ui/system";
 import {
-  CardContent,
   Card,
+  CardContent,
   Grid,
-  TextField as MuiTextField,
-  InputAdornment,
   IconButton,
-} from "@material-ui/core";
+  InputAdornment,
+  TextField as MuiTextField,
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
+import Swal from "sweetalert2";
+import QrBarcodeScanner from "../../../../components/QrBarcodeScanner";
+import CbBranch from "../../../../components/shared/cbBranch";
+import { GetConfig } from "../../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import axios from "axios";
-import { spacing } from "@material-ui/system";
-import SearchIcon from "@material-ui/icons/Search";
-import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
-import { Reply, Refresh, Add, Delete, Save } from "@material-ui/icons";
 import ProductGroupPopup from "./ProductGroupPopup";
-import ProductPrincipalPopup from "./ProductPrincipalPopup";
 import ProductKelompokPopup from "./ProductKelompokPopup";
-import CbBranch from "../../../../components/shared/cbBranch";
-import Swal from "sweetalert2";
-import QrBarcodeScanner from "../../../../components/QrBarcodeScanner";
+import ProductPrincipalPopup from "./ProductPrincipalPopup";
 
 const TextField = styled(MuiTextField)(spacing);
 

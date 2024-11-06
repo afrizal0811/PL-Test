@@ -1,13 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
+import { TabPanel } from "@material-ui/lab";
+import { Box, spacing } from "@material-ui/system";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import {
-  Button,
   Checkbox,
-  CircularProgress,
   Collapse,
-  Grid,
   IconButton,
   Paper as MuiPaper,
   Table,
@@ -16,15 +13,9 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-  Typography,
-} from "@material-ui/core";
-import AddIcon from "@material-ui/icons/Add";
-import { TabPanel } from "@material-ui/lab";
+} from "@mui/material";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
-import { Box, spacing } from "@material-ui/system";
-import { useDemoData } from "@mui/x-data-grid-generator";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
 const Paper = styled(MuiPaper)(spacing);
 const INITIAL_GROUPING_COLUMN_MODEL = ["company", "director"];

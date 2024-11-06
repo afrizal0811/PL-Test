@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import {
-  Avatar as MuiAvatar,
   Badge,
   Box,
   Button,
@@ -12,12 +11,13 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
+  Avatar as MuiAvatar,
   Popover as MuiPopover,
   SvgIcon,
   Tooltip,
   Typography,
-} from "@material-ui/core";
-import { Bell, Home, UserPlus, Server } from "react-feather";
+} from "@mui/material";
+import { Bell, Home, Server, UserPlus } from "react-feather";
 
 const Popover = styled(MuiPopover)`
   .MuiPaper-root {

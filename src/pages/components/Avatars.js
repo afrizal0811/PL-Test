@@ -1,8 +1,15 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { deepOrange, deepPurple, green, pink } from "@material-ui/core/colors";
+import {
+  Assignment as AssignmentIcon,
+  Folder as FolderIcon,
+  Pageview as PageviewIcon,
+} from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   CardContent,
   Grid,
@@ -12,14 +19,7 @@ import {
   Card as MuiCard,
   Divider as MuiDivider,
   Typography,
-} from "@material-ui/core";
-import { deepOrange, deepPurple, green, pink } from "@material-ui/core/colors";
-import {
-  Assignment as AssignmentIcon,
-  Folder as FolderIcon,
-  Pageview as PageviewIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

@@ -1,10 +1,8 @@
-import React from "react";
-import ApprovalDetailsTable from "./ApprovalDetailsTable";
-import RefreshButton from "./RefreshButton";
-import moment from "moment";
 import { TabPanel } from "@material-ui/lab";
-import { Button, Paper } from "@material-ui/core";
+import { Paper } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import moment from "moment";
+import React from "react";
 
 export default function TabApprovalDetails(props) {
   const handleCellClick = (param, event) => {

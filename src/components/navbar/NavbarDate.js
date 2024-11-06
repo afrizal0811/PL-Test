@@ -1,5 +1,5 @@
+import { Tooltip, Typography } from "@mui/material";
 import * as React from "react";
-import { Tooltip, Typography } from "@material-ui/core";
 import { getBrach } from "../../utils/jwt";
 
 function NavbarBranch() {

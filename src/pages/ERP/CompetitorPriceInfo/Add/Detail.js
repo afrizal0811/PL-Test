@@ -1,24 +1,17 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import PropTypes from "prop-types";
-import axios from "axios";
-import DeleteIcon from "@material-ui/icons/Delete";
-import {
-  Card as MuiCard,
-  CardContent,
-  Paper as MuiPaper,
-  Grid,
-  TextField as MuiTextField,
-  Typography,
-  FormHelperText,
-} from "@material-ui/core";
 import Button from "@material-ui/core/Button";
+import DeleteIcon from "@material-ui/icons/Delete";
 import { Box, spacing } from "@material-ui/system";
-import CbEmployee from "../../../../components/shared/cbEmployee.js";
+import {
+  Grid,
+  Card as MuiCard,
+  Paper as MuiPaper,
+  TextField as MuiTextField,
+} from "@mui/material";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 import Carousel from "react-material-ui-carousel";
+import styled from "styled-components/macro";
 // import config from "../../../../utils/ConfigHeader";
-import Swal from "sweetalert2";
-import { GetConfig } from "../../../../utils/ConfigHeader";
 
 const Card = styled(MuiCard)(spacing);
 const TextField = styled(MuiTextField)(spacing);

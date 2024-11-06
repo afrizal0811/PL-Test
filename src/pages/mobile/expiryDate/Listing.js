@@ -1,10 +1,4 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { spacing } from "@material-ui/system";
-import { GetConfig } from "../../../utils/ConfigHeader";
-import axios from "axios";
 import {
   Link,
   Breadcrumbs as MuiBreadcrumbs,
@@ -13,9 +7,15 @@ import {
   Divider as MuiDivider,
   Paper as MuiPaper,
   Typography,
-} from "@material-ui/core";
-import MobileTable from "../../../components/shared/MobileTable";
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
 import Loader from "../../../components/Loader";
+import MobileTable from "../../../components/shared/MobileTable";
+import { GetConfig } from "../../../utils/ConfigHeader";
 
 const Card = styled(MuiCard)(spacing);
 

@@ -1,19 +1,19 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
-  Breadcrumbs as MuiBreadcrumbs,
-  Card as MuiCard,
   CardContent,
-  Divider as MuiDivider,
   Grid,
   Link,
+  Breadcrumbs as MuiBreadcrumbs,
+  Card as MuiCard,
+  Divider as MuiDivider,
+  Pagination as MuiPagination,
   Typography,
-} from "@material-ui/core";
-import { Pagination as MuiPagination } from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

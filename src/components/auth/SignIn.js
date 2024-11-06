@@ -1,16 +1,15 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
 import { Formik } from "formik";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
 
 import {
-  Alert as MuiAlert,
+  Button,
   Checkbox,
   FormControlLabel,
-  Button,
+  Alert as MuiAlert,
   TextField as MuiTextField,
-} from "@material-ui/core";
+} from "@mui/material";
 import { spacing } from "@material-ui/system";
 
 import useAuth from "../../modules/Auth/hooks/useAuth";

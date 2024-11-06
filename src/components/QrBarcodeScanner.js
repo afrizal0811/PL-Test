@@ -1,3 +1,4 @@
+import { Close } from "@material-ui/icons";
 import {
   Box,
   Button,
@@ -6,8 +7,7 @@ import {
   DialogTitle,
   IconButton,
   Typography,
-} from "@material-ui/core";
-import { Close } from "@material-ui/icons";
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import BarcodeScannerComponent from "react-qr-barcode-scanner";
 

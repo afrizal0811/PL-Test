@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { Badge, Grid, Avatar, Typography } from "@material-ui/core";
+import { Avatar, Badge, Grid, Typography } from "@mui/material";
 
 import useAuth from "../../hooks/useAuth";
 

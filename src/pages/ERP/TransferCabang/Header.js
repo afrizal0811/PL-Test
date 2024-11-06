@@ -1,47 +1,37 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import axios from "axios";
-import * as Yup from "yup";
-import swal from "sweetalert2";
-import {
-  Grid,
-  Card as MuiCard,
-  Paper as MuiPaper,
-  CardContent,
-  TextField,
-  InputAdornment,
-  IconButton,
-  Checkbox,
-  Menu,
-  MenuItem,
-  Typography,
-} from "@material-ui/core";
-import {
-  Reply,
-  Save,
-  Edit,
-  Refresh,
-  Add,
-  Delete,
-  MoreHoriz,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+import { Delete, MoreHoriz, Refresh, Reply, Save } from "@material-ui/icons";
 import SearchIcon from "@material-ui/icons/Search";
 import { DatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
+import {
+  CardContent,
+  Checkbox,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Menu,
+  MenuItem,
+  Card as MuiCard,
+  Paper as MuiPaper,
+  TextField,
+  Typography,
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
-import RefnbrPopup from "./RefnbrPopup";
+import styled from "styled-components/macro";
+import { default as swal, default as Swal } from "sweetalert2";
+import * as Yup from "yup";
+import CbData from "../../../components/shared/dropdown";
+import SelectPopup from "../../../components/shared/SelectPopup";
+import useFormIsUpdated from "../../../hooks/useFormIsUpdated";
+import { GetConfig } from "../../../utils/ConfigHeader";
+import { getBrach, getEmployeeName } from "../../../utils/jwt";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
-import CbData from "../../../components/shared/dropdown";
-import { getEmployeeName, getBrach } from "../../../utils/jwt";
-import { GetConfig } from "../../../utils/ConfigHeader";
-import SelectPopup from "../../../components/shared/SelectPopup";
-import useFormIsUpdated from "../../../hooks/useFormIsUpdated";
-import Swal from "sweetalert2";
-import Loader from "../../../components/Loader";
+import RefnbrPopup from "./RefnbrPopup";
 
 const Card = styled(MuiCard)(spacing);
 const Paper = styled(MuiPaper)(spacing);

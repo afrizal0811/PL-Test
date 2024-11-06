@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { Typography } from "@material-ui/core";
+import { Typography } from "@mui/material";
 
 import SidebarNavList from "./SidebarNavList";
 

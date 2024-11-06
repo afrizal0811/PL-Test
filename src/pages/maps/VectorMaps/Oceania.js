@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { VectorMap } from "react-jvectormap";
+import styled from "styled-components/macro";
 
-import { CardContent, Card as MuiCard, Typography } from "@material-ui/core";
-import { spacing } from "@material-ui/system";
 import { orange } from "@material-ui/core/colors";
+import { spacing } from "@material-ui/system";
+import { CardContent, Card as MuiCard, Typography } from "@mui/material";
 
 const MapContainer = styled.div`
   height: 300px;

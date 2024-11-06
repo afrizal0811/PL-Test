@@ -1,5 +1,5 @@
-import { IconButton, TextField } from "@material-ui/core";
 import { Clear, Search } from "@material-ui/icons";
+import { IconButton, TextField } from "@mui/material";
 import PropTypes from "prop-types";
 
 export default function QuickSearch({

@@ -1,17 +1,17 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
 import {
   Box,
+  Grid,
+  Link,
   Breadcrumbs as MuiBreadcrumbs,
   Chip as MuiChip,
   Divider as MuiDivider,
-  Grid,
-  Link,
   Typography as MuiTypography,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import { spacing } from "@material-ui/system";
 

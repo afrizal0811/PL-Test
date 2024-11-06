@@ -1,59 +1,41 @@
-import React, { useEffect, useState } from "react";
-import * as Yup from "yup";
-import PropTypes from "prop-types";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Formik } from "formik";
-import { Helmet } from "react-helmet-async";
-import axios from "axios";
-import { GetConfig } from "../../../utils/ConfigHeader";
-import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
-import SaveIcon from "@material-ui/icons/Save";
-import RefreshIcon from "@material-ui/icons/Refresh";
-import {
-  Alert as MuiAlert,
-  Breadcrumbs as MuiBreadcrumbs,
-  Button as MuiButton,
-  Card as MuiCard,
-  CardContent,
-  Divider as MuiDivider,
-  Paper as MuiPaper,
-  Grid,
-  Link,
-  TextField as MuiTextField,
-  Typography,
-  FormControlLabel,
-  Checkbox,
-  FormHelperText,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  IconButton,
-} from "@material-ui/core";
-import {
-  NotifyError,
-  NotifySuccess,
-} from "../../services/notification.service";
-import Button from "@material-ui/core/Button";
-import moment from "moment";
-import { Box, spacing } from "@material-ui/system";
-import { DatePicker, TabPanel } from "@material-ui/lab";
-import ClearIcon from "@mui/icons-material/Clear";
-import SearchIcon from "@mui/icons-material/Search";
-import CbBranch from "../../../components/shared/cbBranch";
-import { getBrach } from "../../../utils/jwt";
 import Add from "@material-ui/icons/Add";
 import Delete from "@material-ui/icons/Delete";
 import Refresh from "@material-ui/icons/Refresh";
 import Reply from "@material-ui/icons/Reply";
-import PrincipalPopup from "./PrincipalPopup";
-import ProductGroupPopup from "./ProductGroupPopup";
-import BranchTab from "./BranchTab";
-import PrincipalProdukPopup from "./PrincipalProdukPopup";
-import ProdukKelompokPopup from "./ProdukKelompokPopup";
+import SaveIcon from "@material-ui/icons/Save";
+import { DatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
+import {
+  CardContent,
+  Checkbox,
+  FormControlLabel,
+  Grid,
+  IconButton,
+  Link,
+  Breadcrumbs as MuiBreadcrumbs,
+  Card as MuiCard,
+  Divider as MuiDivider,
+  TextField as MuiTextField,
+  Typography,
+} from "@mui/material";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import Swal from "sweetalert2";
+import { GetConfig } from "../../../utils/ConfigHeader";
+import { getBrach } from "../../../utils/jwt";
+import {
+  NotifyError,
+  NotifySuccess,
+} from "../../services/notification.service";
+import BranchTab from "./BranchTab";
+import PrincipalPopup from "./PrincipalPopup";
+import PrincipalProdukPopup from "./PrincipalProdukPopup";
+import ProductGroupPopup from "./ProductGroupPopup";
+import ProdukKelompokPopup from "./ProdukKelompokPopup";
 
 const Divider = styled(MuiDivider)(spacing);
 

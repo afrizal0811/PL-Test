@@ -1,10 +1,10 @@
-import { memo, useEffect, useState, useMemo } from "react";
-import { Modal, Box, Typography, Button } from "@material-ui/core";
-import styled from "styled-components/macro";
+import { Box, Button, Modal, Typography } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
-import { NotifyError } from "../../services/notification.service";
+import { memo, useEffect, useMemo, useState } from "react";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../utils/ConfigHeader";
+import { NotifyError } from "../../services/notification.service";
 const Container = styled(Box)`
   transform: translate(-50%, -50%);
 `;

@@ -1,15 +1,15 @@
 import React from "react";
-import styled, { withTheme } from "styled-components/macro";
 import { MoreVertical } from "react-feather";
 import { VectorMap } from "react-jvectormap";
+import styled, { withTheme } from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
-  Card as MuiCard,
-  CardContent as MuiCardContent,
   CardHeader,
   IconButton,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+  Card as MuiCard,
+  CardContent as MuiCardContent,
+} from "@mui/material";
 
 import "../../../vendor/jvectormap.css";
 

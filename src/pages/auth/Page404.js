@@ -1,10 +1,10 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
+import styled from "styled-components/macro";
 
-import { Button as MuiButton, Typography } from "@material-ui/core";
 import { spacing } from "@material-ui/system";
+import { Button as MuiButton, Typography } from "@mui/material";
 
 const Button = styled(MuiButton)(spacing);
 

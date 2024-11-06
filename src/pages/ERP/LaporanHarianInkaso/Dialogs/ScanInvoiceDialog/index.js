@@ -1,3 +1,6 @@
+import CloseIcon from "@material-ui/icons/Close";
+import { makeStyles } from "@material-ui/styles";
+import { Box } from "@material-ui/system";
 import {
   Button,
   Card,
@@ -11,17 +14,14 @@ import {
   IconButton,
   Paper,
   TextField,
-} from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
-import { Box } from "@material-ui/system";
-import axios from "axios";
-import React from "react";
-import { GetConfig } from "../../../../../utils/ConfigHeader";
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import { makeStyles } from "@material-ui/styles";
+import axios from "axios";
 import moment from "moment";
+import React from "react";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import { GetConfig } from "../../../../../utils/ConfigHeader";
 
 const acquireValidationColor = (isScanSuccess) => {
   if (isScanSuccess) return "green";

@@ -1,27 +1,27 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import SendIcon from "@material-ui/icons/Send";
+import { spacing } from "@material-ui/system";
 import {
+  Avatar,
   Badge,
   Box,
-  Grid,
   Card,
-  TextField as MuiTextField,
-  Typography,
+  Fab,
+  Grid,
+  Link,
   List,
   ListItem,
   ListItemIcon,
   ListItemText,
-  Avatar,
-  Fab,
   Breadcrumbs as MuiBreadcrumbs,
   Divider as MuiDivider,
-  Link,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import SendIcon from "@material-ui/icons/Send";
+  TextField as MuiTextField,
+  Typography,
+} from "@mui/material";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

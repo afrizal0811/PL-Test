@@ -1,10 +1,10 @@
+import GoogleMapReact from "google-map-react";
 import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components/macro";
-import GoogleMapReact from "google-map-react";
 
-import { CardContent, Card as MuiCard, Typography } from "@material-ui/core";
 import { spacing } from "@material-ui/system";
+import { CardContent, Card as MuiCard, Typography } from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

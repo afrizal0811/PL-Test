@@ -1,16 +1,8 @@
+import { spacing } from "@material-ui/system";
+import { Paper as MuiPaper, TextField } from "@mui/material";
 import React, { Component, useState } from "react";
 import QrReader from "react-qr-scanner";
-import IconButton from "@material-ui/core/IconButton";
-import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
-import {
-  InputAdornment,
-  TextField,
-  Link,
-  Paper as MuiPaper,
-} from "@material-ui/core";
-import { DataGrid } from "@mui/x-data-grid";
 import styled from "styled-components/macro";
-import { spacing } from "@material-ui/system";
 
 const Paper = styled(MuiPaper)(spacing);
 

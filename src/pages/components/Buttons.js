@@ -1,8 +1,18 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import {
+  Add as AddIcon,
+  CloudUpload as CloudUploadIcon,
+  Delete as DeleteIcon,
+  Edit as EditIcon,
+  KeyboardVoice as KeyboardVoiceIcon,
+  Navigation as NavigationIcon,
+  Save as SaveIcon,
+} from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   CardContent,
   Grid,
@@ -14,17 +24,7 @@ import {
   Fab as MuiFab,
   IconButton as MuiIconButton,
   Typography,
-} from "@material-ui/core";
-import {
-  Add as AddIcon,
-  Edit as EditIcon,
-  Delete as DeleteIcon,
-  CloudUpload as CloudUploadIcon,
-  KeyboardVoice as KeyboardVoiceIcon,
-  Navigation as NavigationIcon,
-  Save as SaveIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

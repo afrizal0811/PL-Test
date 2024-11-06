@@ -1,16 +1,15 @@
 import React from "react";
-import Header from "./Header";
-import Tabs from "./Tabs";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
+import Header from "./Header";
 
 import {
   Grid,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import { spacing } from "@material-ui/system";
 

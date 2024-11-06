@@ -1,51 +1,23 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import AddIcon from "@material-ui/icons/Add";
-import { spacing } from "@material-ui/system";
-import Button from "@material-ui/core/Button";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import { GetConfig } from "../../../utils/ConfigHeader";
-import swal from "sweetalert2";
-import axios from "axios";
-import moment from "moment";
-import DeleteIcon from "@material-ui/icons/Delete";
 import {
-  NotifyError,
-  NotifySuccess,
-} from "../../services/notification.service";
-import {
+  Grid,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
   Paper as MuiPaper,
-  Typography,
-  Icon,
-  Grid,
-  CircularProgress,
-  TextField,
-  TablePagination,
-  TableContainer,
-  Table,
-  TableBody,
-  TableRow,
-  TableCell,
   Pagination,
   PaginationItem,
-} from "@material-ui/core";
-import {
-  DataGrid,
-  GridToolbarContainer,
-  GridToolbarDensitySelector,
-} from "@mui/x-data-grid";
-import MobileTable from "../../../components/shared/MobileTable";
-import MobileTableEntry from "../../../components/shared/MobileTableEntry";
+  TextField,
+  Typography,
+} from "@mui/material";
+import { spacing } from "@material-ui/system";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
 
 const Card = styled(MuiCard)(spacing);
 

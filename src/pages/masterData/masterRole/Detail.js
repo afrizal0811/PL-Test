@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import CircularProgress from "@mui/material/CircularProgress";
+import Delete from "@material-ui/icons/Delete";
+import Refresh from "@material-ui/icons/Refresh";
+import SaveIcon from "@material-ui/icons/Save";
+import { spacing } from "@material-ui/system";
 import {
-  Breadcrumbs as MuiBreadcrumbs,
-  Link,
-  Typography,
+  Backdrop,
   Grid,
   IconButton,
-  Backdrop,
-} from "@material-ui/core";
+  Link,
+  Breadcrumbs as MuiBreadcrumbs,
+  Typography,
+} from "@mui/material";
+import CircularProgress from "@mui/material/CircularProgress";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
-import { spacing } from "@material-ui/system";
 import Content from "./Content";
-import SaveIcon from "@material-ui/icons/Save";
-import Delete from "@material-ui/icons/Delete";
-import Refresh from "@material-ui/icons/Refresh";
 // import Add from "@material-ui/icons/Add";
-import Swal from "sweetalert2";
 import Reply from "@material-ui/icons/Reply";
 import axios from "axios";
+import Swal from "sweetalert2";
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 
 function DetailUserRole() {

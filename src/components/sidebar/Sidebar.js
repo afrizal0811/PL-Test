@@ -1,19 +1,19 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
-import { spacing } from "@material-ui/system";
 import { green } from "@material-ui/core/colors";
+import { spacing } from "@material-ui/system";
 
 import {
-  Box as MuiBox,
   Chip,
-  Drawer as MuiDrawer,
   ListItemButton,
-} from "@material-ui/core";
+  Box as MuiBox,
+  Drawer as MuiDrawer,
+} from "@mui/material";
 
-import SidebarNav from "./SidebarNav";
 import { Avatar } from "@mui/material";
+import SidebarNav from "./SidebarNav";
 
 const Box = styled(MuiBox)(spacing);
 

@@ -1,20 +1,20 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import * as Icon from "react-feather";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   CardContent,
   Grid,
-  Link as MuiLink,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   Divider as MuiDivider,
+  Link as MuiLink,
   Paper as MuiPaper,
   Typography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const icons = {
   Activity: <Icon.Activity />,

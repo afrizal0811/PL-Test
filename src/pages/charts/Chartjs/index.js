@@ -1,23 +1,23 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   Grid,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Divider as MuiDivider,
   Typography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
-import LineChart from "./LineChart";
 import BarChart from "./BarChart";
 import DoughnutChart from "./DoughnutChart";
+import LineChart from "./LineChart";
 import PieChart from "./PieChart";
-import RadarChart from "./RadarChart";
 import PolarChart from "./PolarChart";
+import RadarChart from "./RadarChart";
 
 const Divider = styled(MuiDivider)(spacing);
 

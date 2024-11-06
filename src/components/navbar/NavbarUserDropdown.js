@@ -1,15 +1,15 @@
 import * as React from "react";
-import styled from "styled-components/macro";
-import { Power, User } from "react-feather";
+import { User } from "react-feather";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
 
 import {
-  Tooltip,
   Menu,
   MenuItem,
   IconButton as MuiIconButton,
+  Tooltip,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import useAuth from "../../modules/Auth/hooks/useAuth";
 import { getEmployee, getEmployeeName } from "../../utils/jwt";

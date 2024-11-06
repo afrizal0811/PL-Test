@@ -1,13 +1,7 @@
+import { Menu, MenuItem, Typography } from "@mui/material";
 import * as React from "react";
-import { getBrach, setBranch, getBranches } from "../../utils/jwt";
 import { useNavigate } from "react-router-dom";
-import {
-  Tooltip,
-  Menu,
-  MenuItem,
-  IconButton as MuiIconButton,
-  Typography,
-} from "@material-ui/core";
+import { getBrach, getBranches, setBranch } from "../../utils/jwt";
 
 function NavbarBranch() {
   const [anchorMenu, setAnchorMenu] = React.useState(null);

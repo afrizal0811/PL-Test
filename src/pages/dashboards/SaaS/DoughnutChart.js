@@ -1,22 +1,22 @@
 import React from "react";
-import styled, { withTheme } from "styled-components/macro";
 import Chart from "react-chartjs-2";
 import { MoreVertical } from "react-feather";
+import styled, { withTheme } from "styled-components/macro";
 
-import { orange, green, red } from "@material-ui/core/colors";
+import { green, orange, red } from "@material-ui/core/colors";
+import { spacing } from "@material-ui/system";
 import {
-  Card as MuiCard,
   CardContent,
   CardHeader,
   IconButton,
+  Card as MuiCard,
+  TableCell as MuiTableCell,
+  TableRow as MuiTableRow,
   Table,
   TableBody,
-  TableCell as MuiTableCell,
   TableHead,
-  TableRow as MuiTableRow,
   Typography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

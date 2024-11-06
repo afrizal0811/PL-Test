@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   Button,
   Container,
   Grid,
   Typography as MuiTypography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Spacer = styled.div(spacing);
 

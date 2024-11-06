@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components/macro";
+import { spacing } from "@material-ui/system";
 import {
+  CardContent,
   Button as MuiButton,
   Card as MuiCard,
   Paper as MuiPaper,
-  CardContent,
-} from "@material-ui/core";
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { spacing } from "@material-ui/system";
+import React from "react";
+import styled from "styled-components/macro";
 
 const Card = styled(MuiCard)(spacing);
 const Paper = styled(MuiPaper)(spacing);

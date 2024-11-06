@@ -1,23 +1,23 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { CloudUpload as MuiCloudUpload } from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   Avatar,
+  CardContent,
+  Grid,
+  Link,
   Breadcrumbs as MuiBreadcrumbs,
   Button as MuiButton,
   Card as MuiCard,
-  CardContent,
   Divider as MuiDivider,
   FormControl as MuiFormControl,
-  Grid,
-  Link,
   TextField as MuiTextField,
   Typography,
-} from "@material-ui/core";
-import { CloudUpload as MuiCloudUpload } from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

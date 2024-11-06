@@ -1,39 +1,19 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 // import DestinationTable from "./DestinationTable";
-import { TabPanel } from "@material-ui/lab";
-import {
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogContentText,
-  DialogTitle,
-  FormControl,
-  Grid,
-  IconButton,
-  Paper,
-  TextField,
-  Tooltip,
-  Typography,
-} from "@material-ui/core";
-import { DatePicker } from "@material-ui/lab";
-import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
-import DialogAddItem from "./DialogAddItem";
 import DeleteIcon from "@material-ui/icons/Delete";
+import { TabPanel } from "@material-ui/lab";
+import { Grid, IconButton, Paper, Tooltip, Typography } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import DialogAddItem from "./DialogAddItem";
 // import { columnsSource } from "./ColumnSouce";
 // import { columnsDestination } from "./ColumnDestination";
 import moment from "moment";
-import CbData from "../../../../../../components/shared/dropdown";
-import { GetConfig } from "../../../../../../utils/ConfigHeader";
-import { number } from "yup";
-import { date } from "faker/lib/locales/az";
-import SelectPopup from "../../../../../../components/shared/SelectPopup";
 // import columnsDestination from "./ColumnDestination";
-import { Add, Edit } from "@material-ui/icons";
-import SourceEdit from "./SourcePopup";
-import DestinationEdit from "./DestinationPopup";
-import { NotifyError } from "../../../../../services/notification.service";
+import { Edit } from "@material-ui/icons";
 import NumberFormat from "react-number-format";
+import { NotifyError } from "../../../../../services/notification.service";
+import DestinationEdit from "./DestinationPopup";
+import SourceEdit from "./SourcePopup";
 
 export default function TabDocumentDetails(props) {
   const [openAddItem, setOpenAddItem] = useState(false);

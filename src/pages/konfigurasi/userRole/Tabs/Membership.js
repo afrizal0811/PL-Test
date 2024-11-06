@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from "react";
-import {
-  Button,
-  Grid,
-  Paper,
-  TextField as MuiTextField,
-} from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
 import { TabPanel } from "@material-ui/lab";
-import styled from "styled-components/macro";
 import { spacing } from "@material-ui/system";
+import { Button, TextField as MuiTextField, Paper } from "@mui/material";
 import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import React, { useEffect, useState } from "react";
+import styled from "styled-components/macro";
 
 const TextField = styled(MuiTextField)(spacing);
 

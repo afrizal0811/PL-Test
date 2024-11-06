@@ -1,53 +1,50 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
-import Tabs from "./Tabs";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import styled from "styled-components/macro";
 import {
-  Grid,
-  Button as MuiButton,
-  Card as MuiCard,
-  Paper as MuiPaper,
-  FormControl,
-  CardContent,
-  TextField,
-  InputAdornment,
-  IconButton,
-  Typography,
-  Select,
-  Menu,
-  MenuItem,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  Button,
-  CircularProgress,
-} from "@material-ui/core";
-import {
-  Reply,
-  Delete,
-  Save,
-  Refresh,
   Add,
+  Delete,
   MoreHoriz,
+  Refresh,
+  Reply,
+  Save,
 } from "@material-ui/icons";
+import SearchIcon from "@material-ui/icons/Search";
 import { DatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
-import SearchIcon from "@material-ui/icons/Search";
+import {
+  Button,
+  CardContent,
+  CircularProgress,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  FormControl,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Menu,
+  MenuItem,
+  Card as MuiCard,
+  Paper as MuiPaper,
+  TextField,
+} from "@mui/material";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import Swal from "sweetalert2";
+import CbData from "../../../../components/shared/dropdown";
+import { GetConfig } from "../../../../utils/ConfigHeader";
+import { getBrach, getEmployee } from "../../../../utils/jwt";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import Swal from "sweetalert2";
-import CbData from "../../../../components/shared/dropdown";
-import { getBrach, getEmployee } from "../../../../utils/jwt";
-import moment from "moment";
 import DialogRefNbr from "./DialogRefNbr";
-import { GetConfig } from "../../../../utils/ConfigHeader";
+import Tabs from "./Tabs";
 
 const Card = styled(MuiCard)(spacing);
 const Paper = styled(MuiPaper)(spacing);

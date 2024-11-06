@@ -1,25 +1,8 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
-import {
-  Collapse,
-  Grid,
-  Link,
-  List,
-  ListItemIcon,
-  ListSubheader,
-  Avatar as MuiAvatar,
-  Breadcrumbs as MuiBreadcrumbs,
-  Card as MuiCard,
-  CardContent as MuiCardContent,
-  Divider as MuiDivider,
-  ListItem,
-  ListItemButton as MuiListItemButton,
-  ListItemText as MuiListItemText,
-  Typography,
-} from "@material-ui/core";
 import {
   BeachAccess as BeachAccessIcon,
   Drafts as DraftsIcon,
@@ -27,11 +10,28 @@ import {
   ExpandMore as ExpandMoreIcon,
   Image as ImageIcon,
   Inbox as InboxIcon,
-  Work as WorkIcon,
   Send as SendIcon,
   StarBorder as StarBorderIcon,
+  Work as WorkIcon,
 } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";
+import {
+  Collapse,
+  Grid,
+  Link,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListSubheader,
+  Avatar as MuiAvatar,
+  Breadcrumbs as MuiBreadcrumbs,
+  Card as MuiCard,
+  CardContent as MuiCardContent,
+  Divider as MuiDivider,
+  ListItemButton as MuiListItemButton,
+  ListItemText as MuiListItemText,
+  Typography,
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

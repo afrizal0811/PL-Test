@@ -1,8 +1,9 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { spacing } from "@material-ui/system";
 import {
   Link,
   Breadcrumbs as MuiBreadcrumbs,
@@ -11,9 +12,8 @@ import {
   Divider as MuiDivider,
   Paper as MuiPaper,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
-import { spacing } from "@material-ui/system";
 
 const Card = styled(MuiCard)(spacing);
 

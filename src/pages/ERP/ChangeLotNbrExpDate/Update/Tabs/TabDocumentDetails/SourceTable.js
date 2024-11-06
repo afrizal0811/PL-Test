@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import DialogAddItem from "./DialogAddItem";
-import { Button as MuiButton, Paper as MuiPaper } from "@material-ui/core";
-import { DataGrid } from "@mui/x-data-grid";
-import styled from "styled-components/macro";
 import { spacing } from "@material-ui/system";
+import { Button as MuiButton, Paper as MuiPaper } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import React, { useState } from "react";
+import styled from "styled-components/macro";
+import DialogAddItem from "./DialogAddItem";
 
 const Paper = styled(MuiPaper)(spacing);
 const Button = styled(MuiButton)(spacing);

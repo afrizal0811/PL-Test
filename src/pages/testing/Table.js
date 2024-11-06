@@ -1,10 +1,3 @@
-import * as React from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import {
-  randomCreatedDate,
-  randomTraderName,
-  randomUpdatedDate,
-} from "@mui/x-data-grid-generator";
 import {
   Button,
   Dialog,
@@ -13,7 +6,9 @@ import {
   DialogContentText,
   DialogTitle,
   TextField,
-} from "@material-ui/core";
+} from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import * as React from "react";
 
 export default function Table() {
   const [rows, setRows] = React.useState([]);

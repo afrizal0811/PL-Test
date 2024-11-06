@@ -1,8 +1,6 @@
-import React from "react";
-import InputFields from "./InputFields";
-import RefreshButton from "./RefreshButton";
 import { TabPanel } from "@material-ui/lab";
-import { Button, Card, CardContent, Grid, TextField } from "@material-ui/core";
+import { Card, CardContent, Grid, TextField } from "@mui/material";
+import React from "react";
 
 export default function TabOtherInformation(props) {
   return (

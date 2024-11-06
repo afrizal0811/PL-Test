@@ -1,19 +1,19 @@
-import React from "react";
-import styled from "styled-components/macro";
 import { rgba } from "polished";
+import React from "react";
 import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
-import { Button, Box, Container, Grid, Typography } from "@material-ui/core";
-import { spacing } from "@material-ui/system";
 import { ArrowForward as ArrowForwardIcon } from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
 
 import {
-  Mail as MailIcon,
-  Code as CodeIcon,
-  Users as UsersIcon,
-  Figma as FigmaIcon,
   BookOpen as BookOpenIcon,
+  Code as CodeIcon,
+  Figma as FigmaIcon,
+  Mail as MailIcon,
   PlusCircle as PlusCircleIcon,
+  Users as UsersIcon,
 } from "react-feather";
 
 const Wrapper = styled.div`

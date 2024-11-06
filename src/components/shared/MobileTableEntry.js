@@ -1,22 +1,13 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import { spacing } from "@material-ui/system";
-import styled from "styled-components/macro";
+import { Typography } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
-import { DataGrid } from "@mui/x-data-grid";
-import axios from "axios";
-import { Box } from "@material-ui/system";
-import ClearIcon from "@mui/icons-material/Clear";
-import SearchIcon from "@mui/icons-material/Search";
-import { GetConfig } from "../../utils/ConfigHeader";
-import { TextField, Typography } from "@material-ui/core";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 
 MobileTableEntry.propTypes = {
   rowDetail: PropTypes.array,

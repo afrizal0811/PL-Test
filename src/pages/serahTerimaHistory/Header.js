@@ -1,25 +1,25 @@
-import React, { useState } from "react";
-import swal from "sweetalert2";
-import QRScanner from "./scanner";
-import styled from "styled-components/macro";
-import {
-  Button as MuiButton,
-  Grid,
-  Card as MuiCard,
-  Paper as MuiPaper,
-  CardContent,
-  TextField,
-  InputAdornment,
-  IconButton,
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogActions,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+import CloseIcon from "@material-ui/icons/Close";
 import SearchIcon from "@material-ui/icons/Search";
 import { DatePicker } from "@material-ui/lab";
-import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
+import {
+  CardContent,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Button as MuiButton,
+  Card as MuiCard,
+  Paper as MuiPaper,
+  TextField,
+} from "@mui/material";
+import React, { useState } from "react";
+import styled from "styled-components/macro";
+import swal from "sweetalert2";
+import QRScanner from "./scanner";
 
 const Card = styled(MuiCard)(spacing);
 const Paper = styled(MuiPaper)(spacing);

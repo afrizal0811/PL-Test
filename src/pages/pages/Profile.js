@@ -1,8 +1,8 @@
 import React from "react";
-import styled, { withTheme } from "styled-components/macro";
-import { NavLink } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import Chart from "react-chartjs-2";
+import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled, { withTheme } from "styled-components/macro";
 
 import {
   Briefcase,
@@ -16,26 +16,26 @@ import {
   Twitter,
 } from "react-feather";
 
+import { spacing } from "@material-ui/system";
 import {
-  Avatar as MuiAvatar,
   Box,
+  CardContent,
+  Link,
+  Avatar as MuiAvatar,
   Breadcrumbs as MuiBreadcrumbs,
   Button as MuiButton,
   Card as MuiCard,
-  CardContent,
   Chip as MuiChip,
   Divider as MuiDivider,
   Grid as MuiGrid,
   LinearProgress as MuiLinearProgress,
-  Link,
+  Typography as MuiTypography,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableRow,
-  Typography as MuiTypography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

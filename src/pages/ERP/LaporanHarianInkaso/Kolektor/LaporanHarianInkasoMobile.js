@@ -1,36 +1,26 @@
-import React, { useRef, useState } from "react";
-import styled from "styled-components/macro";
 import {
-  Card as MuiCard,
+  Autocomplete,
   CardContent,
   Grid,
-  IconButton,
-  InputAdornment,
+  Button as MuiButton,
+  Card as MuiCard,
   Paper as MuiPaper,
   TextField,
-  Button as MuiButton,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Autocomplete,
-} from "@material-ui/core";
-import { DataGrid } from "@mui/x-data-grid";
-import SearchIcon from "@material-ui/icons/Search";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 import { DatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
+import React, { useRef, useState } from "react";
+import styled from "styled-components/macro";
 // import columnLHI from "../columnLHI";
 import axios from "axios";
-import MobileTable from "../../../../components/shared/MobileTable";
-import { Add } from "@material-ui/icons";
-import UpdatePopup from "./UpdatePopup";
-import opsiStatus from "./OpsiStatus";
-import columnLHIKolektor from "./columnLHIKolektor";
-import { getEmployee } from "../../../../utils/jwt";
 import moment from "moment";
-import { NotifySuccess } from "../../../services/notification.service";
-import { GetConfig } from "../../../../utils/ConfigHeader";
 import { useNavigate } from "react-router-dom";
+import MobileTable from "../../../../components/shared/MobileTable";
+import { GetConfig } from "../../../../utils/ConfigHeader";
+import { getEmployee } from "../../../../utils/jwt";
+import opsiStatus from "./OpsiStatus";
+import UpdatePopup from "./UpdatePopup";
+import columnLHIKolektor from "./columnLHIKolektor";
 
 const Card = styled(MuiCard)(spacing);
 const Paper = styled(MuiPaper)(spacing);

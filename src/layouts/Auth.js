@@ -2,10 +2,10 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import styled from "styled-components/macro";
 
-import { CssBaseline } from "@material-ui/core";
+import { CssBaseline } from "@mui/material";
 
-import Settings from "../components/Settings";
 import GlobalStyle from "../components/GlobalStyle";
+import Settings from "../components/Settings";
 
 const Root = styled.div`
   max-width: 520px;

@@ -11,11 +11,9 @@ import {
   MenuItem,
   Select,
   TextField,
-} from "@material-ui/core";
+} from "@mui/material";
 import axios from "axios";
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { GetConfig } from "../../../../../utils/ConfigHeader";
 
 const TransferPopupEdit = ({

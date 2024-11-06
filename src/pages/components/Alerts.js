@@ -1,10 +1,9 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
 import {
-  Alert as MuiAlert,
   AlertTitle,
   Button,
   CardContent,
@@ -12,11 +11,12 @@ import {
   Grid,
   IconButton,
   Link,
+  Alert as MuiAlert,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   Divider as MuiDivider,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import { Close as CloseIcon } from "@material-ui/icons";
 import { spacing } from "@material-ui/system";

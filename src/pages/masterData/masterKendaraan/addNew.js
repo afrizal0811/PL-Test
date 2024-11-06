@@ -1,57 +1,49 @@
-import React, { useEffect, useState, useRef, useMemo } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Formik } from "formik";
-import { Helmet } from "react-helmet-async";
-import axios from "axios";
-import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
 import AppBar from "@material-ui/core/AppBar";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import AddIcon from "@material-ui/icons/Add";
+import CloseIcon from "@material-ui/icons/Close";
+import SaveIcon from "@material-ui/icons/Save";
+import { DatePicker, TabPanel } from "@material-ui/lab";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
+import { spacing } from "@material-ui/system";
 import {
-  Alert as MuiAlert,
-  Box,
-  Breadcrumbs as MuiBreadcrumbs,
-  Button as MuiButton,
-  Card as MuiCard,
   CardContent,
   CircularProgress,
-  Divider as MuiDivider,
-  Paper as MuiPaper,
-  Grid,
-  Link,
-  TextField as MuiTextField,
-  Typography,
-  Tabs,
-  Tab,
-  FormControlLabel,
-  Checkbox,
-  Autocomplete,
-  Select,
-  MenuItem,
-  InputLabel,
-  FormControl,
   Dialog,
   DialogActions,
   DialogContent,
-  DialogTitle,
   DialogContentText,
-} from "@material-ui/core";
-import Button from "@material-ui/core/Button";
-import Timer from "react-timer-wrapper";
+  DialogTitle,
+  FormControl,
+  Grid,
+  InputLabel,
+  Link,
+  MenuItem,
+  Alert as MuiAlert,
+  Breadcrumbs as MuiBreadcrumbs,
+  Card as MuiCard,
+  Divider as MuiDivider,
+  Paper as MuiPaper,
+  TextField as MuiTextField,
+  Select,
+  Tab,
+  Typography,
+} from "@mui/material";
+import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import axios from "axios";
+import React, { useEffect, useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import Timecode from "react-timecode";
-import moment from "moment";
-import { spacing } from "@material-ui/system";
-import { TabPanel, DatePicker } from "@material-ui/lab";
-import AddIcon from "@material-ui/icons/Add";
-import SaveIcon from "@material-ui/icons/Save";
-import IconButton from "@material-ui/core/IconButton";
-import CloseIcon from "@material-ui/icons/Close";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
-import { GetConfig } from "../../../utils/ConfigHeader";
 
 const Divider = styled(MuiDivider)(spacing);
 

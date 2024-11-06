@@ -1,22 +1,22 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { ExpandMore as ExpandMoreIcon } from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
-  CardContent,
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  CardContent,
   Grid,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   Divider as MuiDivider,
   Typography,
-} from "@material-ui/core";
-import { ExpandMore as ExpandMoreIcon } from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

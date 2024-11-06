@@ -1,29 +1,25 @@
 import React, { useState } from "react";
 // import FakturTabel from "./FakturTabel";
 // import DetailFakturTabel from "./DetailFakturTabel";
-import styled from "styled-components/macro";
-import {
-  Button as MuiButton,
-  IconButton,
-  Dialog,
-  DialogContent,
-  DialogTitle,
-  DialogActions,
-  DialogContentText,
-  ListItemText,
-  ListItem,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
 import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
+import {
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  IconButton,
+  Button as MuiButton,
+} from "@mui/material";
+import styled from "styled-components/macro";
 // import CbData from "../../../../../components/shared/dropdown";
 import axios from "axios";
-import { DataGrid } from "@mui/x-data-grid";
-import Swal from "sweetalert2";
+import { GetConfig } from "../../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import { GetConfig } from "../../../../utils/ConfigHeader";
 
 const Button = styled(MuiButton)(spacing);
 

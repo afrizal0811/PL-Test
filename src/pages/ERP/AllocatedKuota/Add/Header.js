@@ -1,61 +1,50 @@
-import React, { useState, useEffect, useCallback } from "react";
-import axios from "axios";
-import {
-  useNavigate,
-  useParams,
-  usePrompt,
-  useBlocker,
-  useLocation,
-} from "react-router-dom";
-import styled from "styled-components/macro";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import {
-  Grid,
-  Button as MuiButton,
-  Card as MuiCard,
-  Paper as MuiPaper,
-  FormControl,
-  CardContent,
-  TextField,
-  InputAdornment,
-  IconButton,
-  Menu,
-  MenuItem,
-  Button,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-  CircularProgress,
-} from "@material-ui/core";
-import {
-  Reply,
-  Delete,
-  Save,
-  Refresh,
-  Add,
-  MoreHoriz,
-} from "@material-ui/icons";
+import { Delete, MoreHoriz, Refresh, Reply, Save } from "@material-ui/icons";
+import SearchIcon from "@material-ui/icons/Search";
 import { DatePicker } from "@material-ui/lab";
 import { spacing } from "@material-ui/system";
-import SearchIcon from "@material-ui/icons/Search";
+import {
+  Button,
+  CardContent,
+  CircularProgress,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  FormControl,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Menu,
+  MenuItem,
+  Card as MuiCard,
+  TextField,
+} from "@mui/material";
+import axios from "axios";
+import React, { useCallback, useEffect, useState } from "react";
+import {
+  useBlocker,
+  useLocation,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import Swal from "sweetalert2";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import Swal from "sweetalert2";
 import SourceTable from "./Source/index";
 
 // import AllocatedTable from "./Allocated/index";
 // import RefnbrPopup from "./RefnbrPopup";
-import MutasiKuotaPopup from "./MutasiKuotaPopup";
-import AllocatedTable from "./Allocated/index";
 import CbData from "../../../../components/shared/dropdown";
+import { GetConfig } from "../../../../utils/ConfigHeader";
 import { getBrach } from "../../../../utils/jwt";
 import RefnbrPopup from "../../ERPPopup/RefnbrPopup";
-import { GetConfig } from "../../../../utils/ConfigHeader";
+import MutasiKuotaPopup from "./MutasiKuotaPopup";
 
 const Card = styled(MuiCard)(spacing);
 

@@ -1,8 +1,10 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { Add as AddIcon, Delete as DeleteIcon } from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   CardContent,
   ClickAwayListener,
@@ -19,9 +21,7 @@ import {
   Tooltip,
   Typography,
   Zoom,
-} from "@material-ui/core";
-import { Add as AddIcon, Delete as DeleteIcon } from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

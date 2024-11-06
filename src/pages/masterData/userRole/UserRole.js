@@ -1,10 +1,4 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { spacing } from "@material-ui/system";
-import axios from "axios";
-import { NotifyError } from "../../services/notification.service";
 import {
   Link,
   Breadcrumbs as MuiBreadcrumbs,
@@ -12,11 +6,17 @@ import {
   CardContent as MuiCardContent,
   Divider as MuiDivider,
   Paper as MuiPaper,
-  Typography,
   TextField,
-} from "@material-ui/core";
+  Typography,
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../utils/ConfigHeader";
+import { NotifyError } from "../../services/notification.service";
 
 const Card = styled(MuiCard)(spacing);
 

@@ -1,8 +1,14 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import {
+  Drafts as DraftsIcon,
+  MoveToInbox as InboxIcon,
+  Send as SendIcon,
+} from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   Button,
   CardContent,
@@ -20,13 +26,7 @@ import {
   ListItemText as MuiListItemText,
   Paper as MuiPaper,
   Typography,
-} from "@material-ui/core";
-import {
-  Drafts as DraftsIcon,
-  MoveToInbox as InboxIcon,
-  Send as SendIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

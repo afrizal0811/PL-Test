@@ -1,33 +1,32 @@
 import React, { useState } from "react";
 // import Header from "./Header";
-import styled from "styled-components/macro";
+import { Clear, Search } from "@material-ui/icons";
+import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
-  IconButton,
+  CardContent,
+  CircularProgress,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-  Paper as MuiPaper,
-  Card as MuiCard,
-  CardContent,
-  Grid,
-  TextField,
   FormControlLabel,
   FormLabel,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Button as MuiButton,
+  Card as MuiCard,
+  Paper as MuiPaper,
   Radio,
   RadioGroup,
-  InputAdornment,
-  CircularProgress,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import CloseIcon from "@material-ui/icons/Close";
-import SelectPopup from "../../../../../components/shared/SelectPopup";
-import { Clear, Search } from "@material-ui/icons";
+  TextField,
+} from "@mui/material";
 import axios from "axios";
-import KolektorPopup from "../../KolektorPopup";
-import { NotifySuccess } from "../../../../services/notification.service";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../../../utils/ConfigHeader";
+import { NotifySuccess } from "../../../../services/notification.service";
+import KolektorPopup from "../../KolektorPopup";
 
 const Button = styled(MuiButton)(spacing);
 const Card = styled(MuiCard)(spacing);

@@ -1,20 +1,27 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
 import {
+  Delete as DeleteIcon,
+  FilterList as FilterListIcon,
+} from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
+import {
   Checkbox,
+  FormControlLabel,
   Grid,
   IconButton,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Divider as MuiDivider,
   Paper as MuiPaper,
+  Switch,
   Table,
   TableBody,
-  TableContainer,
   TableCell,
+  TableContainer,
   TableHead,
   TablePagination,
   TableRow,
@@ -22,14 +29,7 @@ import {
   Toolbar,
   Tooltip,
   Typography,
-  FormControlLabel,
-  Switch,
-} from "@material-ui/core";
-import {
-  Delete as DeleteIcon,
-  FilterList as FilterListIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Divider = styled(MuiDivider)(spacing);
 

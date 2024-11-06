@@ -1,22 +1,11 @@
-import React, { useMemo, useRef, useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
-import { Button, FormControl, Grid, Tab, TextField } from "@material-ui/core";
-import TabGeneral from "./TabGeneral";
+import { Grid, Tab } from "@mui/material";
+import React, { useState } from "react";
 import TabDriver from "./TabDriver";
+import TabGeneral from "./TabGeneral";
 import TabZona from "./TabZona";
-import SaveIcon from "@material-ui/icons/Save";
-import CancelIcon from "@material-ui/icons/Clear";
-import EditIcon from "@material-ui/icons/Edit";
-import DeleteIcon from "@material-ui/icons/Delete";
-import {
-  NotifyError,
-  NotifySuccess,
-} from "../../../../services/notification.service";
-import axios from "axios";
-import CbEmployee from "../../../../../components/shared/cbEmployee";
-import CbZona from "../../../../../components/shared/cbZona";
 
 export default function Tabs(props) {
   const [tabPanel, setTabPanel] = useState("1");

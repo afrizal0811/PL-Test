@@ -1,46 +1,37 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import QrCodeScannerIcon from "@material-ui/icons/QrCodeScanner";
-import {
-  CardContent,
-  Grid,
-  TextField as MuiTextField,
-  Paper as MuiPaper,
-  Button as MuiButton,
-  Typography,
-  FormHelperText,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Card,
-  IconButton,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import SearchIcon from "@material-ui/icons/Search";
 import { DatePicker } from "@material-ui/lab";
-import { DataGrid } from "@mui/x-data-grid";
+import { spacing } from "@material-ui/system";
+import {
+  Card,
+  CardContent,
+  FormHelperText,
+  Grid,
+  IconButton,
+  Button as MuiButton,
+  Paper as MuiPaper,
+  TextField as MuiTextField,
+} from "@mui/material";
 import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../../utils/ConfigHeader";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
 
 import Add from "@material-ui/icons/Add";
 import Delete from "@material-ui/icons/Delete";
 import Refresh from "@material-ui/icons/Refresh";
 import Reply from "@material-ui/icons/Reply";
 import SaveIcon from "@material-ui/icons/Save";
-import CustomerPopup from "./CustomerPopup";
-import { getBrach, getEmployee } from "../../../../utils/jwt";
-import CbData from "../../../../components/shared/dropdown";
-import ItemPopup from "./ItemPopup";
 import axios from "axios";
+import NumberFormat from "react-number-format";
+import Swal from "sweetalert2";
+import CbData from "../../../../components/shared/dropdown";
+import { getBrach, getEmployee } from "../../../../utils/jwt";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import Swal from "sweetalert2";
-import NumberFormat from "react-number-format";
-import CbLocation from "../../../../components/shared/cbLocation";
+import CustomerPopup from "./CustomerPopup";
+import ItemPopup from "./ItemPopup";
 
 const TextField = styled(MuiTextField)(spacing);
 const Paper = styled(MuiPaper)(spacing);

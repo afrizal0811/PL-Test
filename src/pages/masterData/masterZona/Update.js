@@ -1,50 +1,40 @@
-import React, { useEffect, useRef, useState, useMemo } from "react";
-import styled from "styled-components/macro";
-import PropTypes from "prop-types";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import axios from "axios";
+import Button from "@material-ui/core/Button";
+import AddIcon from "@material-ui/icons/Add";
+import CancelIcon from "@material-ui/icons/Clear";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
-import CancelIcon from "@material-ui/icons/Clear";
-import Timer from "react-timer-wrapper";
+import SaveIcon from "@material-ui/icons/Save";
+import { spacing } from "@material-ui/system";
+import {
+  CardContent,
+  CircularProgress,
+  FormControl,
+  FormHelperText,
+  Grid,
+  InputLabel,
+  Link,
+  MenuItem,
+  Breadcrumbs as MuiBreadcrumbs,
+  Card as MuiCard,
+  Divider as MuiDivider,
+  Paper as MuiPaper,
+  TextField as MuiTextField,
+  Select,
+  Typography,
+} from "@mui/material";
+import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import axios from "axios";
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useParams } from "react-router-dom";
 import Timecode from "react-timecode";
-import AddIcon from "@material-ui/icons/Add";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
-import SaveIcon from "@material-ui/icons/Save";
-import {
-  Alert as MuiAlert,
-  Breadcrumbs as MuiBreadcrumbs,
-  Card as MuiCard,
-  CardContent,
-  InputLabel,
-  FormControl,
-  Divider as MuiDivider,
-  Paper as MuiPaper,
-  Grid,
-  Link,
-  Select,
-  MenuItem,
-  TextField as MuiTextField,
-  Typography,
-  Checkbox,
-  FormHelperText,
-  CircularProgress,
-} from "@material-ui/core";
-import {
-  DataGrid,
-  GridToolbarContainer,
-  GridToolbarDensitySelector,
-  useGridApiRef,
-} from "@mui/x-data-grid";
-import Button from "@material-ui/core/Button";
-import { spacing } from "@material-ui/system";
-import { set } from "date-fns";
-import { is } from "date-fns/locale";
-import { GetConfig } from "../../../utils/ConfigHeader";
 
 const Divider = styled(MuiDivider)(spacing);
 

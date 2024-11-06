@@ -1,17 +1,15 @@
-import * as React from "react";
+import CheckBoxIcon from "@material-ui/icons/CheckBox";
+import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
+import SaveIcon from "@material-ui/icons/Save";
 import {
-  Checkbox,
-  TextField,
-  Autocomplete,
+  Button,
   Card,
   CardContent,
-  Typography,
   Grid,
-  Button,
-} from "@material-ui/core";
-import SaveIcon from "@material-ui/icons/Save";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
-import CheckBoxIcon from "@material-ui/icons/CheckBox";
+  TextField,
+  Typography,
+} from "@mui/material";
+import * as React from "react";
 
 const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
 const checkedIcon = <CheckBoxIcon fontSize="small" />;

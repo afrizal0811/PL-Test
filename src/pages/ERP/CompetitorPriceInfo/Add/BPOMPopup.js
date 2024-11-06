@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { useNavigate } from "react-router-dom";
-import PropTypes from "prop-types";
+import { Box } from "@material-ui/system";
+import ClearIcon from "@mui/icons-material/Clear";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   Button,
   CircularProgress,
@@ -10,18 +9,17 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
-  Divider as MuiDivider,
   Grid,
   IconButton,
   TextField,
-} from "@material-ui/core";
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import axios from "axios";
-import { Box } from "@material-ui/system";
-import ClearIcon from "@mui/icons-material/Clear";
-import SearchIcon from "@mui/icons-material/Search";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { GetConfig } from "../../../../utils/ConfigHeader";
-import { getEmployee, getBrach } from "../../../../utils/jwt";
+import { getBrach, getEmployee } from "../../../../utils/jwt";
 
 function escapeRegExp(value) {
   return value.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");

@@ -1,33 +1,24 @@
+import axios from "axios";
+import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components/macro";
-import PropTypes from "prop-types";
-import axios from "axios";
-import AddIcon from "@material-ui/icons/Add";
-import EditIcon from "@material-ui/icons/Edit";
-import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
-import CheckBoxIcon from "@material-ui/icons/CheckBox";
-import SaveIcon from "@material-ui/icons/Save";
 // import AddIcon from "@material-ui/icons/Add";
-import RefreshIcon from "@material-ui/icons/Refresh";
+import Button from "@material-ui/core/Button";
+import DeleteIcon from "@material-ui/icons/Delete";
+import { Box, spacing } from "@material-ui/system";
+import {
+  FormHelperText,
+  Grid,
+  Card as MuiCard,
+  Paper as MuiPaper,
+  TextField as MuiTextField,
+  Typography,
+} from "@mui/material";
+import Carousel from "react-material-ui-carousel";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import DeleteIcon from "@material-ui/icons/Delete";
-import {
-  Card as MuiCard,
-  CardContent,
-  Paper as MuiPaper,
-  Grid,
-  TextField as MuiTextField,
-  Typography,
-  FormHelperText,
-} from "@material-ui/core";
-import Button from "@material-ui/core/Button";
-import { Box, spacing } from "@material-ui/system";
-import CbEmployee from "../../../../components/shared/cbEmployee.js";
-import Carousel from "react-material-ui-carousel";
 import ProdukPopup from "./ProductPopup";
 // import config from "../../../../utils/ConfigHeader";
 import Swal from "sweetalert2";

@@ -1,3 +1,6 @@
+import CloseIcon from "@material-ui/icons/Close";
+import SaveIcon from "@material-ui/icons/Save";
+import { spacing } from "@material-ui/system";
 import {
   Checkbox,
   Dialog,
@@ -11,10 +14,7 @@ import {
   Button as MuiButton,
   TextField,
   Typography,
-} from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
-import SaveIcon from "@material-ui/icons/Save";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 import axios from "axios";
 import React, { useState } from "react";
 import styled from "styled-components/macro";

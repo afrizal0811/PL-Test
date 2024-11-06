@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Paper } from "@material-ui/core";
 import { TabPanel } from "@material-ui/lab";
+import { Paper } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { GetConfig } from "../../../../utils/ConfigHeader";
 
 const columns = [

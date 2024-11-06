@@ -1,14 +1,14 @@
+import SearchIcon from "@material-ui/icons/Search";
 import {
   FormControl,
   IconButton,
   InputAdornment,
   TextField,
-} from "@material-ui/core";
-import SearchIcon from "@material-ui/icons/Search";
+} from "@mui/material";
 import React, { useState } from "react";
 import SelectPopup from "../../../../../components/shared/SelectPopup";
-import { GetConfig } from "../../../../../utils/ConfigHeader";
 import { useTransferKuotaContext } from "../../../../../contexts/Modules/TransferKuota/TransferKuotaContext";
+import { GetConfig } from "../../../../../utils/ConfigHeader";
 
 const ToWarehouseCell = ({
   index,

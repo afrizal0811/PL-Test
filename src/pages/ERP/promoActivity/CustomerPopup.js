@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import {
   Button,
   Dialog,
@@ -6,10 +5,10 @@ import {
   DialogContent,
   DialogContentText,
   DialogTitle,
-  Divider as MuiDivider,
   Grid,
-} from "@material-ui/core";
+} from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import React, { useEffect, useState } from "react";
 
 const DummyCust = [
   {

@@ -1,13 +1,13 @@
 import React from "react";
-import styled from "styled-components/macro";
 import { Helmet } from "react-helmet-async";
+import styled from "styled-components/macro";
 
-import { Avatar, Paper, Typography } from "@material-ui/core";
+import { Avatar, Paper, Typography } from "@mui/material";
 
-import { ReactComponent as Logo } from "../../vendor/logo.svg";
+import { Box } from "@mui/material";
 import SignInComponent from "../../components/auth/SignIn";
 import { useMaintenance } from "../../contexts/MaintenanceProvider";
-import { Box } from "@mui/material";
+import { ReactComponent as Logo } from "../../vendor/logo.svg";
 
 const Brand = styled(Logo)`
   fill: ${(props) => props.theme.palette.primary.main};

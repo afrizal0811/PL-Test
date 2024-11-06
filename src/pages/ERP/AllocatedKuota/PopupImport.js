@@ -1,36 +1,26 @@
 import React, { useState } from "react";
 // import Header from "./Header";
 // import TambahManualTable from "./TambahManualTable";
-import styled from "styled-components/macro";
+import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
-  IconButton,
+  Card,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-  Card,
-  CardContent,
   Grid,
-  Paper,
-  TextField,
+  IconButton,
   InputAdornment,
-  FormControlLabel,
-  Checkbox,
-  Typography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+  Button as MuiButton,
+  TextField,
+} from "@mui/material";
 import axios from "axios";
-import { Clear, Search } from "@material-ui/icons";
-import CloseIcon from "@material-ui/icons/Close";
 import { Download, Upload } from "react-feather";
-import { GetConfig } from "../../../utils/ConfigHeader";
-import { getBrach } from "../../../utils/jwt";
-import {
-  NotifyError,
-  NotifySuccess,
-} from "../../services/notification.service";
+import styled from "styled-components/macro";
 import Swal from "sweetalert2";
+import { getBrach } from "../../../utils/jwt";
+import { NotifySuccess } from "../../services/notification.service";
 
 const Button = styled(MuiButton)(spacing);
 

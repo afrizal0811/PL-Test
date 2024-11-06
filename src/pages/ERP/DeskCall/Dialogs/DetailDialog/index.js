@@ -1,25 +1,24 @@
-import React, { useState } from "react";
-import FakturTabel from "./FakturTabel";
-import DetailFakturTabel from "./DetailFakturTabel";
-import styled from "styled-components/macro";
+import CloseIcon from "@material-ui/icons/Close";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
-  IconButton,
+  CircularProgress,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-  TextField,
   Grid,
-  CircularProgress,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import CloseIcon from "@material-ui/icons/Close";
-import CbData from "../../../../../components/shared/dropdown";
+  IconButton,
+  Button as MuiButton,
+} from "@mui/material";
 import axios from "axios";
+import React, { useState } from "react";
 import NumberFormat from "react-number-format";
+import styled from "styled-components/macro";
+import CbData from "../../../../../components/shared/dropdown";
 import { GetConfig } from "../../../../../utils/ConfigHeader";
 import { getBrach } from "../../../../../utils/jwt";
+import DetailFakturTabel from "./DetailFakturTabel";
+import FakturTabel from "./FakturTabel";
 
 const Button = styled(MuiButton)(spacing);
 

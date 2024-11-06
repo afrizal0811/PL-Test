@@ -1,18 +1,18 @@
-import React from "react";
-import styled from "styled-components/macro";
-import { spacing } from "@material-ui/system";
 import SearchIcon from "@material-ui/icons/Search";
+import { spacing } from "@material-ui/system";
 import {
   Card,
-  CardContent as MuiCardContent,
   FormControl,
   Grid,
   InputAdornment,
   InputLabel,
   MenuItem,
-  Select,
+  CardContent as MuiCardContent,
   TextField as MuiTextField,
-} from "@material-ui/core";
+  Select,
+} from "@mui/material";
+import React from "react";
+import styled from "styled-components/macro";
 
 import Tabs from "./Tabs/Tabs";
 

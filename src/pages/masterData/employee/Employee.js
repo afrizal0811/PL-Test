@@ -1,15 +1,15 @@
-import React from "react";
-import TableEmployee from "./TableEmployee";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { spacing } from "@material-ui/system";
 import {
+  Link,
   Breadcrumbs as MuiBreadcrumbs,
   Divider as MuiDivider,
-  Link,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
+import TableEmployee from "./TableEmployee";
 
 const Divider = styled(MuiDivider)(spacing);
 

@@ -1,32 +1,31 @@
-import React, { useState, useRef } from "react";
+import DeleteIcon from "@material-ui/icons/Delete";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
   CircularProgress,
   Grid,
   IconButton,
+  Button as MuiButton,
   Paper as MuiPaper,
   Tooltip,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
 import {
   DataGrid,
   GridToolbarContainer,
-  GridToolbarDensitySelector,
   GridToolbarFilterButton,
 } from "@mui/x-data-grid";
-import styled from "styled-components/macro";
-import { spacing } from "@material-ui/system";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import AllocatedPopup from "./AllocatedPopup";
 import axios from "axios";
-import DeleteIcon from "@material-ui/icons/Delete";
+import React, { useRef, useState } from "react";
+import NumberFormat from "react-number-format";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifyWarning,
 } from "../../../../services/notification.service";
-import NumberFormat from "react-number-format";
-import { GetConfig } from "../../../../../utils/ConfigHeader";
+import AllocatedPopup from "./AllocatedPopup";
 
 const Paper = styled(MuiPaper)(spacing);
 const Button = styled(MuiButton)(spacing);

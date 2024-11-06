@@ -1,14 +1,9 @@
+import { darken, rgba } from "polished";
 import React, { forwardRef } from "react";
-import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
-import { rgba, darken } from "polished";
+import styled from "styled-components/macro";
 
-import {
-  Chip,
-  Collapse,
-  ListItemButton,
-  ListItemText,
-} from "@material-ui/core";
+import { Chip, Collapse, ListItemButton, ListItemText } from "@mui/material";
 import { ExpandLess, ExpandMore } from "@material-ui/icons";
 
 const CustomRouterLink = forwardRef((props, ref) => (

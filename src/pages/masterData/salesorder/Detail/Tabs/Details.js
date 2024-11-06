@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import { CircularProgress, Grid, Paper as MuiPaper } from "@material-ui/core";
 import { TabPanel } from "@material-ui/lab";
-import styled from "styled-components/macro";
 import { spacing } from "@material-ui/system";
+import { CircularProgress, Grid, Paper as MuiPaper } from "@mui/material";
+import { DataGrid } from "@mui/x-data-grid";
+import React, { useState } from "react";
 import NumberFormat from "react-number-format";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
 
 const Paper = styled(MuiPaper)(spacing);
 

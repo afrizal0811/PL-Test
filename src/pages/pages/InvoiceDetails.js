@@ -1,24 +1,24 @@
 import React from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { display, spacing } from "@material-ui/system";
 import {
   CardContent,
   Grid,
   Link,
-  Button as MuiButton,
   Breadcrumbs as MuiBreadcrumbs,
+  Button as MuiButton,
   Card as MuiCard,
   Divider as MuiDivider,
+  Typography as MuiTypography,
   Table,
   TableBody,
   TableCell,
   TableHead,
   TableRow,
-  Typography as MuiTypography,
-} from "@material-ui/core";
-import { spacing, display } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)`
   ${spacing};

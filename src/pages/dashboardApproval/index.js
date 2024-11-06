@@ -1,16 +1,11 @@
-import React, { useEffect } from "react";
-import ApprovalTable from "./ApprovalTable";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import {
-  Grid,
-  Link,
-  Breadcrumbs as MuiBreadcrumbs,
-  Tab,
-} from "@material-ui/core";
-import { Box, spacing } from "@material-ui/system";
-import styled from "styled-components/macro";
 import { TabContext, TabList, TabPanel } from "@material-ui/lab";
+import { Box, spacing } from "@material-ui/system";
+import { Grid, Link, Breadcrumbs as MuiBreadcrumbs, Tab } from "@mui/material";
+import React, { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
+import ApprovalTable from "./ApprovalTable";
 import DaftarPengajuan from "./DaftarPengajuan";
 import DetailPengajuan from "./detail";
 

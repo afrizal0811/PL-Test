@@ -1,8 +1,14 @@
 import React, { useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import {
+  Done as DoneIcon,
+  Face as FaceIcon,
+  TagFaces as TagFacesIcon,
+} from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   Avatar,
   CardContent,
@@ -12,15 +18,9 @@ import {
   Card as MuiCard,
   Chip as MuiChip,
   Divider as MuiDivider,
-  Typography,
   Stack,
-} from "@material-ui/core";
-import {
-  Done as DoneIcon,
-  Face as FaceIcon,
-  TagFaces as TagFacesIcon,
-} from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+  Typography,
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

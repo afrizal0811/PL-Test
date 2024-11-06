@@ -1,15 +1,11 @@
-import React from "react";
-import Header from "./Header";
-import styled from "styled-components/macro";
-import { NavLink, useParams } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import {
-  Breadcrumbs as MuiBreadcrumbs,
-  Link,
-  Typography,
-} from "@material-ui/core";
 import { spacing } from "@material-ui/system";
+import { Link, Breadcrumbs as MuiBreadcrumbs, Typography } from "@mui/material";
+import React from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import TransferKuotaContextProvider from "../../../../contexts/Modules/TransferKuota/TransferKuotaContext";
+import Header from "./Header";
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 

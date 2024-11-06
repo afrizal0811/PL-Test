@@ -1,15 +1,15 @@
+import { rgba } from "polished";
 import React from "react";
 import styled, { css } from "styled-components/macro";
-import { rgba } from "polished";
 
+import { spacing } from "@material-ui/system";
 import {
   Box,
   Card as MuiCard,
   CardContent as MuiCardContent,
   Chip as MuiChip,
   Typography as MuiTypography,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Typography = styled(MuiTypography)(spacing);
 

@@ -1,19 +1,18 @@
-import * as React from "react";
-import styled, { withTheme } from "styled-components/macro";
+import { Menu as MenuIcon } from "@material-ui/icons";
 import {
   Grid,
   Hidden,
   AppBar as MuiAppBar,
   IconButton as MuiIconButton,
-  Toolbar,
   Paper,
+  Toolbar,
   Typography,
-} from "@material-ui/core";
-import { Menu as MenuIcon } from "@material-ui/icons";
-import NavbarUserDropdown from "./NavbarUserDropdown";
-import { getBrach } from "../../utils/jwt";
+} from "@mui/material";
 import moment from "moment";
+import * as React from "react";
+import styled, { withTheme } from "styled-components/macro";
 import NavbarBranch from "./NavbarBranch";
+import NavbarUserDropdown from "./NavbarUserDropdown";
 
 moment.locale("id");
 const AppBar = styled(MuiAppBar)`

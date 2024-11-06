@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { NavLink } from "react-router-dom";
+import styled from "styled-components/macro";
 
+import { Add as AddIcon, Person as PersonIcon } from "@material-ui/icons";
+import { spacing } from "@material-ui/system";
 import {
   Avatar,
-  Button,
   Box,
+  Button,
   CardContent,
   Dialog,
   DialogActions,
@@ -31,9 +33,7 @@ import {
   Switch,
   TextField,
   Typography,
-} from "@material-ui/core";
-import { Add as AddIcon, Person as PersonIcon } from "@material-ui/icons";
-import { spacing } from "@material-ui/system";
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

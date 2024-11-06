@@ -1,46 +1,35 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import SynchIcon from "@material-ui/icons/Sync";
-import AddIcon from "@material-ui/icons/Add";
-import { spacing } from "@material-ui/system";
 import Button from "@material-ui/core/Button";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import swal from "sweetalert2";
-import axios from "axios";
-import moment from "moment";
+import SynchIcon from "@material-ui/icons/Sync";
+import { DesktopDatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
-  NotifyError,
-  NotifySuccess,
-} from "../../services/notification.service";
-import {
+  CircularProgress,
+  Grid,
   Link,
-  Text,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
   Paper as MuiPaper,
-  Typography,
-  Grid,
-  CircularProgress,
-  Tooltip,
   TextField,
-  IconButton,
-} from "@material-ui/core";
-import {
-  DataGrid,
-  GridToolbarContainer,
-  GridToolbarDensitySelector,
-} from "@mui/x-data-grid";
+  Typography,
+} from "@mui/material";
+import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import axios from "axios";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate } from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import swal from "sweetalert2";
 import { GetConfig } from "../../../utils/ConfigHeader";
-import CbData from "../../../components/shared/dropdown";
-import PropTypes from "prop-types";
-import { Clear, Search } from "@material-ui/icons";
-import { DesktopDatePicker } from "@material-ui/lab";
 import QuickSearch from "../../components/QuickSearch";
+import {
+  NotifyError,
+  NotifySuccess,
+} from "../../services/notification.service";
 
 const Card = styled(MuiCard)(spacing);
 

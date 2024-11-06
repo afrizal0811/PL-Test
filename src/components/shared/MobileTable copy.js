@@ -16,7 +16,7 @@ import { Box } from "@material-ui/system";
 import ClearIcon from "@mui/icons-material/Clear";
 import SearchIcon from "@mui/icons-material/Search";
 import { GetConfig } from "../../utils/ConfigHeader";
-import { Collapse, IconButton, Typography } from "@material-ui/core";
+import { Collapse, IconButton, Typography } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 

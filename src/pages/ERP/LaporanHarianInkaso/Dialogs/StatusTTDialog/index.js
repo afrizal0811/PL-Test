@@ -1,38 +1,35 @@
 import React, { useEffect, useState } from "react";
 // import Header from "./Header";
-import styled from "styled-components/macro";
+import CloseIcon from "@material-ui/icons/Close";
+import { DatePicker } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
-  Button as MuiButton,
-  IconButton,
+  Card,
+  CardContent,
+  CircularProgress,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-  Grid,
-  Paper,
-  FormLabel,
-  TextField,
-  InputAdornment,
-  MenuItem,
   FormControl,
+  Grid,
+  IconButton,
   InputLabel,
+  MenuItem,
+  Button as MuiButton,
+  Paper,
   Select,
-  CardContent,
-  Card,
-  CircularProgress,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import CloseIcon from "@material-ui/icons/Close";
-import { Clear, Search } from "@material-ui/icons";
-import { DatePicker } from "@material-ui/lab";
-import NumberFormat from "react-number-format";
+  TextField,
+} from "@mui/material";
 import axios from "axios";
+import moment from "moment";
+import NumberFormat from "react-number-format";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../../services/notification.service";
-import moment from "moment";
-import { GetConfig } from "../../../../../utils/ConfigHeader";
 
 const Button = styled(MuiButton)(spacing);
 

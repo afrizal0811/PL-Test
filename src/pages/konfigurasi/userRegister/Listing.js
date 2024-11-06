@@ -1,46 +1,35 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import { spacing } from "@material-ui/system";
 import Button from "@material-ui/core/Button";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import DeleteIcon from "@material-ui/icons/Delete";
 import AddIcon from "@material-ui/icons/Add";
-import swal from "sweetalert2";
-import axios from "axios";
+import { spacing } from "@material-ui/system";
 import {
-  NotifyError,
-  NotifySuccess,
-} from "../../services/notification.service";
-import {
+  CircularProgress,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogTitle,
+  Grid,
   Link,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
   Paper as MuiPaper,
-  Typography,
-  Icon,
-  Grid,
-  CircularProgress,
   TextField,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  DialogActions,
-} from "@material-ui/core";
-import {
-  DataGrid,
-  GridToolbarContainer,
-  GridToolbarDensitySelector,
-} from "@mui/x-data-grid";
+  Typography,
+} from "@mui/material";
+import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
+import CbBranch from "../../../components/shared/cbBranch";
 import { GetConfig } from "../../../utils/ConfigHeader";
 import { getBrach } from "../../../utils/jwt";
-import { Add } from "@material-ui/icons";
-import CbBranch from "../../../components/shared/cbBranch";
+import {
+  NotifyError,
+  NotifySuccess,
+} from "../../services/notification.service";
 
 const Card = styled(MuiCard)(spacing);
 

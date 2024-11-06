@@ -1,15 +1,14 @@
-import React, { useEffect, useState, useRef, useMemo } from "react";
-import PropTypes from "prop-types";
 import {
-  Box,
-  TextField,
   Autocomplete,
-  FormHelperText,
   Checkbox,
-} from "@material-ui/core";
-import axios from "axios";
-import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
+  FormHelperText,
+  TextField,
+} from "@mui/material";
 import CheckBoxIcon from "@material-ui/icons/CheckBox";
+import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
+import axios from "axios";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
 import { GetConfig } from "../../utils/ConfigHeader";
 
 CbDataPG.propTypes = {

@@ -1,37 +1,34 @@
-import React, { useEffect, useState, useRef } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
+import SearchIcon from "@material-ui/icons/Search";
+import { spacing } from "@material-ui/system";
 import {
+  CardContent,
+  Checkbox,
+  CircularProgress,
+  FormControl,
+  FormControlLabel,
   Grid,
+  IconButton,
+  InputAdornment,
+  InputLabel,
+  MenuItem,
   Button as MuiButton,
   Card as MuiCard,
   Paper as MuiPaper,
-  CardContent,
-  TextField,
-  CircularProgress,
-  InputAdornment,
-  IconButton,
-  Typography,
   Popover,
-  FormControl,
-  InputLabel,
   Select,
-  MenuItem,
-  FormControlLabel,
-  Checkbox,
-} from "@material-ui/core";
-import { Box, spacing } from "@material-ui/system";
-import SearchIcon from "@material-ui/icons/Search";
+  TextField,
+  Typography,
+} from "@mui/material";
 import axios from "axios";
-import ListSOTable from "./ListSOTable";
 import moment from "moment";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import ListSOTable from "./ListSOTable";
 
 import Refresh from "@material-ui/icons/Refresh";
-import Add from "@material-ui/icons/Add";
-import Reply from "@material-ui/icons/Reply";
-import SaveIcon from "@material-ui/icons/Save";
 import { MoreHorizontal, Search } from "react-feather";
 import CbData from "../../../components/shared/dropdown";
 // import CustomerPopup from "../../../components/shared/CustomerPopup";
@@ -39,19 +36,19 @@ import { Clear } from "@material-ui/icons";
 // import SalesPersonPopup from "./SalesPersonPopup";
 // import DeskcallPopup from "./DeskcallPopup";
 import { DesktopDatePicker } from "@material-ui/lab";
-import KeteranganPopup from "./ProcessingPopup/KeteranganPopup";
-import HistApprovalPopup from "./ProcessingPopup/HistApprovalPopup";
-import OtorisasiPopup from "./ProcessingPopup/OtorisasiPopup";
 import Swal from "sweetalert2";
-import RejectPopup from "./ProcessingPopup/RejectPopup";
-import { getBrach, getEmployee, getEmployeeName } from "../../../utils/jwt";
+import SelectPopup from "../../../components/shared/SelectPopup";
+import { GetConfig } from "../../../utils/ConfigHeader";
+import { getBrach, getEmployeeName } from "../../../utils/jwt";
+import CustomerPopup from "../../dashboardApproval/CustomerPopup";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
-import SelectPopup from "../../../components/shared/SelectPopup";
-import { GetConfig } from "../../../utils/ConfigHeader";
-import CustomerPopup from "../../dashboardApproval/CustomerPopup";
+import HistApprovalPopup from "./ProcessingPopup/HistApprovalPopup";
+import KeteranganPopup from "./ProcessingPopup/KeteranganPopup";
+import OtorisasiPopup from "./ProcessingPopup/OtorisasiPopup";
+import RejectPopup from "./ProcessingPopup/RejectPopup";
 
 const Card = styled(MuiCard)(spacing);
 const Paper = styled(MuiPaper)(spacing);

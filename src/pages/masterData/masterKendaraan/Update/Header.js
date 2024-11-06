@@ -1,40 +1,34 @@
-import React, { useState, useRef, useMemo, useEffect } from "react";
-import axios from "axios";
-import Tabs from "./Tabs/index";
-import styled from "styled-components/macro";
-import { useParams, useNavigate } from "react-router-dom";
-import Button from "@material-ui/core/Button";
-import SaveIcon from "@material-ui/icons/Save";
-import CancelIcon from "@material-ui/icons/Clear";
-import EditIcon from "@material-ui/icons/Edit";
-import DeleteIcon from "@material-ui/icons/Delete";
 import Add from "@material-ui/icons/Add";
 import Delete from "@material-ui/icons/Delete";
 import Refresh from "@material-ui/icons/Refresh";
 import Reply from "@material-ui/icons/Reply";
+import SaveIcon from "@material-ui/icons/Save";
+import { spacing } from "@material-ui/system";
 import {
+  Card,
   CardContent,
-  Grid,
-  TextField as MuiTextField,
-  Typography,
-  Select,
-  MenuItem,
-  InputLabel,
   FormControl,
   FormHelperText,
-  Card,
+  Grid,
   IconButton,
-} from "@material-ui/core";
+  InputLabel,
+  MenuItem,
+  TextField as MuiTextField,
+  Select,
+  Typography,
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useRef, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import styled from "styled-components/macro";
+import CbBranch from "../../../../components/shared/cbBranch";
+import { GetConfig } from "../../../../utils/ConfigHeader";
+import { getBrach } from "../../../../utils/jwt";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import { spacing } from "@material-ui/system";
-import CbEmployee from "../../../../components/shared/cbEmployee";
-import CbZona from "../../../../components/shared/cbZona";
-import CbBranch from "../../../../components/shared/cbBranch";
-import { getBrach } from "../../../../utils/jwt";
-import { GetConfig } from "../../../../utils/ConfigHeader";
+import Tabs from "./Tabs/index";
 
 const TextField = styled(MuiTextField)(spacing);
 

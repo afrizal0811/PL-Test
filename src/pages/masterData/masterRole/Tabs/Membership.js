@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { Paper } from "@material-ui/core";
 import { TabPanel } from "@material-ui/lab";
+import { Paper } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { GetConfig } from "../../../../utils/ConfigHeader";
-import axios from "axios";
 import { NotifyError } from "../../../services/notification.service";
 const columns = [
   {

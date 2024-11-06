@@ -1,9 +1,9 @@
-import React from "react";
-import styled, { css } from "styled-components/macro";
-import ReactPerfectScrollbar from "react-perfect-scrollbar";
-import { List } from "@material-ui/core";
 import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { List } from "@mui/material";
+import React from "react";
+import ReactPerfectScrollbar from "react-perfect-scrollbar";
+import styled, { css } from "styled-components/macro";
 
 import SidebarNavSection from "./SidebarNavSection";
 

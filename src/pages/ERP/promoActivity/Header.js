@@ -1,34 +1,27 @@
-import React, { useEffect, useState } from "react";
-import Detail from "./Detail";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate, useParams } from "react-router-dom";
-import {
-  Card as MuiCard,
-  CardContent,
-  Grid,
-  TextField as MuiTextField,
-  Typography,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
-  Autocomplete,
-  FormHelperText,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  Button,
-  DialogActions,
-} from "@material-ui/core";
-import { Box, spacing } from "@material-ui/system";
 import { DatePicker } from "@material-ui/lab";
-import moment from "moment";
-import { DataGrid } from "@mui/x-data-grid";
-import CustomerPopup from "./CustomerPopup";
+import { Box, spacing } from "@material-ui/system";
+import {
+  Autocomplete,
+  CardContent,
+  FormControl,
+  FormHelperText,
+  Grid,
+  InputLabel,
+  MenuItem,
+  Card as MuiCard,
+  TextField as MuiTextField,
+  Select,
+  Typography,
+} from "@mui/material";
 import axios from "axios";
-import PromoPopup from "./PromoPopup";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import styled from "styled-components/macro";
 import { GetConfig } from "../../../utils/ConfigHeader";
+import CustomerPopup from "./CustomerPopup";
+import Detail from "./Detail";
+import PromoPopup from "./PromoPopup";
 
 const Card = styled(MuiCard)(spacing);
 const TextField = styled(MuiTextField)(spacing);

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
-import { Tab } from "@material-ui/core";
-import TabDocumentDetails from "./TabDocumentDetails";
+import { Tab } from "@mui/material";
+import React, { useState } from "react";
 import TabApprovalDetails from "./TabApprovalDetails";
+import TabDocumentDetails from "./TabDocumentDetails";
 import TabOtherInformation from "./TabOtherInformation";
 
 export default function Tabs(props) {

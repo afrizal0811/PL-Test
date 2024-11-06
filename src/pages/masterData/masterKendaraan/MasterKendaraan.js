@@ -1,45 +1,38 @@
-import React, { useEffect, useState } from "react";
-import styled from "styled-components/macro";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
-import AddIcon from "@material-ui/icons/Add";
-import { Box, spacing } from "@material-ui/system";
 import Button from "@material-ui/core/Button";
-import Timer from "react-timer-wrapper";
-import Timecode from "react-timecode";
-import swal from "sweetalert2";
-import axios from "axios";
-import moment from "moment";
-import DeleteIcon from "@material-ui/icons/Delete";
-import EditIcon from "@material-ui/icons/Edit";
-import PropTypes from "prop-types";
+import AddIcon from "@material-ui/icons/Add";
 import ClearIcon from "@material-ui/icons/Clear";
+import EditIcon from "@material-ui/icons/Edit";
 import SearchIcon from "@material-ui/icons/Search";
+import { Box, spacing } from "@material-ui/system";
 import {
-  NotifyError,
-  NotifySuccess,
-} from "../../services/notification.service";
-import {
+  CircularProgress,
+  Grid,
+  IconButton,
   Link,
-  Text,
   Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
   Paper as MuiPaper,
-  Typography,
-  IconButton,
   TextField,
-  Icon,
-  Grid,
-  CircularProgress,
-} from "@material-ui/core";
-import {
-  DataGrid,
-  GridToolbarContainer,
-  GridToolbarDensitySelector,
-} from "@mui/x-data-grid";
+  Typography,
+} from "@mui/material";
+import { DataGrid, GridToolbarContainer } from "@mui/x-data-grid";
+import axios from "axios";
+import moment from "moment";
+import PropTypes from "prop-types";
+import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { NavLink, useNavigate } from "react-router-dom";
+import Timecode from "react-timecode";
+import Timer from "react-timer-wrapper";
+import styled from "styled-components/macro";
+import swal from "sweetalert2";
 import { GetConfig } from "../../../utils/ConfigHeader";
+import {
+  NotifyError,
+  NotifySuccess,
+} from "../../services/notification.service";
 
 const Card = styled(MuiCard)(spacing);
 

@@ -2,8 +2,8 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components/macro";
 
-import { CssBaseline } from "@material-ui/core";
 import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
+import { CssBaseline } from "@mui/material";
 
 import { THEMES } from "../constants";
 import createTheme from "../theme";

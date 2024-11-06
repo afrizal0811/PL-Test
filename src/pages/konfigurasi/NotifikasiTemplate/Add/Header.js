@@ -1,37 +1,33 @@
-import React, { useState } from "react";
-import styled from "styled-components/macro";
-import { useNavigate } from "react-router-dom";
+import { Add, Delete, Refresh, Reply, Save } from "@material-ui/icons";
+import SearchIcon from "@material-ui/icons/Search";
+import { TabContext, TabList, TabPanel } from "@material-ui/lab";
+import { spacing } from "@material-ui/system";
 import {
-  CardContent,
-  Grid,
-  TextField as MuiTextField,
-  Paper as MuiPaper,
-  Button as MuiButton,
-  IconButton,
-  Checkbox,
-  InputAdornment,
   AppBar,
-  Tab,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
+  CardContent,
+  Checkbox,
   FormControlLabel,
-} from "@material-ui/core";
+  Grid,
+  IconButton,
+  InputAdornment,
+  Button as MuiButton,
+  Paper as MuiPaper,
+  TextField as MuiTextField,
+  Tab,
+} from "@mui/material";
+import axios from "axios";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../../utils/ConfigHeader";
+import { getBrach } from "../../../../utils/jwt";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../../services/notification.service";
-import { GetConfig } from "../../../../utils/ConfigHeader";
-import axios from "axios";
-import { spacing } from "@material-ui/system";
-import { getBrach } from "../../../../utils/jwt";
-import { Reply, Refresh, Add, Delete, Save } from "@material-ui/icons";
-import SearchIcon from "@material-ui/icons/Search";
-import ScreenIDPopup from "../ScreenIDPopup";
-import { TabContext, TabList, TabPanel } from "@material-ui/lab";
-import InsertVariable from "../InsertVariable";
 import dataInsert from "../DataInsert";
+import InsertVariable from "../InsertVariable";
+import ScreenIDPopup from "../ScreenIDPopup";
 
 const TextField = styled(MuiTextField)(spacing);
 const Paper = styled(MuiPaper)(spacing);

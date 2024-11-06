@@ -1,10 +1,10 @@
-import React from "react";
-import Details from "./Details";
-import Payment from "./Payment";
 import AppBar from "@material-ui/core/AppBar";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
-import { Tab } from "@material-ui/core";
+import { Tab } from "@mui/material";
+import React from "react";
+import Details from "./Details";
+import Payment from "./Payment";
 
 export default function Tabs(props) {
   const [value, setValue] = React.useState("1");

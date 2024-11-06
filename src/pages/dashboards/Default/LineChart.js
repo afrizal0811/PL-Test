@@ -1,16 +1,16 @@
 import React from "react";
-import styled, { withTheme } from "styled-components/macro";
 import Chart from "react-chartjs-2";
 import { MoreVertical } from "react-feather";
+import styled, { withTheme } from "styled-components/macro";
 
+import { alpha } from "@material-ui/core/styles";
+import { spacing } from "@material-ui/system";
 import {
-  Card as MuiCard,
   CardContent,
   CardHeader,
   IconButton,
-} from "@material-ui/core";
-import { spacing } from "@material-ui/system";
-import { alpha } from "@material-ui/core/styles";
+  Card as MuiCard,
+} from "@mui/material";
 
 const Card = styled(MuiCard)(spacing);
 

@@ -5,7 +5,7 @@ import {
   DialogTitle,
   Grid,
   TextField,
-} from "@material-ui/core";
+} from "@mui/material";
 import axios from "axios";
 import { useFormik } from "formik";
 import React from "react";

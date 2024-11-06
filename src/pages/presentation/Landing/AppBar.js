@@ -1,16 +1,16 @@
-import * as React from "react";
-import styled from "styled-components/macro";
 import { spacing } from "@material-ui/system";
+import * as React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components/macro";
 
 import {
   AppBar,
-  Button as MuiButton,
   Container,
   Grid,
   Hidden,
+  Button as MuiButton,
   Toolbar,
-} from "@material-ui/core";
+} from "@mui/material";
 
 import { ReactComponent as Logo } from "../../../vendor/logo.svg";
 

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import General from "./General";
-import Employment from "./Employment";
 import AppBar from "@material-ui/core/AppBar";
 import TabContext from "@material-ui/lab/TabContext";
 import TabList from "@material-ui/lab/TabList";
-import { Tab } from "@material-ui/core";
+import { Tab } from "@mui/material";
+import React, { useState } from "react";
+import Employment from "./Employment";
+import General from "./General";
 
 export default function Tabs(props) {
   const [value, setValue] = useState("1");

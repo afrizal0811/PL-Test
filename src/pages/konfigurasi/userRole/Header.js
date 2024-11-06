@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import styled from "styled-components/macro";
-import { Box, spacing } from "@material-ui/system";
-import { useParams } from "react-router-dom";
 import SaveIcon from "@material-ui/icons/Save";
+import { spacing } from "@material-ui/system";
 import {
-  Autocomplete,
   Button,
   Card,
-  CardContent as MuiCardContent,
   Grid,
   InputAdornment,
+  CardContent as MuiCardContent,
   TextField as MuiTextField,
   Typography,
-} from "@material-ui/core";
+} from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import styled from "styled-components/macro";
+import { GetConfig } from "../../../utils/ConfigHeader";
 import {
   NotifyError,
   NotifySuccess,
 } from "../../services/notification.service";
 import Tabs from "./Tabs/Tabs";
-import { set } from "date-fns";
-import { GetConfig } from "../../../utils/ConfigHeader";
 
 const CardContent = styled(MuiCardContent)(spacing);
 const TextField = styled(MuiTextField)(spacing);
