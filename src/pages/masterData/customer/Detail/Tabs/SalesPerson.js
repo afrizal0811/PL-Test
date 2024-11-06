@@ -1,0 +1,86 @@
+import React, { useState } from "react";
+import { DataGrid } from "@mui/x-data-grid";
+import Timer from "react-timer-wrapper";
+import Timecode from "react-timecode";
+import { CircularProgress, Grid, Paper as MuiPaper } from "@material-ui/core";
+import { TabPanel } from "@material-ui/lab";
+import styled from "styled-components/macro";
+import { spacing } from "@material-ui/system";
+
+const Paper = styled(MuiPaper)(spacing);
+
+const columns = [
+  {
+    field: "SalespersonID",
+    headerName: "Sales Person ID",
+    width: 200,
+  },
+  {
+    field: "Name",
+    headerName: "Name",
+    width: 200,
+  },
+  {
+    field: "LocationID",
+    headerName: "Location ID",
+    width: 200,
+  },
+  {
+    field: "Commission",
+    headerName: "Commission",
+    type: "text",
+    width: 200,
+  },
+  {
+    field: "Default",
+    headerName: "Default",
+    type: "boolean",
+    width: 200,
+  },
+];
+
+export default function SalesPerson(props) {
+  const [selection, setSelection] = useState(0);
+  const [pageSize, setPageSize] = useState(5);
+
+  return (
+    <TabPanel value="4">
+      {props.loading ? (
+        <Grid container justifyContent="center" spacing={1} md={12} xs={12}>
+          <Grid item xs={12} style={{ textAlign: "center" }}>
+            <CircularProgress disableShrink style={{ textAlign: "center" }} />
+          </Grid>
+          <Grid item xs={12} justifyContent="center" alignItems="center">
+            <h1 style={{ textAlign: "center" }}>Loading</h1>
+          </Grid>
+          <Grid item xs={12} justifyContent="center" alignItems="center">
+            <Timer
+              active={true}
+              duration={null}
+              style={{ textAlign: "center", marginBottom: 20 }}
+            >
+              <Timecode />
+            </Timer>
+          </Grid>
+        </Grid>
+      ) : (
+        <Paper>
+          <div style={{ height: 400, width: "100%", marginTop: "10px" }}>
+            <DataGrid
+              rowsPerPageOptions={[5, 10, 25]}
+              rows={props.salesPerson}
+              getRowId={(row) => row.CustomerSalesPersonID}
+              columns={columns}
+              pageSize={pageSize}
+              onPageSizeChange={(newPageSize) => setPageSize(newPageSize)}
+              selectionModel={selection}
+              onSelectionModelChange={(selection) => {
+                setSelection(selection);
+              }}
+            />
+          </div>
+        </Paper>
+      )}
+    </TabPanel>
+  );
+}

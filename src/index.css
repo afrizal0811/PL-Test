@@ -1,0 +1,7 @@
+.swal-height {
+    height: 80vh;
+}
+
+.swal-z-max {
+    z-index: 99999999 !important;
+}

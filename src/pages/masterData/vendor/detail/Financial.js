@@ -1,0 +1,44 @@
+import React, { useState, useRef, useEffect } from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components/macro";
+import {
+  Checkbox,
+  FormControlLabel,
+  Grid,
+  TextField as MuiTextField,
+} from "@material-ui/core";
+import { spacing } from "@material-ui/system";
+
+const TextField = styled(MuiTextField)(spacing);
+
+TabFinancial.propTypes = {
+  data: PropTypes.object,
+};
+
+export default function TabFinancial(props) {
+  return (
+    <>
+      <Grid container spacing={3} md={8}>
+        <Grid item md={12} xs={12}>
+          <u>
+            <h1>Financial Setting</h1>
+          </u>
+        </Grid>
+        <Grid item md={6} xs={6}>
+          <TextField
+            name="term"
+            label="Terms"
+            value={!props.data?.financial?.terms ? "" : "ada"}
+            fullWidth
+            variant="outlined"
+            my={2}
+            InputLabelProps={{
+              shrink: true,
+              readOnly: true,
+            }}
+          />
+        </Grid>
+      </Grid>
+    </>
+  );
+}
