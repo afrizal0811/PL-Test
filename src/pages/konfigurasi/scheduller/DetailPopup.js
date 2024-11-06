@@ -1,25 +1,23 @@
-import React, { useState } from "react";
-import styled from "styled-components/macro";
 import {
-  Button as MuiButton,
-  IconButton,
+  Checkbox,
   Dialog,
+  DialogActions,
   DialogContent,
   DialogTitle,
-  DialogActions,
-  Typography,
-  TextField,
-  Grid,
-  CircularProgress,
   FormControlLabel,
-  Checkbox,
   FormHelperText,
+  Grid,
+  IconButton,
+  Button as MuiButton,
+  TextField,
+  Typography,
 } from "@material-ui/core";
-import { spacing } from "@material-ui/system";
 import CloseIcon from "@material-ui/icons/Close";
 import SaveIcon from "@material-ui/icons/Save";
+import { spacing } from "@material-ui/system";
 import axios from "axios";
-import NumberFormat from "react-number-format";
+import React, { useState } from "react";
+import styled from "styled-components/macro";
 import {
   NotifyError,
   NotifySuccess,
