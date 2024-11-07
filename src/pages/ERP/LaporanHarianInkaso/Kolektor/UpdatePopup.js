@@ -92,9 +92,9 @@ export default function UpdatePopup(props) {
 
       setData(newList);
       setKetStatusKembali(newList[0]?.ketStatusKembali);
-      if (newList[0]?.ketStatusKembali == "Bayar") {
+      if (newList[0]?.ketStatusKembali === "Bayar") {
         setTunaiDiterima(newList[0]?.balanceTotal);
-      } else if (newList[0]?.ketStatusKembali == "Sebagian") {
+      } else if (newList[0]?.ketStatusKembali === "Sebagian") {
         setTunaiDiterima(newList[0]?.balanceTotal / 2);
       }
       setBalanceTotal(newList[0]?.balanceTotal);
@@ -118,7 +118,7 @@ export default function UpdatePopup(props) {
     props.setOpenEdit(false);
     const selectedfakturall = Data.filter((ae) => {
       return selectedfaktur.some((f) => {
-        return f.id == ae.referenceNbr;
+        return f.id === ae.referenceNbr;
       });
     });
     const newfaktur = selectedfakturall.map((aaa) => {
@@ -131,11 +131,11 @@ export default function UpdatePopup(props) {
       aaa.tglKembali = moment(new Date()).format();
       aaa.tglPenagihan = moment(new Date()).format();
       let tunai = TunaiDiterima;
-      if (KetStatusKembali == "Bayar") {
+      if (KetStatusKembali === "Bayar") {
         aaa.balanceTotal = 0;
         aaa.balance = 0;
         aaa.tunaiDiterima = BalanceTotal;
-      } else if (KetStatusKembali == "Sebagian" && TunaiDiterima > 0) {
+      } else if (KetStatusKembali === "Sebagian" && TunaiDiterima > 0) {
         // tunai = parseInt(TunaiDiterima) - parseInt(aaa.balance);
         // aaa.balance = parseInt(aaa.balance) - parseInt(TunaiDiterima);
         // if (aaa.balance <= 0) {
@@ -161,7 +161,7 @@ export default function UpdatePopup(props) {
     console.log("ReferenceNbr", selectedfaktur);
     console.log("newfaktur", newfaktur);
     const newdata = props.DataSource.map((item) => {
-      if (item.type == props.dataEdit) {
+      if (item.type === props.dataEdit) {
         item.isi = newfaktur;
       }
       return item;
@@ -241,9 +241,9 @@ export default function UpdatePopup(props) {
               options={opsiStatus}
               onChange={(event, newValue) => {
                 console.log(newValue);
-                if (newValue.id == "Bayar") {
+                if (newValue.id === "Bayar") {
                   setTunaiDiterima(BalanceTotal);
-                } else if (newValue.id == "Sebagian") {
+                } else if (newValue.id === "Sebagian") {
                   setTunaiDiterima(BalanceTotal / 2);
                 }
                 setKetStatusKembali(newValue.id);
@@ -299,9 +299,9 @@ export default function UpdatePopup(props) {
               id="Keterangan"
               label="Keterangan"
               type="text"
-              // color={!TunaiDiterimanbr || TunaiDiterimanbr == "" ? "warning" : ""}
-              // focused={!TunaiDiterimanbr || TunaiDiterimanbr == "" ? true : false}
-              value={KetKembali == "" ? " " : KetKembali}
+              // color={!TunaiDiterimanbr || TunaiDiterimanbr === "" ? "warning" : ""}
+              // focused={!TunaiDiterimanbr || TunaiDiterimanbr === "" ? true : false}
+              value={KetKembali === "" ? " " : KetKembali}
               onChange={(e) => setKetKembali(e.target.value)}
               // disabled
               fullWidth

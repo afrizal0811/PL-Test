@@ -88,7 +88,7 @@ export default function DetailPopup(props) {
   //         `${process.env.REACT_APP_DOMAIN_API}` +
   //           "/DeskcallReps/getDetailDeskcall/" +
   //           id +
-  //           `?filterStatusLHI=${StatusLHI == null ? "All" : StatusLHI}`
+  //           `?filterStatusLHI=${StatusLHI === null ? "All" : StatusLHI}`
   //       )
   //       .then(function (response) {
   //         if (response.status === 200) {
@@ -122,8 +122,8 @@ export default function DetailPopup(props) {
           console.log(response);
           if (
             response.status === 200 ||
-            response.status == 201 ||
-            response.status == 204
+            response.status === 201 ||
+            response.status === 204
           ) {
             NotifySuccess("success", "Data Telah DiTambah");
             props.setOpenDetail(false);
@@ -156,7 +156,7 @@ export default function DetailPopup(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiUbah");
             // setTimeout(() => {
             //   window.location.href = `/konfigurasi/set-key/${upKey}`;
@@ -209,14 +209,14 @@ export default function DetailPopup(props) {
               name="SchedullerName"
               disabled={Loading}
               fullWidth
-              color={!Name || Name == "" ? "warning" : ""}
-              focused={!Name || Name == "" ? true : false}
+              color={!Name || Name === "" ? "warning" : ""}
+              focused={!Name || Name === "" ? true : false}
               label="Scheduler Name"
               value={Name}
               onChange={(e) => setName(e.target.value)}
             />
             {!Name ||
-              (Name == "" && (
+              (Name === "" && (
                 <FormHelperText style={{ color: "red" }}>
                   Required
                 </FormHelperText>
@@ -226,15 +226,15 @@ export default function DetailPopup(props) {
             <TextField
               name="SchedullerMethod"
               disabled={Loading}
-              color={!Method || Method == "" ? "warning" : ""}
-              focused={!Method || Method == "" ? true : false}
+              color={!Method || Method === "" ? "warning" : ""}
+              focused={!Method || Method === "" ? true : false}
               fullWidth
               label="Scheduler Method"
               value={Method}
               onChange={(e) => setMethod(e.target.value)}
             />
             {!Method ||
-              (Method == "" && (
+              (Method === "" && (
                 <FormHelperText style={{ color: "red" }}>
                   Required
                 </FormHelperText>
@@ -245,14 +245,14 @@ export default function DetailPopup(props) {
               name="SchedullerFunction"
               disabled={Loading}
               fullWidth
-              color={!Function || Function == "" ? "warning" : ""}
-              focused={!Function || Function == "" ? true : false}
+              color={!Function || Function === "" ? "warning" : ""}
+              focused={!Function || Function === "" ? true : false}
               label="Scheduler Function"
               value={Function}
               onChange={(e) => setFunction(e.target.value)}
             />
             {!Function ||
-              (Function == "" && (
+              (Function === "" && (
                 <FormHelperText style={{ color: "red" }}>
                   Required
                 </FormHelperText>
@@ -377,8 +377,8 @@ export default function DetailPopup(props) {
                   name="Jam"
                   disabled={Loading}
                   fullWidth
-                  color={!Jam || Jam == "" ? "warning" : ""}
-                  focused={!Jam || Jam == "" ? true : false}
+                  color={!Jam || Jam === "" ? "warning" : ""}
+                  focused={!Jam || Jam === "" ? true : false}
                   label="Jam"
                   value={Jam}
                   onChange={(e) => {
@@ -389,7 +389,7 @@ export default function DetailPopup(props) {
                   }}
                 />
                 {!Jam ||
-                  (Jam == "" && (
+                  (Jam === "" && (
                     <FormHelperText style={{ color: "red" }}>
                       Required
                     </FormHelperText>
@@ -400,8 +400,8 @@ export default function DetailPopup(props) {
                   name="Minute"
                   fullWidth
                   disabled={Loading}
-                  color={!Minute || Minute == "" ? "warning" : ""}
-                  focused={!Minute || Minute == "" ? true : false}
+                  color={!Minute || Minute === "" ? "warning" : ""}
+                  focused={!Minute || Minute === "" ? true : false}
                   // type="number"
                   label="Minute"
                   placeholder="Default *"
@@ -422,7 +422,7 @@ export default function DetailPopup(props) {
                   }}
                 />
                 {!Minute ||
-                  (Minute == "" && (
+                  (Minute === "" && (
                     <FormHelperText style={{ color: "red" }}>
                       Required
                     </FormHelperText>
@@ -449,11 +449,11 @@ export default function DetailPopup(props) {
             color="primary"
             size="medium"
             disabled={
-              Name.length == 0 ||
-              Method.length == 0 ||
-              Function.length == 0 ||
-              Jam.length == 0 ||
-              Minute.length == 0 ||
+              Name.length === 0 ||
+              Method.length === 0 ||
+              Function.length === 0 ||
+              Jam.length === 0 ||
+              Minute.length === 0 ||
               (!Sunday &&
                 !Monday &&
                 !Tuesday &&

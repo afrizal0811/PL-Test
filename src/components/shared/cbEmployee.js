@@ -53,7 +53,7 @@ function CbEmployee(props) {
       .then(function (response) {
         // handle success
         console.log(response);
-        if (response.status === 200 || response.status == 201) {
+        if (response.status === 200 || response.status === 201) {
           const resdata = response.data[0].record;
           const newres = [];
           Object.keys(resdata).forEach(function (key) {
@@ -104,7 +104,7 @@ function CbEmployee(props) {
         value={value}
         getOptionLabel={(option) => option}
         renderOption={(propss, option, { selected }) => {
-          let op = cbEmployee.filter((item) => item.EmployeeID == option);
+          let op = cbEmployee.filter((item) => item.EmployeeID === option);
           if (props.multiple) {
             return (
               <>
@@ -137,13 +137,13 @@ function CbEmployee(props) {
               required={required}
               color={
                 (required && employee === null) ||
-                (required && employee.length == 0)
+                (required && employee.length === 0)
                   ? "warning"
                   : ""
               }
               focused={
                 (required && employee === null) ||
-                (required && employee.length == 0)
+                (required && employee.length === 0)
                   ? true
                   : false
               }
@@ -161,7 +161,7 @@ function CbEmployee(props) {
         }}
       />
       {(required && employee === null) ||
-        (required && employee.length == 0 && (
+        (required && employee.length === 0 && (
           <FormHelperText style={{ color: "red" }}>Required</FormHelperText>
         ))}
     </>

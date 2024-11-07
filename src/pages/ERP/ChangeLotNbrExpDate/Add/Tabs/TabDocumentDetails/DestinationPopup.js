@@ -368,8 +368,8 @@ export default function DestinationEdit(props) {
                   min: 0,
                 }}
                 value={dstqty}
-                color={warning || dstqty == "" || !dstqty ? "warning" : ""}
-                focused={warning || dstqty == "" || !dstqty ? true : false}
+                color={warning || dstqty === "" || !dstqty ? "warning" : ""}
+                focused={warning || dstqty === "" || !dstqty ? true : false}
                 onValueChange={(e) => handleChangeUOM(e)}
                 fullWidth
                 thousandsGroupStyle="thousand"
@@ -394,12 +394,12 @@ export default function DestinationEdit(props) {
                 }}
                 value={dstqty}
                 color={
-                  dstqty > dstList.Qty || dstqty == "" || !dstqty
+                  dstqty > dstList.Qty || dstqty === "" || !dstqty
                     ? "warning"
                     : ""
                 }
                 focused={
-                  dstqty > dstList.Qty || dstqty == "" || !dstqty ? true : false
+                  dstqty > dstList.Qty || dstqty === "" || !dstqty ? true : false
                 }
                 onChange={(e) => setdstqty(e.target.value)}
                 fullWidth
@@ -412,8 +412,8 @@ export default function DestinationEdit(props) {
                 label="To Lot Nbr"
                 type="text"
                 required
-                color={!dstLotnbr || dstLotnbr == "" ? "warning" : ""}
-                focused={!dstLotnbr || dstLotnbr == "" ? true : false}
+                color={!dstLotnbr || dstLotnbr === "" ? "warning" : ""}
+                focused={!dstLotnbr || dstLotnbr === "" ? true : false}
                 value={dstLotnbr}
                 onChange={(e) => setdstLotnbr(e.target.value)}
                 fullWidth
@@ -451,10 +451,10 @@ export default function DestinationEdit(props) {
           <Button
             onClick={EditRows}
             disabled={
-              dstLotnbr == "" ||
+              dstLotnbr === "" ||
               SelectedLoc.length < 1 ||
-              dstExpdate == "" ||
-              dstqty == "" ||
+              dstExpdate === "" ||
+              dstqty === "" ||
               warning
             }
             color="primary"

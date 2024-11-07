@@ -230,7 +230,7 @@ export default function PromoPopup(props) {
                 onRowDoubleClick={(e) => {
                   props.setOpenPromo(false);
                   props.setTempPromoID(
-                    Rows.filter((i) => i.promoID == e.id)[0]
+                    Rows.filter((i) => i.promoID === e.id)[0]
                   );
                 }}
                 onSelectionModelChange={(e) => {

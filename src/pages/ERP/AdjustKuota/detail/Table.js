@@ -105,7 +105,7 @@ export default function Table(props) {
       align: "right",
       renderCell: (params) => (
         <>
-          {props.Data?.StatusAdjustment == "Released" ? (
+          {props.Data?.StatusAdjustment === "Released" ? (
             <p>Released</p>
           ) : (
             <NumberFormat
@@ -147,7 +147,7 @@ export default function Table(props) {
       align: "right",
       renderCell: (params) => (
         <>
-          {props.Data?.StatusAdjustment == "Released" ? (
+          {props.Data?.StatusAdjustment === "Released" ? (
             <p>Released</p>
           ) : (
             <NumberFormat
@@ -183,7 +183,9 @@ export default function Table(props) {
             variant="text"
             size="small"
             startIcon={<EditIcon />}
-            disabled={props.Data?.StatusAdjustment == "Released" ? true : false}
+            disabled={
+              props.Data?.StatusAdjustment === "Released" ? true : false
+            }
             onClick={() => {
               setOpenEditAllocated(true);
               setDataEditAllocated(params.row);
@@ -194,7 +196,9 @@ export default function Table(props) {
             color="error"
             size="small"
             style={{ marginLeft: 4 }}
-            disabled={props.Data?.StatusAdjustment == "Released" ? true : false}
+            disabled={
+              props.Data?.StatusAdjustment === "Released" ? true : false
+            }
             startIcon={<DeleteIcon />}
             onClick={() => {
               // notifyDeleteConfirm(params.row.DetailSourceID)
@@ -412,7 +416,8 @@ export default function Table(props) {
           // console.log("add", e);
           const isDuplicate = props.TableData.some(
             (item) =>
-              !item.KuotaAdjustmentDetailID && item.InventoryID == e.InventoryID
+              !item.KuotaAdjustmentDetailID &&
+              item.InventoryID === e.InventoryID
           );
           if (!isDuplicate) {
             const newData = props.TableData.concat([e]);

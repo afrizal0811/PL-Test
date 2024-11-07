@@ -219,7 +219,7 @@ export default function TransferCabangTable({
             color="error"
             size="small"
             style={{ marginLeft: 8 }}
-            disabled={params.row.Status == "On Hold" ? false : true}
+            disabled={params.row.Status === "On Hold" ? false : true}
             startIcon={<Delete />}
             onClick={() => notifyConfirm(params.row.RefNbr)}
           >
@@ -236,7 +236,7 @@ export default function TransferCabangTable({
         <Button
           color="primary"
           onClick={() => {
-            // if (data.filter((ae) => ae.Status == "On Hold").length > 0) {
+            // if (data.filter((ae) => ae.Status === "On Hold").length > 0) {
             //   NotifyError("Error!", "Terdapat transfer kuota yang belum rilis");
             // } else {
             history("add");

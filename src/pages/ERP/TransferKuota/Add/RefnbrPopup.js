@@ -125,7 +125,7 @@ export default function RefnbrPopup(props) {
   useEffect(() => {
     if (props.open) {
       if (searchText.length > 3) getData(1);
-      if (searchText.length == 0) getData(1);
+      if (searchText.length === 0) getData(1);
     }
   }, [props.open, searchText]);
 

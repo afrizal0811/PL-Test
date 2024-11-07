@@ -125,7 +125,7 @@ function ProductGroupPopup(props) {
   }, []);
 
   useEffect(() => {
-    let arr = DataProductGroup.filter((i) => i.id == props.ProductGroupID);
+    let arr = DataProductGroup.filter((i) => i.id === props.ProductGroupID);
     setTempProductGroup(arr);
     setSelectedProductGroup(
       arr.map((a) => {

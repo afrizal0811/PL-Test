@@ -54,9 +54,9 @@ export default function SourceTable(props) {
       mounted.current = true;
       // getData();
     } else {
-      if (props.RefNbr !== undefined && props.Status == "On Hold") {
+      if (props.RefNbr !== undefined && props.Status === "On Hold") {
         // HandleSource();
-      } else if (props.RefNbr == undefined && props.Status == "On Hold") {
+      } else if (props.RefNbr === undefined && props.Status === "On Hold") {
         HandleCreate();
       }
     }
@@ -95,14 +95,14 @@ export default function SourceTable(props) {
             unAlloKuota: item.AllocatedKuotaDetailSourceID
               ? item.AlloKuota -
                 data
-                  .filter((ab) => ab.InventoryID == item.InventoryID)
+                  .filter((ab) => ab.InventoryID === item.InventoryID)
                   .reduce((n, { DstAlloKuota }) => n + DstAlloKuota, 0)
               : item.UnAlloKuota,
             allocatedRefNbr: item.AllocatedRefNbr,
             allocatedKuotaSourceDetailAllocatedRep:
               item.AllocatedKuotaDetailSourceID
                 ? data
-                    .filter((ab) => ab.InventoryID == item.InventoryID)
+                    .filter((ab) => ab.InventoryID === item.InventoryID)
                     .map((ao) => {
                       return ao;
                     })
@@ -129,7 +129,7 @@ export default function SourceTable(props) {
           .then(function (response) {
             // handle success
             console.log(response);
-            if (response.status === 200 || response.status == 204) {
+            if (response.status === 200 || response.status === 204) {
               // NotifySuccess("success", "Data telah disimpan");
               window.location.replace(
                 `/allocated-kuota/detail/${response.data.RefNbr}`
@@ -172,11 +172,11 @@ export default function SourceTable(props) {
           UnAlloKuota:
             item.AlloKuota -
             a
-              .filter((ab) => ab.InventoryID == item.InventoryID)
+              .filter((ab) => ab.InventoryID === item.InventoryID)
               .reduce((n, { DstAlloKuota }) => n + DstAlloKuota, 0),
           AllocatedRefNbr: item.AllocatedRefNbr,
           AllocatedKuotaSourceDetailAllocatedRep: a
-            .filter((ab) => ab.InventoryID == item.InventoryID)
+            .filter((ab) => ab.InventoryID === item.InventoryID)
             .map((ao) => {
               return ao;
             }),
@@ -202,7 +202,7 @@ export default function SourceTable(props) {
         )
         .then(function (response) {
           // handle success
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             // NotifySuccess("success", "Data telah disimpan");
             props.getDataSource();
             props.setDataAllo(a);
@@ -283,10 +283,10 @@ export default function SourceTable(props) {
       sortable: false,
       renderCell: (params) =>
         props.DataSource.filter(
-          (we) => we.InventoryID == params.row.InventoryID
+          (we) => we.InventoryID === params.row.InventoryID
         ).length > 0 &&
         props?.DataSource?.filter(
-          (we) => we.InventoryID == params.row.InventoryID
+          (we) => we.InventoryID === params.row.InventoryID
         )[0]?.UnAlloKuota < 0 ? (
           <>
             <Tooltip title="Allocated Qty pada inventory ini melebihi batas">
@@ -304,10 +304,10 @@ export default function SourceTable(props) {
       sortable: false,
       renderCell: (params) =>
         props.DataSource.filter(
-          (we) => we.InventoryID == params.row.InventoryID
+          (we) => we.InventoryID === params.row.InventoryID
         ).length > 0 &&
         props?.DataSource?.filter(
-          (we) => we.InventoryID == params.row.InventoryID
+          (we) => we.InventoryID === params.row.InventoryID
         )[0]?.UnAlloKuota < 0 ? (
           <>
             <Tooltip title="Allocated Qty pada inventory ini melebihi batas">
@@ -326,10 +326,10 @@ export default function SourceTable(props) {
       sortable: false,
       renderCell: (params) =>
         props.DataSource.filter(
-          (we) => we.InventoryID == params.row.InventoryID
+          (we) => we.InventoryID === params.row.InventoryID
         ).length > 0 &&
         props?.DataSource?.filter(
-          (we) => we.InventoryID == params.row.InventoryID
+          (we) => we.InventoryID === params.row.InventoryID
         )[0]?.UnAlloKuota < 0 ? (
           <>
             <Tooltip title="Allocated Qty pada inventory ini melebihi batas">

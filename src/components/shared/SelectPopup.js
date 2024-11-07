@@ -234,7 +234,7 @@ export default function SelectPopup(props) {
               if (props.all) {
                 props.setTemp(
                   Rows.filter(
-                    (ae) => ae[props.id] == SelectedCust.toString()
+                    (ae) => ae[props.id] === SelectedCust.toString()
                   )[0]
                 );
               } else {

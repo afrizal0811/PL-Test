@@ -155,7 +155,7 @@ export default function DetailApproval(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.href = `/promo-activity}`;
@@ -194,7 +194,7 @@ export default function DetailApproval(props) {
   //   // window.location.reload();
   //   console.log("event ", e.target.value);
   //   let DeletedImage = imgData.filter(
-  //     (item) => item.promoFile == e.target.value
+  //     (item) => item.promoFile === e.target.value
   //   );
   //   console.log("Deleted: ", DeletedImage);
   //   if (DeletedImage[0].isnew) {
@@ -213,7 +213,7 @@ export default function DetailApproval(props) {
   //       .then(function (response) {
   //         // handle success
   //         console.log(response);
-  //         if (response.status === 200 || response.status == 201) {
+  //         if (response.status === 200 || response.status === 201) {
   //           let newData = imgData.filter(
   //             (item) => item.promoFile !== e.target.value
   //           );

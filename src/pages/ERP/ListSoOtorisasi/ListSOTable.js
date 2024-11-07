@@ -149,7 +149,7 @@ const columns = [
     filterable: false,
     width: 200,
     renderCell: (params) => {
-      return <>{params.value == "undefined" ? " " : params.value}</>;
+      return <>{params.value === "undefined" ? " " : params.value}</>;
     },
   },
   {
@@ -246,11 +246,11 @@ export default function ListSOTable(props) {
           //   ).format("YYYY-MM-DD")}&end=${moment(props.EndDate).format(
           //     "YYYY-MM-DD"
           //   )}&adminPiutang=${props.AdminPiutang}&statusApproval=${
-          //     props.StatusSO == "Semua" || props.StatusSO == null
+          //     props.StatusSO === "Semua" || props.StatusSO === null
           //       ? ""
           //       : props.StatusSO
           //   }&statusFaktur=${
-          //     props.StatusOto == null ? "" : props.StatusOto
+          //     props.StatusOto === null ? "" : props.StatusOto
           //   }&termasuk0=${props.Termasuk0}&pernahReject=${props.PernahReject}`
           `${
             process.env.REACT_APP_DOMAIN_API
@@ -261,17 +261,19 @@ export default function ListSOTable(props) {
           ).format("YYYY-MM-DD")}&adminPiutang=${
             props.AdminPiutang
           }&statusApproval=${
-            props.StatusSO == "Semua" || props.StatusSO == null
+            props.StatusSO === "Semua" || props.StatusSO === null
               ? ""
               : props.StatusSO
           }&statusFaktur=${
-            props.StatusOto == null ? "" : props.StatusOto
+            props.StatusOto === null ? "" : props.StatusOto
           }&termasuk0=${props.Termasuk0}&pernahReject=${
             props.PernahReject
           }&tipeSO=${
-            props.TipeSO == "ALL" || props.TipeSO == null ? "" : props.TipeSO
+            props.TipeSO === "ALL" || props.TipeSO === null ? "" : props.TipeSO
           }&storage=${
-            props.Storage == "ALL" || props.Storage == null ? "" : props.Storage
+            props.Storage === "ALL" || props.Storage === null
+              ? ""
+              : props.Storage
           }&nomorSO=${props.NoSO}&BranchID=${getBrach()}`,
           GetConfig()
         )
@@ -287,7 +289,7 @@ export default function ListSOTable(props) {
             setData(resdata.record);
             props.setSelectedSO(
               []
-              // resdata.record.filter((e) => e.StatusSO == "Diajukan")
+              // resdata.record.filter((e) => e.StatusSO === "Diajukan")
             );
             settotaldata(resdata.totalCountData);
             // props.setData(resdata.record);
@@ -369,13 +371,13 @@ export default function ListSOTable(props) {
             //     selectedIDs.has(item.IDListSOOtorisasi)
             //   );
             //   console.log("unselect:", unselectedModel);
-            //   if (props.selectedObj.length == 0) {
+            //   if (props.selectedObj.length === 0) {
             //     props.setSelectedObj(selectedModel);
             //   }
             //   selectedModel.map((select) => {
             //     if (
             //       !props.selectedObj.some(
-            //         (item) => item.IDListSOOtorisasi == select.IDListSOOtorisasi
+            //         (item) => item.IDListSOOtorisasi === select.IDListSOOtorisasi
             //       )
             //     ) {
             //       props.setSelectedObj(props.selectedObj.concat(select));
@@ -385,7 +387,7 @@ export default function ListSOTable(props) {
             //     if (
             //       props.selectedObj.some(
             //         (item) =>
-            //           item.IDListSOOtorisasi == unselect.IDListSOOtorisasi
+            //           item.IDListSOOtorisasi === unselect.IDListSOOtorisasi
             //       )
             //     ) {
             //       props.setSelectedObj(

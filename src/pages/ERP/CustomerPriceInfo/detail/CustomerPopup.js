@@ -187,17 +187,17 @@ export default function CustomerPopup(props) {
                 onRowDoubleClick={(e) => {
                   // console.log(
                   //   "doble",
-                  //   Rows.filter((i) => i.id == e.id)[0]
+                  //   Rows.filter((i) => i.id === e.id)[0]
                   //   // e
                   // // );
                   props.setOpenCust(false);
-                  props.setTempCustomer(Rows.filter((i) => i.id == e.id)[0]);
+                  props.setTempCustomer(Rows.filter((i) => i.id === e.id)[0]);
                 }}
                 onSelectionModelChange={(e) => {
                   console.log(
                     "change",
                     Rows.filter((i) => e.includes(i.id))[0]
-                    // Rows.filter((i) => i.id == e.id)[0]
+                    // Rows.filter((i) => i.id === e.id)[0]
                     // e
                   );
                   setSelectedCust(Rows.filter((i) => e.includes(i.id))[0]);

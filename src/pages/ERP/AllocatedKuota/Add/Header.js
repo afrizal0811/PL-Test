@@ -309,7 +309,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah disimpan");
             // props.getDataSource();
             // setcounter(counter + 1);
@@ -380,7 +380,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah disimpan");
             // props.getDataSource();
             // setcounter(counter + 1);
@@ -558,7 +558,7 @@ export default function Header(props) {
               DataSource.filter((aw) => aw.UnAlloKuota < 0).length > 0 ||
               DataSource.filter((aw) => aw.UnAlloKuota !== 0).length > 0 ||
               Data.Status === "Released" ||
-              DataAllo.length == 0 ||
+              DataAllo.length === 0 ||
               isBlocking ||
               loading
             }
@@ -658,8 +658,8 @@ export default function Header(props) {
                 style={{ width: "100%" }}
               /> */}
               <CbData
-                value={Warehouse == "" ? " " : `${Warehouse}`}
-                defaultValue={Warehouse == "" ? " " : `${Warehouse}`}
+                value={Warehouse === "" ? " " : `${Warehouse}`}
+                defaultValue={Warehouse === "" ? " " : `${Warehouse}`}
                 required
                 disabled={DataSource.length > 0}
                 label="Warehouse"

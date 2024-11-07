@@ -161,8 +161,8 @@ function Header() {
                 name="PromoID"
                 label="Promo Activity ID"
                 value={TempPromoID.map((item) => item)}
-                color={TempPromoID.length == 0 ? "warning" : ""}
-                focused={TempPromoID.length == 0 ? true : false}
+                color={TempPromoID.length === 0 ? "warning" : ""}
+                focused={TempPromoID.length === 0 ? true : false}
                 fullWidth
                 required
                 onClick={() => setOpenPromo(true)}
@@ -173,7 +173,7 @@ function Header() {
                   shrink: true,
                 }}
               />
-              {TempPromoID.length == 0 && (
+              {TempPromoID.length === 0 && (
                 <FormHelperText style={{ color: "red" }}>
                   Required
                 </FormHelperText>

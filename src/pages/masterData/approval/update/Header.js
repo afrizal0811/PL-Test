@@ -172,8 +172,8 @@ function Header() {
           console.log(response);
           if (
             response.status === 200 ||
-            response.status == 201 ||
-            response.status == 204
+            response.status === 201 ||
+            response.status === 204
           ) {
             NotifySuccess("success", "Data Telah DiUbah");
             // getData();
@@ -222,7 +222,7 @@ function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             history("/master-data/approval");
           }
@@ -307,10 +307,10 @@ function Header() {
             {/* <Grid item md={3} xs={6}>
               <CbData
                 value={
-                  departement == "" ? " " : `${departement[0].DepartmentID}`
+                  departement === "" ? " " : `${departement[0].DepartmentID}`
                 }
                 defaultValue={
-                  departement == "" ? " " : `${departement[0].DepartmentID}`
+                  departement === "" ? " " : `${departement[0].DepartmentID}`
                 }
                 required
                 // config={GetConfig()}

@@ -221,20 +221,20 @@ export default function ScreenIDPopup(props) {
                   onRowDoubleClick={(e) => {
                     // console.log(
                     //   "doble",
-                    //   // Rows.filter((i) => i.id == e.id)[0]
+                    //   // Rows.filter((i) => i.id === e.id)[0]
                     //   e
                     // );
                     // history(`/${props.href}/update/${params.row[props.id]}`);
                     props.setopen(false);
                     props.setTemp(
-                      Rows.filter((i) => e.id == i[props.id])[0][props.id]
+                      Rows.filter((i) => e.id === i[props.id])[0][props.id]
                     );
                   }}
                   onSelectionModelChange={(e) => {
                     console.log(
                       "change",
                       Rows.filter((i) => e.includes(i[props.id]))[0]
-                      // Rows.filter((i) => i.id == e.id)[0]
+                      // Rows.filter((i) => i.id === e.id)[0]
                       // e
                     );
                     setSelectedCust(

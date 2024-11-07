@@ -89,7 +89,7 @@ export default function QRScanner(props) {
                 <TextField
                   id="outlined-number"
                   fullWidth
-                  value={Result == null ? " " : Result}
+                  value={Result === null ? " " : Result}
                   InputProps={{
                     readOnly: true,
                   }}

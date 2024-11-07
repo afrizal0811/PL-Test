@@ -96,9 +96,9 @@ export default function MobileTable(props) {
                           {props.rowDetail.map((col) => {
                             let val;
                             let header = col.headerName;
-                            if (col.type == "date") {
+                            if (col.type === "date") {
                               val = moment(row[col.field]).format("DD/MM/YYYY");
-                            } else if (col.type == "number") {
+                            } else if (col.type === "number") {
                               val = (
                                 <NumberFormat
                                   thousandSeparator={true}

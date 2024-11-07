@@ -176,7 +176,7 @@ export default function Header() {
             <TextField
               name="description"
               label="Description"
-              value={!description || description == "" ? " " : description}
+              value={!description || description === "" ? " " : description}
               fullWidth
               variant="outlined"
               InputLabelProps={{
@@ -189,7 +189,7 @@ export default function Header() {
             <TextField
               name="active"
               label="Item Status"
-              value={!active || active == "" ? " " : active}
+              value={!active || active === "" ? " " : active}
               fullWidth
               variant="outlined"
               InputLabelProps={{
@@ -214,7 +214,7 @@ export default function Header() {
               <Tab
                 label="General"
                 value="1"
-                style={{ color: value == 1 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 1 ? "white" : "#a7d2f0" }}
               />
             </TabList>
           </AppBar>

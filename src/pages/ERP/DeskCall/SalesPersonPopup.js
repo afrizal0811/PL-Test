@@ -199,19 +199,19 @@ export default function SalesPersonPopup(props) {
                 onRowDoubleClick={(e) => {
                   // console.log(
                   //   "doble",
-                  //   Rows.filter((i) => i.SalespersonID == e.id)[0]
+                  //   Rows.filter((i) => i.SalespersonID === e.id)[0]
                   //   // e
                   // );
                   props.setOpenSP(false);
                   props.setSalesPerson(
-                    Rows.filter((i) => i.SalespersonID == e.id)[0]
+                    Rows.filter((i) => i.SalespersonID === e.id)[0]
                   );
                 }}
                 onSelectionModelChange={(e) => {
                   console.log(
                     "change",
                     Rows.filter((i) => e.includes(i.SalespersonID))[0]
-                    // Rows.filter((i) => i.SalespersonID == e.id)[0]
+                    // Rows.filter((i) => i.SalespersonID === e.id)[0]
                     // e
                   );
                   setSelectedCust(

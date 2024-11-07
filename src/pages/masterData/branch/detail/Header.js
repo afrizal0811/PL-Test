@@ -94,7 +94,7 @@ export default function Header() {
             <TextField
               name="branchName"
               label="Branch Name"
-              value={!BranchName || BranchName == "" ? " " : BranchName}
+              value={!BranchName || BranchName === "" ? " " : BranchName}
               fullWidth
               variant="outlined"
               InputLabelProps={{
@@ -133,12 +133,12 @@ export default function Header() {
               <Tab
                 label="Branch Detail"
                 value="1"
-                style={{ color: value == 1 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 1 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Delivery Settings"
                 value="2"
-                style={{ color: value == 2 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 2 ? "white" : "#a7d2f0" }}
               />
             </TabList>
           </AppBar>

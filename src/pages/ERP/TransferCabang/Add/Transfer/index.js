@@ -272,7 +272,7 @@ export default function DetailTransfer({
             variant="text"
             size="small"
             startIcon={<EditIcon />}
-            disabled={dataDetail?.Status == "Released" ? true : false}
+            disabled={dataDetail?.Status === "Released" ? true : false}
             onClick={() => {
               setOpenEditAllocated(true);
               setDataEditAllocated(params.row);
@@ -283,7 +283,7 @@ export default function DetailTransfer({
             color="error"
             size="small"
             style={{ marginLeft: 4 }}
-            disabled={dataDetail?.Status == "Released" ? true : false}
+            disabled={dataDetail?.Status === "Released" ? true : false}
             startIcon={<DeleteIcon />}
             onClick={() =>
               notifyDeleteConfirm(params.row.TransferCabangDetailAllocatedID)

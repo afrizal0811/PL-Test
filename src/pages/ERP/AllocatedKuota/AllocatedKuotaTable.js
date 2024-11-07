@@ -111,7 +111,7 @@ export default function AllocatedKuotaTable() {
             color="error"
             size="small"
             style={{ marginLeft: 8 }}
-            disabled={params.row.Status == "On Hold" ? false : true}
+            disabled={params.row.Status === "On Hold" ? false : true}
             startIcon={<DeleteIcon />}
             onClick={() => notifyConfirm(params.row.RefNbr)}
           >
@@ -167,7 +167,7 @@ export default function AllocatedKuotaTable() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah dihapus");
             setTimeout(() => {
               window.location.href = `/allocated-kuota`;
@@ -213,7 +213,7 @@ export default function AllocatedKuotaTable() {
         <Button
           color="primary"
           onClick={() => {
-            if (data.filter((ae) => ae.Status == "On Hold").length > 0) {
+            if (data.filter((ae) => ae.Status === "On Hold").length > 0) {
               NotifyError(
                 "Error!",
                 "Terdapat allocated kuota yang belum rilis"
@@ -232,7 +232,7 @@ export default function AllocatedKuotaTable() {
         <Button
           color="primary"
           onClick={() => {
-            if (data.filter((ae) => ae.Status == "On Hold").length > 0) {
+            if (data.filter((ae) => ae.Status === "On Hold").length > 0) {
               NotifyError(
                 "Error!",
                 "Terdapat allocated kuota yang belum rilis"

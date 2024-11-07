@@ -124,7 +124,10 @@ export default function QRScanner(props) {
                   value={
                     Loading
                       ? " "
-                      : Data == [] || Data.length == 0 || !Data || Data == null
+                      : Data === [] ||
+                        Data.length === 0 ||
+                        !Data ||
+                        Data === null
                       ? "Item tidak ditemukan"
                       : `${Data.noBPOM} - ${Data.cpItem}`
                   }

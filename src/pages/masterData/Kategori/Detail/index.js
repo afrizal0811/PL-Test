@@ -93,9 +93,9 @@ function Header() {
     if (selection !== "") {
       setdatakelompok(
         dataprincipal
-          .filter((ao) => ao.tipe2Principal == selection[0])[0]
+          .filter((ao) => ao.tipe2Principal === selection[0])[0]
           ?.masterKategoriKelompokRep.filter(
-            (ea) => ea.tipe2Value == selection[0]
+            (ea) => ea.tipe2Value === selection[0]
           )
       );
     }

@@ -209,7 +209,7 @@ export default function TabDriver(props) {
           <DialogTitle id="form-dialog-title">Add Driver</DialogTitle>
           <DialogContent>
             <Grid container spacing={3} md={12} mt={2}>
-              {props.StatusMilik == "Milik" ? (
+              {props.StatusMilik === "Milik" ? (
                 <>
                   <Grid item md={6} xs={6} mt={2}>
                     <CbData
@@ -258,7 +258,7 @@ export default function TabDriver(props) {
                   label="Employee Name"
                   type="text"
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   value={employeeName}
                   onChange={(e) => setEmployeeName(e.target.value)}
@@ -275,7 +275,7 @@ export default function TabDriver(props) {
                   type="text"
                   value={email}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setEmail(e.target.value)}
                   fullWidth
@@ -291,7 +291,7 @@ export default function TabDriver(props) {
                   type="text"
                   value={contact}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setContact(e.target.value)}
                   fullWidth
@@ -332,7 +332,7 @@ export default function TabDriver(props) {
           <DialogContent>
             <DialogContentText>Update Data Approval</DialogContentText>
             <Grid container spacing={3} md={12} mt={2}>
-              {props.StatusMilik == "Milik" ? (
+              {props.StatusMilik === "Milik" ? (
                 <>
                   <Grid item md={6} xs={6} mt={2}>
                     <CbData
@@ -381,7 +381,7 @@ export default function TabDriver(props) {
                   label="Employee Name"
                   type="text"
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   value={employeeName}
                   onChange={(e) => setEmployeeName(e.target.value)}
@@ -397,7 +397,7 @@ export default function TabDriver(props) {
                   type="text"
                   value={email}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setEmail(e.target.value)}
                   fullWidth
@@ -412,7 +412,7 @@ export default function TabDriver(props) {
                   type="text"
                   value={contact}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setContact(e.target.value)}
                   fullWidth

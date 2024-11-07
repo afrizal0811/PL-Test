@@ -82,7 +82,7 @@ export default function OtorisasiPopup(props) {
         GetConfig()
       )
       .then(function (response) {
-        if (response.status === 200 || response.status == 204) {
+        if (response.status === 200 || response.status === 204) {
           const resdata = response.data;
           console.log("res", resdata);
           NotifySuccess("success", "Data Telah Diperbarui");
@@ -116,7 +116,7 @@ export default function OtorisasiPopup(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             const resdata = response.data;
             console.log("res", resdata);
             NotifySuccess("success", "Data Telah Diperbarui");

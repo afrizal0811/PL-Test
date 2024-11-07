@@ -32,7 +32,7 @@ export default function Branch({ data, handleChangeBranches }) {
     if (propBranches?.length > 0) {
       const arr = DataPincipal.filter((el) => {
         return propBranches.some((f) => {
-          return f.branchID === el.BranchID && f.isLinked == true;
+          return f.branchID === el.BranchID && f.isLinked === true;
         });
       });
       setSelectedPrincipal(

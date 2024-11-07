@@ -186,7 +186,7 @@ export default function AdjustmentKuotaTable(props) {
             onClick={() => {
               props.setDetail(
                 data.filter(
-                  (ae) => ae.KuotaAdjustmentID == params.row.KuotaAdjustmentID
+                  (ae) => ae.KuotaAdjustmentID === params.row.KuotaAdjustmentID
                 )[0]
               );
               history(`/adjustment-kuota/detail/${params.row.RefNbr}`);
@@ -202,7 +202,7 @@ export default function AdjustmentKuotaTable(props) {
             color="error"
             size="small"
             style={{ marginLeft: 8 }}
-            disabled={params.row.StatusAdjustment == "On Hold" ? false : true}
+            disabled={params.row.StatusAdjustment === "On Hold" ? false : true}
             startIcon={<DeleteIcon />}
             onClick={() =>
               notifyConfirm(params.row.KuotaAdjustmentID, params.row.RefNbr)
@@ -229,7 +229,7 @@ export default function AdjustmentKuotaTable(props) {
           }&RefNbr=${refNbr}&FromBranchID=${
             !!branch ? branch : ""
           }&FromWarehouseID=${WH}&Description=${description}&StatusAdjustment=${
-            Status == "ALL" ? "" : Status
+            Status === "ALL" ? "" : Status
           }&branch=${getBrach()}`,
           GetConfig()
         )
@@ -266,7 +266,7 @@ export default function AdjustmentKuotaTable(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah dihapus");
             setTimeout(() => {
               window.location.href = `/adjustment-kuota`;
@@ -312,7 +312,7 @@ export default function AdjustmentKuotaTable(props) {
         <Button
           color="primary"
           onClick={() => {
-            // if (data.filter((ae) => ae.Status == "On Hold").length > 0) {
+            // if (data.filter((ae) => ae.Status === "On Hold").length > 0) {
             //   NotifyError("Error!", "Terdapat transfer kuota yang belum rilis");
             // } else {
             props.setDetail("Add");
@@ -500,7 +500,7 @@ export default function AdjustmentKuotaTable(props) {
                     <Button
                       color="primary"
                       onClick={() => {
-                        // if (data.filter((ae) => ae.Status == "On Hold").length > 0) {
+                        // if (data.filter((ae) => ae.Status === "On Hold").length > 0) {
                         //   NotifyError("Error!", "Terdapat transfer kuota yang belum rilis");
                         // } else {
                         props.setDetail("Add");
@@ -542,7 +542,8 @@ export default function AdjustmentKuotaTable(props) {
                 // );
                 props.setDetail(
                   data.filter(
-                    (ae) => ae.KuotaAdjustmentID == params.row.KuotaAdjustmentID
+                    (ae) =>
+                      ae.KuotaAdjustmentID === params.row.KuotaAdjustmentID
                   )[0]
                 );
                 history(`/adjustment-kuota/detail/${params.row.RefNbr}`);

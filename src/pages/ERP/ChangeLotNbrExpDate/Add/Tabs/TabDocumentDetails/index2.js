@@ -47,7 +47,7 @@ export default function TabDocumentDetails(props) {
           id: value.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         if (isInEditModeZona) {
           return (
             <FormControl style={{ width: "100%" }}>
@@ -93,7 +93,7 @@ export default function TabDocumentDetails(props) {
           id: value.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         if (isInEditModeZona) {
           return (
             <FormControl style={{ width: "100%" }}>
@@ -140,7 +140,7 @@ export default function TabDocumentDetails(props) {
           id: value.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         if (isInEditModeZona) {
           setdstqty(params.value);
           return (
@@ -189,7 +189,7 @@ export default function TabDocumentDetails(props) {
           id: value.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         if (isInEditModeZona) {
           return (
             <FormControl style={{ width: "100%" }}>
@@ -238,7 +238,7 @@ export default function TabDocumentDetails(props) {
           id: value.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         if (isInEditModeZona) {
           setdstexpdate(moment(params.value).format("YYYY-MM-DD"));
           return (
@@ -374,7 +374,7 @@ export default function TabDocumentDetails(props) {
           id: value?.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         if (isInEditModeZona) {
           return (
             <FormControl style={{ width: "100%" }}>

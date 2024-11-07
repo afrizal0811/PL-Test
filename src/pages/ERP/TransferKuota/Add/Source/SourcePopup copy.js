@@ -61,7 +61,7 @@ export default function SourcePopup(props) {
       if (Inventory.length > 2) {
         getData(currentPage);
       }
-      if (Inventory.length == 0) getData(currentPage);
+      if (Inventory.length === 0) getData(currentPage);
     }
   }, [
     props.openSource,
@@ -127,7 +127,7 @@ export default function SourcePopup(props) {
           id: id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         // if (!isInEditModeZona) {
         //   params.api.setRowMode(params.id, "view");
         // } else {
@@ -187,10 +187,10 @@ export default function SourcePopup(props) {
                       // InventoryEndSaldoSiteLocID:
                       //   value.InventoryEndSaldoSiteLocID,
                       // Qty:
-                      //   value.id == params.id
+                      //   value.id === params.id
                       //     ? qtyTemp
                       //     : console.log(value.Qty),
-                      // // Qty: value.id == params.id ? qtyTemp : 0,
+                      // // Qty: value.id === params.id ? qtyTemp : 0,
                       // EndSaldo: value.EndSaldo,
                       // BaseUnit: value.BaseUnit,
                       // Warehouse: value.Warehouse,
@@ -227,7 +227,7 @@ export default function SourcePopup(props) {
                       // id: value.id,
                       // InventoryID: value.InventoryID,
                       // Qty:
-                      //   value.id == params.id
+                      //   value.id === params.id
                       //     ? qtyTemp
                       //     : console.log(value.Qty),
                       // // Qty: qtyTemp,
@@ -312,7 +312,7 @@ export default function SourcePopup(props) {
         .then(function (response) {
           // handle success
           // console.log("ini data stockitem = ", response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             const resdata = response.data;
             // const newres = [];
             // Object.keys(resdata).forEach(function (key) {
@@ -397,8 +397,8 @@ export default function SourcePopup(props) {
               </Grid>
               <Grid item md={3}>
                 {/* <CbData
-                  value={BranchID == "" ? props.Branch : `${BranchID}`}
-                  defaultValue={BranchID == "" ? props.Branch : `${BranchID}`}
+                  value={BranchID === "" ? props.Branch : `${BranchID}`}
+                  defaultValue={BranchID === "" ? props.Branch : `${BranchID}`}
                   required
                   // disabled={GridSource.length > 0}
                   label="Branch"
@@ -422,12 +422,12 @@ export default function SourcePopup(props) {
                 /> */}
                 {/* <CbData
                   value={
-                    Warehouse?.warehouseID == undefined
+                    Warehouse?.warehouseID === undefined
                       ? " "
                       : `${Warehouse.warehouseID}`
                   }
                   defaultValue={
-                    Warehouse?.warehouseID == undefined
+                    Warehouse?.warehouseID === undefined
                       ? " "
                       : `${Warehouse.warehouseID}`
                   }
@@ -481,12 +481,12 @@ export default function SourcePopup(props) {
                     );
                     console.log(
                       "isInEditModeZona",
-                      filter.filter((row) => row.id == e.id).length > 0
+                      filter.filter((row) => row.id === e.id).length > 0
                     );
                     console.log("editmode", editmode);
                     const isInEditModeZona =
-                      filter.filter((row) => row.id == e.id).length > 0;
-                    if (editmode == false && isInEditModeZona) {
+                      filter.filter((row) => row.id === e.id).length > 0;
+                    if (editmode === false && isInEditModeZona) {
                       // console.log("klik", e);
                       setqtyTemp(e.value);
                       refdata.current.setRowMode(e.id, "edit");

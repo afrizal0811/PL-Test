@@ -202,7 +202,7 @@ export default function MutationAllocatedKuotaTable(props) {
       CSV += row + "\r\n";
     }
 
-    if (CSV == "") {
+    if (CSV === "") {
       alert("Invalid data");
       return;
     }
@@ -377,7 +377,7 @@ export default function MutationAllocatedKuotaTable(props) {
                 selectionModel={props.select?.MutasiKuotaID}
                 onSelectionModelChange={(e) => {
                   props.setselect(
-                    data.filter((ea) => ea.MutasiKuotaID == e)[0]
+                    data.filter((ea) => ea.MutasiKuotaID === e)[0]
                   );
                 }}
                 // onCellCLick={handleCellClick}

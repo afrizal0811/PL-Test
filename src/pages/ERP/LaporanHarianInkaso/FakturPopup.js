@@ -225,20 +225,20 @@ export default function FakturPopup(props) {
                 onRowDoubleClick={(e) => {
                   // console.log(
                   //   "doble",
-                  //   Rows.filter((i) => i.id == e.id)[0]
+                  //   Rows.filter((i) => i.id === e.id)[0]
                   //   // e
                   // );
                   console.log("e", e);
                   props.setopenCust(false);
                   props.setTempCustomer(
-                    Rows.filter((i) => i.referenceNbr == e.id)[0]
+                    Rows.filter((i) => i.referenceNbr === e.id)[0]
                   );
                 }}
                 onSelectionModelChange={(e) => {
                   console.log(
                     "change",
                     Rows.filter((i) => e.includes(i.referenceNbr))[0]
-                    // Rows.filter((i) => i.id == e.id)[0]
+                    // Rows.filter((i) => i.id === e.id)[0]
                     // e
                   );
                   setSelectedCust(

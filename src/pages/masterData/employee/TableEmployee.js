@@ -84,7 +84,7 @@ export default function TableEmployee() {
           `${
             process.env.REACT_APP_DOMAIN_API
           }/EmployeeReps?page=${page}&rowsCount=${pageSize}&employeeName=${employee}&branch=${
-            branch == "ALL" ? "" : branch
+            branch === "ALL" ? "" : branch
           }`,
           GetConfig()
         )

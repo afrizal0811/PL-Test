@@ -68,8 +68,8 @@ export default function TabDocumentDetails(props) {
       renderCell: (params) =>
         !params.row.ToLotNbr ||
         !params.row.ToExpDate ||
-        params.row.ToExpDate == "" ||
-        params.row.ToLotNbr == "" ? (
+        params.row.ToExpDate === "" ||
+        params.row.ToLotNbr === "" ? (
           <>
             <Tooltip title="Data Inventory ini belum lengkap">
               <Typography sx={{ color: "red" }}>{params.value}</Typography>
@@ -87,8 +87,8 @@ export default function TabDocumentDetails(props) {
       renderCell: (params) =>
         !params.row.ToLotNbr ||
         !params.row.ToExpDate ||
-        params.row.ToExpDate == "" ||
-        params.row.ToLotNbr == "" ? (
+        params.row.ToExpDate === "" ||
+        params.row.ToLotNbr === "" ? (
           <>
             <Tooltip title="Data Inventory ini belum lengkap">
               <Typography sx={{ color: "red" }}>{params.value}</Typography>
@@ -231,7 +231,7 @@ export default function TabDocumentDetails(props) {
       editable: false,
       sortable: false,
       renderCell: (params) =>
-        !params.row.SrcExpDate || params.row.SrcExpDate == "" ? (
+        !params.row.SrcExpDate || params.row.SrcExpDate === "" ? (
           <>
             <Tooltip title="Data Inventory ini belum lengkap">
               <Typography sx={{ color: "red" }}>{params.value}</Typography>
@@ -248,7 +248,7 @@ export default function TabDocumentDetails(props) {
       filterable: false,
       sortable: false,
       renderCell: (params) =>
-        !params.row.SrcExpDate || params.row.SrcExpDate == "" ? (
+        !params.row.SrcExpDate || params.row.SrcExpDate === "" ? (
           <>
             <Tooltip title="Data Inventory ini belum lengkap">
               <Typography sx={{ color: "red" }}>{params.value}</Typography>
@@ -397,7 +397,7 @@ export default function TabDocumentDetails(props) {
 
   const mounted = useRef();
   useEffect(() => {
-    if (!mounted.current || props.Kirim == 0) {
+    if (!mounted.current || props.Kirim === 0) {
       mounted.current = true;
       console.log("GADIKirim", props.Kirim);
       // getData();
@@ -409,7 +409,7 @@ export default function TabDocumentDetails(props) {
       console.log("refsrc", refsrc.current);
       // console.log("src rowsrc", refsrc.current.getRowModels());
       let merged;
-      if (refsrc.current == null) {
+      if (refsrc.current === null) {
         merged = {
           DataDesti: props.DataDest,
           DataSource: props.DataSource,
@@ -449,13 +449,13 @@ export default function TabDocumentDetails(props) {
         if (
           merged.DataDesti.filter(
             (ao) =>
-              ao.ToLotNbr == "" ||
+              ao.ToLotNbr === "" ||
               !ao.ToLotNbr ||
-              ao.ToExpDate == "" ||
+              ao.ToExpDate === "" ||
               !ao.ToExpDate
           ).length > 0 ||
           merged.DataSource.filter(
-            (ao) => ao.SrcExpDate == "" || !ao.SrcExpDate
+            (ao) => ao.SrcExpDate === "" || !ao.SrcExpDate
           ).length > 0
         ) {
           NotifyError("Error!", "Data tidak lengkap");
@@ -470,7 +470,7 @@ export default function TabDocumentDetails(props) {
 
   useEffect(() => {
     console.log("submit", props.Submit);
-    if (!mounted.current || props.Submit == 0) {
+    if (!mounted.current || props.Submit === 0) {
       mounted.current = true;
       // getData();
     } else {

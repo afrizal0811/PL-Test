@@ -103,7 +103,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.href = `/change-lot-nbr-exp-date`;
@@ -157,7 +157,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah Diupdate");
           }
         })
@@ -193,7 +193,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiSubmit");
             setTimeout(() => {
               window.location.href = `/change-lot-nbr-exp-date`;
@@ -224,7 +224,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiRelease");
             setTimeout(() => {
               window.location.href = `/change-lot-nbr-exp-date`;
@@ -254,7 +254,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiApprove");
             setTimeout(() => {
               window.location.href = `/change-lot-nbr-exp-date`;
@@ -284,7 +284,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiReject");
             setTimeout(() => {
               window.location.href = `/change-lot-nbr-exp-date`;

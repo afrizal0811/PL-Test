@@ -76,7 +76,7 @@ export default function Header(props) {
               mainAddress:
                 resdata.CustomerMainContact[0].Contact.Address.AddressLine1,
               mainContact:
-                resdata.CustomerMainContact[0].Contact.Phone1 == undefined
+                resdata.CustomerMainContact[0].Contact.Phone1 === undefined
                   ? " "
                   : resdata.CustomerMainContact[0].Contact.Phone1,
               country: resdata.Location[0].Country,

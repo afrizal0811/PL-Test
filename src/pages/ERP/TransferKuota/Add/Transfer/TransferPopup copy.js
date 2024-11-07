@@ -117,7 +117,7 @@ export default function TransferPopup(props) {
           id: value.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         // if (!isInEditModeZona) {
         //   params.api.setRowMode(params.id, "view");
         // } else {
@@ -258,7 +258,7 @@ export default function TransferPopup(props) {
           id: value.id,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         // if (!isInEditModeZona) {
         //   params.api.setRowMode(params.id, "view");
         // } else {
@@ -394,8 +394,8 @@ export default function TransferPopup(props) {
             <Grid container spacing={2} mb={3} md={9}>
               <Grid item md={4}>
                 <CbData
-                  value={BranchID == "" ? " " : `${BranchID}`}
-                  defaultValue={BranchID == "" ? " " : `${BranchID}`}
+                  value={BranchID === "" ? " " : `${BranchID}`}
+                  defaultValue={BranchID === "" ? " " : `${BranchID}`}
                   required
                   // disabled={GridSource.length > 0}
                   label="Branch"
@@ -450,8 +450,8 @@ export default function TransferPopup(props) {
                     );
                     console.log("double", e);
                     const isInEditModeZona =
-                      filter.filter((row) => row.id == e.id).length > 0;
-                    if (editmode == false && isInEditModeZona) {
+                      filter.filter((row) => row.id === e.id).length > 0;
+                    if (editmode === false && isInEditModeZona) {
                       // console.log("klik", e);
                       setqtyTemp(e.row.DstQty);
                       refdata.current.setRowMode(e.id, "edit");

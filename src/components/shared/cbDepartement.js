@@ -51,7 +51,7 @@ function CbDepartment(props) {
       .then(function (response) {
         // handle success
         console.log(response);
-        if (response.status === 200 || response.status == 201) {
+        if (response.status === 200 || response.status === 201) {
           const resdata = response.data;
           const newres = [];
           Object.keys(resdata).forEach(function (key) {
@@ -86,7 +86,7 @@ function CbDepartment(props) {
         value={value}
         getOptionLabel={(option) => option}
         renderOption={(propss, option, { selected }) => {
-          let op = cbDepartment.filter((item) => item.DepartmentID == option);
+          let op = cbDepartment.filter((item) => item.DepartmentID === option);
           if (props.multiple) {
             return (
               <>
@@ -118,13 +118,13 @@ function CbDepartment(props) {
               required={required}
               color={
                 (required && Department === undefined) ||
-                (required && Department.length == 0)
+                (required && Department.length === 0)
                   ? "warning"
                   : ""
               }
               focused={
                 (required && Department === undefined) ||
-                (required && Department.length == 0)
+                (required && Department.length === 0)
                   ? true
                   : false
               }
@@ -142,7 +142,7 @@ function CbDepartment(props) {
         }}
       />
       {(required && Department === undefined) ||
-        (required && Department.length == 0 && (
+        (required && Department.length === 0 && (
           <FormHelperText style={{ color: "red" }}>Required</FormHelperText>
         ))}
     </>

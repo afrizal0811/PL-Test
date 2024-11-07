@@ -70,7 +70,7 @@ export default function Header(props) {
     }).then((result) => {
       if (result.value) {
         // props.setselSO(selSO);
-        // let a = Data.filter((ae) => ae.id == selKendaraan.id)
+        // let a = Data.filter((ae) => ae.id === selKendaraan.id)
         const newdata = Data.map((item, i) => {
           if (selKendaraan[0].id === item.id) {
             item.Confirm = true;
@@ -132,8 +132,8 @@ export default function Header(props) {
             color="primary"
             disabled={
               selKendaraan.length <= 0 ||
-              selKendaraan[0]?.Confirm == true ||
-              selSO.length == 0
+              selKendaraan[0]?.Confirm === true ||
+              selSO.length === 0
                 ? true
                 : false
             }
@@ -148,7 +148,7 @@ export default function Header(props) {
           </Button>
           <Button
             disabled={
-              selKendaraan.length <= 0 || selKendaraan[0]?.Confirm == false
+              selKendaraan.length <= 0 || selKendaraan[0]?.Confirm === false
             }
             color="primary"
             onClick={() => {
@@ -169,7 +169,7 @@ export default function Header(props) {
           </Button>
           <Button
             disabled={
-              selKendaraan.length <= 0 || selKendaraan[0]?.Confirm == true
+              selKendaraan.length <= 0 || selKendaraan[0]?.Confirm === true
             }
             color="primary"
             onClick={() => {
@@ -201,7 +201,7 @@ export default function Header(props) {
           component="span"
           disabled={
             false
-            // NoBPOM == "" || CPDate == "" || CPPrice == "" || CPLocation == ""
+            // NoBPOM === "" || CPDate === "" || CPPrice === "" || CPLocation === ""
           }
           // onClick={() => notifySubmit()}
         >
@@ -220,7 +220,7 @@ export default function Header(props) {
         </IconButton>
         <IconButton
           component="span"
-          // disabled={id == undefined}
+          // disabled={id === undefined}
           // onClick={() => notifyConfirm(id)}
         >
           <Delete />
@@ -282,7 +282,7 @@ export default function Header(props) {
                 label="Vehicle ID"
                 size="small"
                 fullWidth
-                value={Vehicle == "" ? " " : Vehicle}
+                value={Vehicle === "" ? " " : Vehicle}
                 onChange={(e) => {
                   setVehicle(e.target.value);
                 }}
@@ -290,8 +290,8 @@ export default function Header(props) {
             </Grid>
             <Grid item md={4}>
               <CbDataPG
-                value={Zona == "" ? " " : `${Zona}`}
-                defaultValue={Zona == "" ? " " : `${Zona}`}
+                value={Zona === "" ? " " : `${Zona}`}
+                defaultValue={Zona === "" ? " " : `${Zona}`}
                 required
                 size="small"
                 // config={GetConfig()}
@@ -312,7 +312,7 @@ export default function Header(props) {
                 label="Search"
                 size="small"
                 fullWidth
-                value={SearchText == "" ? " " : SearchText}
+                value={SearchText === "" ? " " : SearchText}
                 onChange={(e) => {
                   setSearchText(e.target.value);
                 }}
@@ -352,7 +352,7 @@ export default function Header(props) {
                 setselKendaraan(Data.filter((i) => e.includes(i.id)));
                 // setselKendaraan(
                 //   e.map((a) => {
-                //     Data.filter((aa) => aa.LaporanHarianInkasoGridRepID == a);
+                //     Data.filter((aa) => aa.LaporanHarianInkasoGridRepID === a);
                 //   })
                 // );
               }}
@@ -396,9 +396,9 @@ export default function Header(props) {
                 setPanel("1");
               }}
               mr={2}
-              disabled={Panel == 1}
+              disabled={Panel === 1}
               // style={{
-              //   color: Panel == 1 ? "white" : "#a7d2f0",
+              //   color: Panel === 1 ? "white" : "#a7d2f0",
               //   // background: "#0078d2",
               // }}
               disableElevation
@@ -412,9 +412,9 @@ export default function Header(props) {
                 setPanel("2");
               }}
               mr={2}
-              disabled={Panel == 2}
+              disabled={Panel === 2}
               // style={{
-              //   color: Panel == 2 ? "white" : "#a7d2f0",
+              //   color: Panel === 2 ? "white" : "#a7d2f0",
               //   // background: "#0078d2",
               // }}
               disableElevation

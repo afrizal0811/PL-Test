@@ -147,7 +147,7 @@ function Header() {
                 Object.keys(responsedep.data).forEach(function (key) {
                   if (stockItem === "") {
                     if (
-                      responsedep.data[key].InventoryID == resdata.InventoryID
+                      responsedep.data[key].InventoryID === resdata.InventoryID
                     ) {
                       setStockItem({
                         inventoryID: responsedep.data[key].InventoryID,
@@ -294,17 +294,17 @@ function Header() {
               <Tab
                 label="General"
                 value="1"
-                style={{ color: value == 1 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 1 ? "white" : "#a7d2f0" }}
               />
               {/* <Tab
                 label="GL Account"
                 value="2"
-                style={{ color: value == 2 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 2 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Address"
                 value="3"
-                style={{ color: value == 3 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 3 ? "white" : "#a7d2f0" }}
               /> */}
             </TabList>
           </AppBar>

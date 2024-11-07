@@ -76,7 +76,7 @@ export default function StatusTTDialog(props) {
         entryTypeID: entryType?.id === undefined ? "" : entryType?.id,
         nomorFaktur: item.referenceNbr,
         tunaiDiterima:
-          UangDiterima == null || UangDiterima === "" ? 0 : UangDiterima,
+          UangDiterima === null || UangDiterima === "" ? 0 : UangDiterima,
       };
     });
     try {
@@ -89,8 +89,8 @@ export default function StatusTTDialog(props) {
         .then(function (response) {
           if (
             response.status === 200 ||
-            response.status == 201 ||
-            response.status == 204
+            response.status === 201 ||
+            response.status === 204
           ) {
             NotifySuccess("success", "Data telah diupdate");
             setTimeout(() => {
@@ -166,9 +166,9 @@ export default function StatusTTDialog(props) {
                         console.log("date", newValue);
                       }}
                       readOnly={
-                        keterangan == "Bayar Lunas" ||
-                        keterangan == "Gagal Tagih" ||
-                        keterangan == "Tidak dikunjungi"
+                        keterangan === "Bayar Lunas" ||
+                        keterangan === "Gagal Tagih" ||
+                        keterangan === "Tidak dikunjungi"
                           ? true
                           : false
                       }
@@ -194,9 +194,9 @@ export default function StatusTTDialog(props) {
                       }}
                       maxDate={new Date(moment(TglKembali).format())}
                       readOnly={
-                        keterangan == "TT Transfer" ||
-                        keterangan == "TT Giro" ||
-                        keterangan == "TT Nagih"
+                        keterangan === "TT Transfer" ||
+                        keterangan === "TT Giro" ||
+                        keterangan === "TT Nagih"
                           ? false
                           : true
                       }
@@ -216,29 +216,29 @@ export default function StatusTTDialog(props) {
                         value={keterangan}
                         defaultValue={props.selectedLHI[0]?.keterangan}
                         onChange={(e) => {
-                          if (e.target.value == "Bayar Lunas") {
+                          if (e.target.value === "Bayar Lunas") {
                             setUangDiterima(
                               props.selectedLHI?.reduce(
                                 (acc, item) => acc + item.balance,
                                 0
                               )
                             );
-                          } else if (e.target.value == "Bayar Sebagian") {
+                          } else if (e.target.value === "Bayar Sebagian") {
                             setUangDiterima(props.selectedLHI[0]?.balance / 2);
                           }
                           if (
-                            e.target.value == "TT Nagih" ||
-                            e.target.value == "TT Giro" ||
-                            e.target.value == "TT Transfer"
+                            e.target.value === "TT Nagih" ||
+                            e.target.value === "TT Giro" ||
+                            e.target.value === "TT Transfer"
                           ) {
                             setTglTT(new Date());
                           } else {
                             setTglTT(null);
                           }
                           if (
-                            e.target.value == "Bayar Lunas" ||
-                            e.target.value == "Gagal Tagih" ||
-                            e.target.value == "Tidak dikunjungi"
+                            e.target.value === "Bayar Lunas" ||
+                            e.target.value === "Gagal Tagih" ||
+                            e.target.value === "Tidak dikunjungi"
                           ) {
                             setTglKembali(null);
                           } else {
@@ -295,7 +295,7 @@ export default function StatusTTDialog(props) {
               </Grid> */}
                 <Grid item md={6}>
                   <Paper mt={3}>
-                    {keterangan == "Tgl. Terbit TT" ? (
+                    {keterangan === "Tgl. Terbit TT" ? (
                       <>
                         <DatePicker
                           value={DetKet}
@@ -336,7 +336,7 @@ export default function StatusTTDialog(props) {
                     <TextField
                       fullWidth
                       value={
-                        cashAccount == ""
+                        cashAccount === ""
                           ? " "
                           : cashAccount.id + " - " + cashAccount.desc
                       }
@@ -370,8 +370,8 @@ export default function StatusTTDialog(props) {
                     />
                   </Paper>
                 </Grid>
-                {keterangan == "Bayar Lunas" ||
-                keterangan == "Bayar Sebagian" ? (
+                {keterangan === "Bayar Lunas" ||
+                keterangan === "Bayar Sebagian" ? (
                   <>
                     {/* <Grid item md={6}>
                     <Paper mt={6}>
@@ -390,11 +390,11 @@ export default function StatusTTDialog(props) {
                           label="Uang Diterima"
                           required
                           inputProps={{
-                            readOnly: keterangan == "Bayar" ? true : false,
+                            readOnly: keterangan === "Bayar" ? true : false,
                           }}
                           value={
-                            UangDiterima == null ||
-                            UangDiterima == "" ||
+                            UangDiterima === null ||
+                            UangDiterima === "" ||
                             !UangDiterima
                               ? 0
                               : UangDiterima
@@ -418,8 +418,8 @@ export default function StatusTTDialog(props) {
                   ""
                 )}
               </Grid>
-              {props.selectedLHI[0]?.keterangan == "Closed" &&
-              cashAccount.desc == "Piutang Giro Lokal" ? (
+              {props.selectedLHI[0]?.keterangan === "Closed" &&
+              cashAccount.desc === "Piutang Giro Lokal" ? (
                 <>
                   <Grid container mb={3} spacing={3}>
                     {/* <Grid item md={3}>
@@ -433,7 +433,7 @@ export default function StatusTTDialog(props) {
                           fullWidth
                           label="Entry Type"
                           value={
-                            entryType?.id == undefined
+                            entryType?.id === undefined
                               ? ""
                               : entryType?.id + " - " + entryType?.desc
                           }
@@ -460,9 +460,9 @@ export default function StatusTTDialog(props) {
                       label="Document Ref."
                       value={
                         " "
-                        // props.selectedLHI[0]?.ReferenceNbr == "" ||
-                        // props.selectedLHI[0]?.ReferenceNbr == null ||
-                        // props.selectedLHI[0]?.ReferenceNbr == undefined
+                        // props.selectedLHI[0]?.ReferenceNbr === "" ||
+                        // props.selectedLHI[0]?.ReferenceNbr === null ||
+                        // props.selectedLHI[0]?.ReferenceNbr === undefined
                         //   ? " "
                         //   : props.selectedLHI[0]?.ReferenceNbr
                       }
@@ -480,7 +480,7 @@ export default function StatusTTDialog(props) {
       </DialogContent>
       <DialogActions>
         <Button
-          // disabled={TglKembali == null}
+          // disabled={TglKembali === null}
           onClick={() => {
             updateStatus();
           }}

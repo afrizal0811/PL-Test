@@ -80,17 +80,17 @@ export default function Tabs(props) {
               <Tab
                 label="General"
                 value="1"
-                style={{ color: tabPanel == 1 ? "white" : "#a7d2f0" }}
+                style={{ color: tabPanel === 1 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Driver"
                 value="2"
-                style={{ color: tabPanel == 2 ? "white" : "#a7d2f0" }}
+                style={{ color: tabPanel === 2 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Shipping Zone"
                 value="3"
-                style={{ color: tabPanel == 3 ? "white" : "#a7d2f0" }}
+                style={{ color: tabPanel === 3 ? "white" : "#a7d2f0" }}
               />
             </TabList>
           </AppBar>

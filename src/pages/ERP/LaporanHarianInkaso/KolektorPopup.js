@@ -236,20 +236,20 @@ export default function KolektorPopup(props) {
                 onRowDoubleClick={(e) => {
                   // console.log(
                   //   "doble",
-                  //   Rows.filter((i) => i.id == e.id)[0]
+                  //   Rows.filter((i) => i.id === e.id)[0]
                   //   // e
                   // );
                   console.log("e", e);
                   props.setopenCust(false);
                   props.setTempCustomer(
-                    Rows.filter((i) => i.employeeID == e.id)[0]
+                    Rows.filter((i) => i.employeeID === e.id)[0]
                   );
                 }}
                 onSelectionModelChange={(e) => {
                   console.log(
                     "change",
                     Rows.filter((i) => e.includes(i.employeeID))[0]
-                    // Rows.filter((i) => i.id == e.id)[0]
+                    // Rows.filter((i) => i.id === e.id)[0]
                     // e
                   );
                   setSelectedCust(

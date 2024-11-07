@@ -36,7 +36,7 @@ export default function Header({ searchParams, setSearchParams }) {
                 desc={"BranchName"}
                 label="Branch"
                 value={
-                  searchParams.branchID == "" ? "ALL" : searchParams.branchID
+                  searchParams.branchID === "" ? "ALL" : searchParams.branchID
                 }
                 onChange={(newValue) => {
                   if (newValue) {
@@ -127,7 +127,7 @@ export default function Header({ searchParams, setSearchParams }) {
                 desc={"description"}
                 label="Warehouse"
                 value={
-                  searchParams.warehouseID == ""
+                  searchParams.warehouseID === ""
                     ? "ALL"
                     : searchParams.warehouseID
                 }
@@ -149,7 +149,7 @@ export default function Header({ searchParams, setSearchParams }) {
                 id={"kelompokMutasiKuota"}
                 label="Kelompok Barang"
                 value={
-                  searchParams.kelompok == "" ? "ALL" : searchParams.kelompok
+                  searchParams.kelompok === "" ? "ALL" : searchParams.kelompok
                 }
                 onChange={(newValue) => {
                   if (newValue) {

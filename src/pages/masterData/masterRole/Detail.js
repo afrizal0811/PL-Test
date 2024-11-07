@@ -87,7 +87,7 @@ function DetailUserRole() {
         GetConfig()
       );
       const selectedRole = data.role.Role_AccessRight.filter(
-        (ae) => ae.Access == true
+        (ae) => ae.Access === true
       ).map((el) => el.AccessRightID);
       setroleid(
         data.role.Role_AccessRight.map((el) => {
@@ -125,7 +125,7 @@ function DetailUserRole() {
             roleID: params.id,
             brnchID: branch,
             roles_AccessRightID: roleid.filter(
-              (ae) => ae.AccessRightID == el.PermissionID
+              (ae) => ae.AccessRightID === el.PermissionID
             )[0]?.roles_AccessRightID,
           },
         ];
@@ -139,7 +139,7 @@ function DetailUserRole() {
       //       access: false,
       //       roleID: params.id,
       //       roles_AccessRightID: roleid.filter(
-      //         (ae) => ae.AccessRightID == el.PermissionID
+      //         (ae) => ae.AccessRightID === el.PermissionID
       //       )[0]?.roles_AccessRightID,
       //       brnchID: branch,
       //     },

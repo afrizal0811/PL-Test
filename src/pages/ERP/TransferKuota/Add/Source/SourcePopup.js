@@ -326,13 +326,14 @@ export default function SourcePopup(props) {
                         selectedIDs.has(item.MutasiKuotaID)
                       );
                       console.log("unselect:", unselectedModel);
-                      if (selectedObj.length == 0) {
+                      if (selectedObj.length === 0) {
                         setSelectedObj(selectedModel);
                       }
                       selectedModel.map((select) => {
                         if (
                           !selectedObj.some(
-                            (item) => item.MutasiKuotaID == select.MutasiKuotaID
+                            (item) =>
+                              item.MutasiKuotaID === select.MutasiKuotaID
                           )
                         ) {
                           setSelectedObj(selectedObj.concat(select));
@@ -342,7 +343,7 @@ export default function SourcePopup(props) {
                         if (
                           selectedObj.some(
                             (item) =>
-                              item.MutasiKuotaID == unselect.MutasiKuotaID
+                              item.MutasiKuotaID === unselect.MutasiKuotaID
                           )
                         ) {
                           setSelectedObj(

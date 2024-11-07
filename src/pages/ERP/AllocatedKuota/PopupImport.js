@@ -141,7 +141,7 @@ export default function PopupImport(props) {
       .then(function (response) {
         // handle success
         console.log("ress", response);
-        if (response.status === 200 || response.status == 201) {
+        if (response.status === 200 || response.status === 201) {
           NotifySuccess("success", "Data Telah Ditambah");
           setTimeout(() => {
             window.location.reload();

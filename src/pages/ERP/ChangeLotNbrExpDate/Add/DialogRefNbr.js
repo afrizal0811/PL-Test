@@ -123,7 +123,7 @@ export default function DialogRefNbr(props) {
   // }, [rowsState, setRowsState]);
 
   React.useEffect(() => {
-    if (props.openRefnbr == true) {
+    if (props.openRefnbr === true) {
       getData();
     }
   }, [props.openRefnbr]);

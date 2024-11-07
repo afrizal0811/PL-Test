@@ -51,7 +51,7 @@ function CbZona(props) {
       .then(function (response) {
         // handle success
         console.log(response);
-        if (response.status === 200 || response.status == 201) {
+        if (response.status === 200 || response.status === 201) {
           const resdata = response.data;
           const newres = [];
           Object.keys(resdata).forEach(function (key) {
@@ -84,7 +84,7 @@ function CbZona(props) {
         value={value}
         getOptionLabel={(option) => option}
         renderOption={(propss, option, { selected }) => {
-          let op = cbZona.filter((item) => item.ZoneID == option);
+          let op = cbZona.filter((item) => item.ZoneID === option);
           if (props.multiple) {
             return (
               <>
@@ -115,12 +115,12 @@ function CbZona(props) {
               {...params}
               required={required}
               color={
-                (required && zona === null) || (required && zona.length == 0)
+                (required && zona === null) || (required && zona.length === 0)
                   ? "warning"
                   : ""
               }
               focused={
-                (required && zona === null) || (required && zona.length == 0)
+                (required && zona === null) || (required && zona.length === 0)
                   ? true
                   : false
               }
@@ -138,7 +138,7 @@ function CbZona(props) {
         }}
       />
       {(required && zona === null) ||
-        (required && zona.length == 0 && (
+        (required && zona.length === 0 && (
           <FormHelperText style={{ color: "red" }}>Required</FormHelperText>
         ))}
     </>

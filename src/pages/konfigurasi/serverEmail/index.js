@@ -128,7 +128,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             setIsEdited(false);
             NotifySuccess("success", "Data Telah DiUbah");
             setTimeout(() => {
@@ -167,7 +167,7 @@ function Header() {
   //       .then(function (response) {
   //         // handle success
   //         console.log(response);
-  //         if (response.status === 200 || response.status == 201) {
+  //         if (response.status === 200 || response.status === 201) {
   //           setIsEdited(false);
   //           NotifySuccess("success", "Data Telah DiUpdate");
   //           setTimeout(() => {
@@ -329,7 +329,7 @@ function Header() {
                   color="primary"
                   size="medium"
                   disabled={
-                    EMPass == null || EMPass === "" || EMPass?.length < 8
+                    EMPass === null || EMPass === "" || EMPass?.length < 8
                       ? isButtonActive
                       : false
                   }

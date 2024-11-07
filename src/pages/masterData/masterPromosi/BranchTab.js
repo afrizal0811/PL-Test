@@ -41,10 +41,10 @@ function BranchTab(props) {
 
   useEffect(() => {
     if (props.Branch?.length > 0) {
-      // let branchfil = props.Branch.filter((e) => e.isLinked == true);
+      // let branchfil = props.Branch.filter((e) => e.isLinked === true);
       const arr = DataPincipal.filter((el) => {
         return props.Branch.some((f) => {
-          return f.branchID === el.BranchID && f.isLinked == true;
+          return f.branchID === el.BranchID && f.isLinked === true;
         });
       });
       console.log("effect", arr);

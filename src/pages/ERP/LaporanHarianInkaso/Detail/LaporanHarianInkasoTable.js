@@ -162,7 +162,7 @@ export default function LHITabelDet(props) {
         };
       }),
     };
-    if (id == undefined) {
+    if (id === undefined) {
       createData({
         ...payload,
         ketStatusKembali: "Draft",
@@ -191,7 +191,7 @@ export default function LHITabelDet(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah Disimpan");
             setTimeout(() => {
               window.location.href = `/laporan-harian-inkaso/detail/${response.data.NomorLHI}`;
@@ -226,8 +226,8 @@ export default function LHITabelDet(props) {
           console.log(response);
           if (
             response.status === 200 ||
-            response.status == 201 ||
-            response.status == 204
+            response.status === 201 ||
+            response.status === 204
           ) {
             NotifySuccess("success", "Data Telah Dirubah");
             setTimeout(() => {
@@ -340,11 +340,11 @@ export default function LHITabelDet(props) {
         </IconButton>
         <IconButton
           disabled={
-            AdminPiutang == "" ||
+            AdminPiutang === "" ||
             !AdminPiutang ||
             Loading ||
-            status == "Closed" ||
-            Data.length == 0
+            status === "Closed" ||
+            Data.length === 0
           }
           component="span"
           onClick={notifyConfirmSave}
@@ -370,10 +370,10 @@ export default function LHITabelDet(props) {
         </IconButton>
         <Button
           component="span"
-          disabled={status !== "Draft" || Data.length == 0 || Loading}
+          disabled={status !== "Draft" || Data.length === 0 || Loading}
           style={{
             color:
-              status !== "Draft" || Data.length == 0 ? grey[400] : grey[700],
+              status !== "Draft" || Data.length === 0 ? grey[400] : grey[700],
           }}
           onClick={notifyConfirmOpen}
         >
@@ -466,7 +466,7 @@ export default function LHITabelDet(props) {
                   Modify
                 </Typography>
                 <Button
-                  disabled={selectedLHI.length == 0 || status !== "Draft"}
+                  disabled={selectedLHI.length === 0 || status !== "Draft"}
                   onClick={() => {
                     notifyConfirmDelete();
                   }}
@@ -634,7 +634,7 @@ export default function LHITabelDet(props) {
                         shrink: true,
                         readOnly: true,
                       }}
-                      value={TimeReceived == null ? " " : TimeReceived}
+                      value={TimeReceived === null ? " " : TimeReceived}
                       {...params}
                     />
                   )}

@@ -271,7 +271,7 @@ export default function Header() {
     console.log("id", id);
     if (id !== undefined) {
       // getData();
-      let roles = Cbrole.filter((data) => data.role == id);
+      let roles = Cbrole.filter((data) => data.role === id);
       console.log("roles", roles);
       if (roles.length > 0) {
         setRole(roles[0]);
@@ -330,7 +330,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/screen-number/detail/${RoleName}`;
@@ -366,7 +366,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiUbah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/screen-number/detail/${RoleName}`;
@@ -386,7 +386,7 @@ export default function Header() {
   };
 
   const onSumbitHandler = async () => {
-    if (id == undefined) {
+    if (id === undefined) {
       createData();
     } else {
       editData();
@@ -410,7 +410,7 @@ export default function Header() {
               color="primary"
               size="medium"
               startIcon={<SaveIcon />}
-              disabled={Role == "" || description == ""}
+              disabled={Role === "" || description === ""}
               // onClick={onSumbitHandler}
             >
               Save
@@ -422,7 +422,7 @@ export default function Header() {
               variant="contained"
               color="error"
               size="medium"
-              // disabled={RoleName == "" || description == ""}
+              // disabled={RoleName === "" || description === ""}
               // onClick={onSumbitHandler}
             >
               Delete
@@ -434,7 +434,7 @@ export default function Header() {
               fullWidth
               color="primary"
               size="medium"
-              // disabled={RoleName == "" || description == ""}
+              // disabled={RoleName === "" || description === ""}
               // onClick={onSumbitHandler}
             >
               Cancel
@@ -457,7 +457,7 @@ export default function Header() {
             {/* <Autocomplete
               // freeSolo
               onChange={(event, newValue) => {
-                let op = Cbrole.filter((item) => item.role == newValue);
+                let op = Cbrole.filter((item) => item.role === newValue);
                 if (op.length > 0) {
                   setRole(op[0]);
                   setdescription(op[0].desc);

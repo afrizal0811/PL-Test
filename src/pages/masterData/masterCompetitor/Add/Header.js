@@ -243,13 +243,13 @@ export default function Header() {
           <IconButton
             component="span"
             disabled={
-              NoBPOM == "" ||
-              CPItem == "" ||
-              CPBrand == "" ||
-              JenisItem == "" ||
-              BranchID == "" ||
-              Tipe1Group == "" ||
-              Tipe2Principal == ""
+              NoBPOM === "" ||
+              CPItem === "" ||
+              CPBrand === "" ||
+              JenisItem === "" ||
+              BranchID === "" ||
+              Tipe1Group === "" ||
+              Tipe2Principal === ""
             }
             onClick={handleSave}
           >

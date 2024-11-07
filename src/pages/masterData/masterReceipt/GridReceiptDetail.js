@@ -314,7 +314,7 @@ export default function GridReceiptDetail(props) {
                   label="Employee Name"
                   type="text"
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   value={employeeName}
                   onChange={(e) => setEmployeeName(e.target.value)}
@@ -331,7 +331,7 @@ export default function GridReceiptDetail(props) {
                   type="text"
                   value={email}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setEmail(e.target.value)}
                   fullWidth
@@ -347,7 +347,7 @@ export default function GridReceiptDetail(props) {
                   type="text"
                   value={contact}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setContact(e.target.value)}
                   fullWidth
@@ -396,7 +396,7 @@ export default function GridReceiptDetail(props) {
                   label="Employee Name"
                   type="text"
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   value={employeeName}
                   onChange={(e) => setEmployeeName(e.target.value)}
@@ -412,7 +412,7 @@ export default function GridReceiptDetail(props) {
                   type="text"
                   value={email}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setEmail(e.target.value)}
                   fullWidth
@@ -427,7 +427,7 @@ export default function GridReceiptDetail(props) {
                   type="text"
                   value={contact}
                   InputProps={{
-                    readOnly: props.StatusMilik == "Milik" ? true : false,
+                    readOnly: props.StatusMilik === "Milik" ? true : false,
                   }}
                   onChange={(e) => setContact(e.target.value)}
                   fullWidth

@@ -57,7 +57,7 @@ function CbLocation(props) {
       .then(function (response) {
         // handle success
         // console.log(response);
-        if (response.status === 200 || response.status == 201) {
+        if (response.status === 200 || response.status === 201) {
           const resdata = response.data[0]?.record[0]?.location;
           console.log("resdata", resdata);
           const newres = [];
@@ -95,7 +95,7 @@ function CbLocation(props) {
         value={value}
         getOptionLabel={(option) => option}
         renderOption={(propss, option, { selected }) => {
-          let op = cbData.filter((item) => item[props.id] == option);
+          let op = cbData.filter((item) => item[props.id] === option);
           // console.log("op", op);
           if (props.multiple) {
             return (
@@ -131,13 +131,13 @@ function CbLocation(props) {
               required={required}
               color={
                 (required && Data === undefined) ||
-                (required && Data.length == 0)
+                (required && Data.length === 0)
                   ? "warning"
                   : ""
               }
               focused={
                 (required && Data === undefined) ||
-                (required && Data.length == 0)
+                (required && Data.length === 0)
                   ? true
                   : false
               }
@@ -155,7 +155,7 @@ function CbLocation(props) {
         }}
       />
       {(required && Data === undefined) ||
-        (required && Data.length == 0 && (
+        (required && Data.length === 0 && (
           <FormHelperText style={{ color: "red" }}>Required</FormHelperText>
         ))}
     </>

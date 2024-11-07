@@ -120,7 +120,7 @@ export default function BPOMPopup(props) {
   useEffect(() => {
     if (props.open) {
       if (searchText.length > 3) getData(1);
-      if (searchText.length == 0) getData(1);
+      if (searchText.length === 0) getData(1);
     }
   }, [props.open, searchText, pageSize]);
 
@@ -229,7 +229,7 @@ export default function BPOMPopup(props) {
                   // onRowDoubleClick={(params, event) => {
                   //   // console.log(
                   //   //   "doble",
-                  //   //   // Rows.filter((i) => i.id == e.id)[0]
+                  //   //   // Rows.filter((i) => i.id === e.id)[0]
                   //   //   e
                   //   // );
                   //   // history(`/allocated-kuota/detail/${params.row[props.id]}`);
@@ -242,7 +242,7 @@ export default function BPOMPopup(props) {
                     console.log(
                       "change",
                       Rows.filter((i) => e.includes(i[props.id]))[0]
-                      // Rows.filter((i) => i.id == e.id)[0]
+                      // Rows.filter((i) => i.id === e.id)[0]
                       // e
                     );
                     setSelectedCust(

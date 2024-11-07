@@ -149,7 +149,7 @@ export default function TableCompetitor() {
           `${
             process.env.REACT_APP_DOMAIN_API_BARU
           }/api/Competitor/Pagination2?page=${page}&rowsCount=${pageSize}&userId=${
-            getRoleName() == "CRM Admin" ? "" : getEmployee()
+            getRoleName() === "CRM Admin" ? "" : getEmployee()
           }${
             !!start ? "&startDate=" + moment(start).format("MM-DD-YYYY") : ""
           }${
@@ -190,7 +190,7 @@ export default function TableCompetitor() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.reload();

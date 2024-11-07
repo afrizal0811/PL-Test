@@ -82,17 +82,19 @@ export default function OtomatisDialog(props) {
                 ? `&invoiceDueDate=${moment(TglPenagihan).format("MM-DD-YYYY")}`
                 : ""
             }&hariTagih=${hariTagih}&usrAdminPiutang=${
-              AdmPiutang == "" ? "" : AdmPiutang?.employeeID
+              AdmPiutang === "" ? "" : AdmPiutang?.employeeID
             }&customerID=${
-              CustomerID == "" ? "" : CustomerID?.CustomerID
-            }&customerName=${CustomerID == "" ? "" : CustomerID?.CustomerName}${
-              dueDate == null
+              CustomerID === "" ? "" : CustomerID?.CustomerID
+            }&customerName=${
+              CustomerID === "" ? "" : CustomerID?.CustomerName
+            }${
+              dueDate === null
                 ? ""
                 : "&dueDate=" + moment(dueDate).format("MM-DD-YYYY")
             }${
-              credit == "" ? "" : "&creditLimit=" + parseInt(credit)
+              credit === "" ? "" : "&creditLimit=" + parseInt(credit)
             }&pasarAllow=${PasarAllow}&mingguTagih=${mingguTagih}&usrKolektor=${
-              Kolektor == "" ? "" : Kolektor?.employeeID
+              Kolektor === "" ? "" : Kolektor?.employeeID
             }&ketPenagihan=${ketPenagihan}&serahTerima=${serahterima}&creditmemo=${creditmemo}&hariTT=${hariTT}${
               tanggalKembali
                 ? `&tanggalKembali=${moment(tanggalKembali).format(
@@ -105,7 +107,7 @@ export default function OtomatisDialog(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             props.setDataTambah(
               response.data.filter((bo) =>
                 props.Data.every((ao) => ao.referenceNbr !== bo.referenceNbr)
@@ -439,7 +441,7 @@ export default function OtomatisDialog(props) {
                               </InputAdornment>
                             ),
                           }}
-                          value={Kolektor == "" ? "" : Kolektor?.employeeName}
+                          value={Kolektor === "" ? "" : Kolektor?.employeeName}
                           onClick={() => {
                             if (!Kolektor) {
                               setOpenKolektor(true);

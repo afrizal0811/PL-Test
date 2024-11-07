@@ -58,7 +58,7 @@ export default function SourcePopup(props) {
       if (Inventory.length > 1) {
         getData(currentPage);
       }
-      if (Inventory.length == 0) getData(currentPage);
+      if (Inventory.length === 0) getData(currentPage);
     }
   }, [props.openSource, currentPage, Inventory, pageSize]);
 
@@ -200,7 +200,7 @@ export default function SourcePopup(props) {
         .then(function (response) {
           // handle success
           // console.log("ini data stockitem = ", response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             const resdata = response.data;
             // const newres = [];
             // Object.keys(resdata).forEach(function (key) {
@@ -314,13 +314,13 @@ export default function SourcePopup(props) {
                       selectedIDs.has(item.MutasiKuotaID)
                     );
                     console.log("unselect:", unselectedModel);
-                    if (selectedObj.length == 0) {
+                    if (selectedObj.length === 0) {
                       setSelectedObj(selectedModel);
                     }
                     selectedModel.map((select) => {
                       if (
                         !selectedObj.some(
-                          (item) => item.MutasiKuotaID == select.MutasiKuotaID
+                          (item) => item.MutasiKuotaID === select.MutasiKuotaID
                         )
                       ) {
                         setSelectedObj(selectedObj.concat(select));
@@ -329,7 +329,8 @@ export default function SourcePopup(props) {
                     unselectedModel.map((unselect) => {
                       if (
                         selectedObj.some(
-                          (item) => item.MutasiKuotaID == unselect.MutasiKuotaID
+                          (item) =>
+                            item.MutasiKuotaID === unselect.MutasiKuotaID
                         )
                       ) {
                         setSelectedObj(

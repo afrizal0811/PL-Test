@@ -93,7 +93,7 @@ function DetailPengajuan(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah Disimpan");
             setTimeout(() => {
               window.location.href = `/dashboard-approval/`;
@@ -337,9 +337,9 @@ function DetailPengajuan(props) {
                   <Typography variant="subtitle1" gutterBottom>
                     Keterangan: {dataDetail.keterangan}
                   </Typography>
-                  {Detail.submit == true ? (
+                  {Detail.submit === true ? (
                     <>
-                      {dataDetail.approve == true ? (
+                      {dataDetail.approve === true ? (
                         <FormControl component="fieldset" variant="standard">
                           <RadioGroup
                             aria-label="Status"

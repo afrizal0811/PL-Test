@@ -261,7 +261,7 @@ const columnsFakturBelumLunas = [
     width: 200,
     editable: false,
     renderCell: (params) =>
-      params.value == "0001-01-01T00:00:00"
+      params.value === "0001-01-01T00:00:00"
         ? ""
         : moment(params.value).format("DD-MM-YYYY"),
   },
@@ -297,13 +297,13 @@ export default function KeteranganPopup(props) {
   const [Loading, setLoading] = useState(false);
 
   React.useEffect(() => {
-    if (props.openKeterangan && props.SelectedSO.length == 1) {
+    if (props.openKeterangan && props.SelectedSO.length === 1) {
       getKeterangan(props.SelectedSO[0].IDListSOOtorisasi);
       setketerangan(props.SelectedSO[0].KetOtorisasi);
       setUrgent(
-        props.SelectedSO[0]?.StatusOtorisasi == "Urgent" ? true : false
+        props.SelectedSO[0]?.StatusOtorisasi === "Urgent" ? true : false
       );
-      setBatal(props.SelectedSO[0]?.StatusOtorisasi == "Batal" ? true : false);
+      setBatal(props.SelectedSO[0]?.StatusOtorisasi === "Batal" ? true : false);
     }
     // console.log("selectedso", props.SelectedSO);
   }, [props.openKeterangan]);
@@ -508,16 +508,16 @@ export default function KeteranganPopup(props) {
                     }
                     label="Urgent"
                     disabled={
-                      props.SelectedSO[0]?.StatusSO == "Di-posting" ||
-                      props.SelectedSO[0]?.StatusSO == "Ditindaklanjuti"
-                      // props.SelectedSO[0]?.StatusOtorisasi == "Urgent"
+                      props.SelectedSO[0]?.StatusSO === "Di-posting" ||
+                      props.SelectedSO[0]?.StatusSO === "Ditindaklanjuti"
+                      // props.SelectedSO[0]?.StatusOtorisasi === "Urgent"
                     }
                   />
                   {/* <FormControlLabel
                     value={Batal}
                     disabled={
-                      props.SelectedSO[0]?.StatusSO == "Diajukan" ||
-                      props.SelectedSO[0]?.StatusOtorisasi == "Urgent"
+                      props.SelectedSO[0]?.StatusSO === "Diajukan" ||
+                      props.SelectedSO[0]?.StatusOtorisasi === "Urgent"
                     }
                     onChange={(e) => setBatal(e.target.checked)}
                     control={<Checkbox />}
@@ -534,15 +534,15 @@ export default function KeteranganPopup(props) {
                     }
                     label="Batal"
                     disabled={
-                      props.SelectedSO[0]?.StatusSO == "Di-posting" ||
-                      props.SelectedSO[0]?.StatusSO == "Ditindaklanjuti"
-                      // props.SelectedSO[0]?.StatusOtorisasi == "Urgent"
+                      props.SelectedSO[0]?.StatusSO === "Di-posting" ||
+                      props.SelectedSO[0]?.StatusSO === "Ditindaklanjuti"
+                      // props.SelectedSO[0]?.StatusOtorisasi === "Urgent"
                     }
                   />
                 </FormGroup>
               </FormControl>
             </Paper>
-            {Batal == true ? (
+            {Batal === true ? (
               <>
                 <Paper mt={4}>
                   <TextField
@@ -575,8 +575,8 @@ export default function KeteranganPopup(props) {
               variant="outlined"
               style={{ width: "100%" }}
               disabled={
-                props.SelectedSO[0]?.StatusSO == "Di-posting" ||
-                props.SelectedSO[0]?.StatusSO == "Ditindaklanjuti"
+                props.SelectedSO[0]?.StatusSO === "Di-posting" ||
+                props.SelectedSO[0]?.StatusSO === "Ditindaklanjuti"
               }
             />
           </Grid>
@@ -668,7 +668,7 @@ export default function KeteranganPopup(props) {
       <DialogActions>
         <Button
           onClick={() => handleSave()}
-          disabled={keterangan == "" || !props.SelectedSO[0]?.CustomerID}
+          disabled={keterangan === "" || !props.SelectedSO[0]?.CustomerID}
           color="primary"
           variant="contained"
         >

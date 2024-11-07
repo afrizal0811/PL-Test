@@ -25,7 +25,7 @@ export default function DriverPopup(props) {
 
   useEffect(() => {
     // getData();
-    if (props.openEdit == true) {
+    if (props.openEdit === true) {
       console.log("dataedit", props.dataEdit);
       if (props.dataEdit !== "") {
         const newList = props.rowKend.filter(
@@ -75,7 +75,7 @@ export default function DriverPopup(props) {
         <DialogContent>
           <DialogContentText>Update Driver</DialogContentText>
           <Grid container spacing={3} md={12} mt={2}>
-            {Data?.Kepemilikan == "Milik" ? (
+            {Data?.Kepemilikan === "Milik" ? (
               <>
                 <Grid item md={6} xs={6} mt={2}>
                   <CbData
@@ -124,7 +124,7 @@ export default function DriverPopup(props) {
                 label="Employee Name"
                 type="text"
                 InputProps={{
-                  readOnly: Data?.Kepemilikan == "Milik" ? true : false,
+                  readOnly: Data?.Kepemilikan === "Milik" ? true : false,
                 }}
                 value={employeeName}
                 onChange={(e) => setEmployeeName(e.target.value)}
@@ -140,7 +140,7 @@ export default function DriverPopup(props) {
                 type="text"
                 value={email ? email : " "}
                 InputProps={{
-                  readOnly: Data?.Kepemilikan == "Milik" ? true : false,
+                  readOnly: Data?.Kepemilikan === "Milik" ? true : false,
                 }}
                 onChange={(e) => setEmail(e.target.value)}
                 fullWidth
@@ -155,7 +155,7 @@ export default function DriverPopup(props) {
                 type="text"
                 value={contact}
                 InputProps={{
-                  readOnly: Data?.Kepemilikan == "Milik" ? true : false,
+                  readOnly: Data?.Kepemilikan === "Milik" ? true : false,
                 }}
                 onChange={(e) => setContact(e.target.value)}
                 fullWidth

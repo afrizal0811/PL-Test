@@ -128,7 +128,7 @@ function TableScheduller() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah dihapus");
             setTimeout(() => {
               window.location.reload();

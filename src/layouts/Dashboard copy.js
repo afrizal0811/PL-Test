@@ -63,7 +63,7 @@ const Dashboard = ({ children }) => {
   useEffect(() => {
     if (
       getAkses().split(",")?.includes("SAW300012") &&
-      docsSection.filter((ae) => ae.title === "Dashboard Approval").length == 0
+      docsSection.filter((ae) => ae.title === "Dashboard Approval").length === 0
     ) {
       setdocsSection(
         docsSection.concat({
@@ -77,7 +77,7 @@ const Dashboard = ({ children }) => {
     //erp
     if (
       getAkses().split(",")?.includes("SAW200002") &&
-      pagesSection.filter((ae) => ae.title === "Allocated Kuota").length == 0
+      pagesSection.filter((ae) => ae.title === "Allocated Kuota").length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -89,7 +89,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAC300007") &&
-      pagesSection.filter((ae) => ae.title === "Expiry Date").length == 0
+      pagesSection.filter((ae) => ae.title === "Expiry Date").length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -102,7 +102,8 @@ const Dashboard = ({ children }) => {
 
     if (
       getAkses().split(",")?.includes("SAC300002") &&
-      pagesSection.filter((ae) => ae.title === "Promotion Activity").length == 0
+      pagesSection.filter((ae) => ae.title === "Promotion Activity").length ===
+        0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -115,7 +116,7 @@ const Dashboard = ({ children }) => {
     if (
       getAkses().split(",")?.includes("SAC300004") &&
       pagesSection.filter((ae) => ae.title === "Competitor Price Information")
-        .length == 0
+        .length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -128,7 +129,7 @@ const Dashboard = ({ children }) => {
     if (
       getAkses().split(",")?.includes("SAC300005") &&
       pagesSection.filter((ae) => ae.title === "Customer Price Information")
-        .length == 0
+        .length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -140,7 +141,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAW300011") &&
-      pagesSection.filter((ae) => ae.title === "List SO Otorisasi").length == 0
+      pagesSection.filter((ae) => ae.title === "List SO Otorisasi").length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -153,7 +154,7 @@ const Dashboard = ({ children }) => {
     if (
       getAkses().split(",")?.includes("SAW200001") &&
       pagesSection.filter((ae) => ae.title === "Change Lot Nbr & Exp Date")
-        .length == 0
+        .length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -165,7 +166,7 @@ const Dashboard = ({ children }) => {
     }
     // if (
     //   getAkses().split(",")?.includes("SAW200005") &&
-    //   pagesSection.filter((ae) => ae.title === "Transfer Kuota").length == 0
+    //   pagesSection.filter((ae) => ae.title === "Transfer Kuota").length === 0
     // ) {
     //   setpagesSection(
     //     pagesSection.concat({
@@ -177,7 +178,7 @@ const Dashboard = ({ children }) => {
     // }
     if (
       getAkses().split(",")?.includes("SAW200004") &&
-      pagesSection.filter((ae) => ae.title === "Transfer Kuota").length == 0
+      pagesSection.filter((ae) => ae.title === "Transfer Kuota").length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -190,7 +191,7 @@ const Dashboard = ({ children }) => {
     if (
       getAkses().split(",")?.includes("SAW600002") &&
       pagesSection.filter((ae) => ae.title === "Mutation Allocated Kuota")
-        .length == 0
+        .length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -202,7 +203,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAW200003") &&
-      pagesSection.filter((ae) => ae.title === "Transfer Cabang").length == 0
+      pagesSection.filter((ae) => ae.title === "Transfer Cabang").length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -214,7 +215,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAF300003") &&
-      pagesSection.filter((ae) => ae.title === "Desk Call").length == 0
+      pagesSection.filter((ae) => ae.title === "Desk Call").length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -228,7 +229,7 @@ const Dashboard = ({ children }) => {
       getAkses().split(",")?.includes("SAF300002") &&
       pagesSection.filter(
         (ae) => ae.title === "Laporan Harian Inkaso (Kolektor)"
-      ).length == 0
+      ).length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -242,7 +243,7 @@ const Dashboard = ({ children }) => {
     if (
       getAkses().split(",")?.includes("SAF300001") &&
       pagesSection.filter((ae) => ae.title === "Laporan Harian Inkaso")
-        .length == 0
+        .length === 0
     ) {
       setpagesSection(
         pagesSection.concat({
@@ -256,7 +257,7 @@ const Dashboard = ({ children }) => {
     //master
     if (
       getAkses().split(",")?.includes("SAW300003") &&
-      masterDataSection.filter((ae) => ae.title === "Vendor").length == 0
+      masterDataSection.filter((ae) => ae.title === "Vendor").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -268,7 +269,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAW300009") &&
-      masterDataSection.filter((ae) => ae.title === "Stock Item").length == 0
+      masterDataSection.filter((ae) => ae.title === "Stock Item").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -280,7 +281,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAG300005") &&
-      masterDataSection.filter((ae) => ae.title === "Approval").length == 0
+      masterDataSection.filter((ae) => ae.title === "Approval").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -292,7 +293,7 @@ const Dashboard = ({ children }) => {
     }
     // if (
     //   getAkses().split(",")?.includes("SW300001") &&
-    //   masterDataSection.filter((ae) => ae.title === "Kategori").length == 0
+    //   masterDataSection.filter((ae) => ae.title === "Kategori").length === 0
     // ) {
     //   setmasterDataSection(
     //     masterDataSection.concat({
@@ -304,7 +305,7 @@ const Dashboard = ({ children }) => {
     // }
     if (
       getAkses().split(",")?.includes("SAG300003") &&
-      masterDataSection.filter((ae) => ae.title === "Position").length == 0
+      masterDataSection.filter((ae) => ae.title === "Position").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -316,7 +317,8 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAW300007") &&
-      masterDataSection.filter((ae) => ae.title === "Shipping Zone").length == 0
+      masterDataSection.filter((ae) => ae.title === "Shipping Zone").length ===
+        0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -328,7 +330,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAG300001") &&
-      masterDataSection.filter((ae) => ae.title === "Branch").length == 0
+      masterDataSection.filter((ae) => ae.title === "Branch").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -340,7 +342,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAW300006") &&
-      masterDataSection.filter((ae) => ae.title === "Sales Order").length == 0
+      masterDataSection.filter((ae) => ae.title === "Sales Order").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -352,7 +354,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAW300002") &&
-      masterDataSection.filter((ae) => ae.title === "Customer").length == 0
+      masterDataSection.filter((ae) => ae.title === "Customer").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -364,7 +366,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAG300004") &&
-      masterDataSection.filter((ae) => ae.title === "Employee").length == 0
+      masterDataSection.filter((ae) => ae.title === "Employee").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -377,7 +379,7 @@ const Dashboard = ({ children }) => {
     if (
       getAkses().split(",")?.includes("SAC300001") &&
       masterDataSection.filter((ae) => ae.title === "Master Promotion")
-        .length == 0
+        .length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -390,7 +392,7 @@ const Dashboard = ({ children }) => {
     if (
       getAkses().split(",")?.includes("SAC300003") &&
       masterDataSection.filter((ae) => ae.title === "Master Competitor")
-        .length == 0
+        .length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -402,7 +404,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAG300006") &&
-      masterDataSection.filter((ae) => ae.title === "Transaksi ID").length == 0
+      masterDataSection.filter((ae) => ae.title === "Transaksi ID").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({
@@ -427,7 +429,7 @@ const Dashboard = ({ children }) => {
     }
     if (
       getAkses().split(",")?.includes("SAW300001") &&
-      masterDataSection.filter((ae) => ae.title === "Warehouse").length == 0
+      masterDataSection.filter((ae) => ae.title === "Warehouse").length === 0
     ) {
       setmasterDataSection(
         masterDataSection.concat({

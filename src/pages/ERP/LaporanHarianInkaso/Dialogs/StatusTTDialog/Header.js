@@ -126,7 +126,7 @@ export default function Header() {
           </Grid>
           <Grid item md={3}>
             <Paper mt={3}>
-              {keterangan == "Tgl. Terbit TT" ? (
+              {keterangan === "Tgl. Terbit TT" ? (
                 <>
                   <DatePicker
                     inputFormat={"dd/MM/yyyy"}
@@ -164,7 +164,7 @@ export default function Header() {
               <TextField
                 fullWidth
                 value={
-                  cashAccount == ""
+                  cashAccount === ""
                     ? " "
                     : cashAccount?.id + " - " + cashAccount?.desc
                 }
@@ -216,7 +216,8 @@ export default function Header() {
             </Paper>
           </Grid>
         </Grid>
-        {keterangan == "Closed" && cashAccount.desc == "Piutang Giro Lokal" ? (
+        {keterangan === "Closed" &&
+        cashAccount.desc === "Piutang Giro Lokal" ? (
           <>
             <Grid container spacing={6}>
               <Grid item md={3}>

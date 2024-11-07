@@ -243,20 +243,20 @@ export default function CustomerPopup(props) {
                 onRowDoubleClick={(e) => {
                   // console.log(
                   //   "doble",
-                  //   Rows.filter((i) => i.id == e.id)[0]
+                  //   Rows.filter((i) => i.id === e.id)[0]
                   //   // e
                   // );
                   console.log("e", e);
                   props.setOpenCust(false);
                   props.setTempCustomer(
-                    Rows.filter((i) => i.customerID == e.id)[0]
+                    Rows.filter((i) => i.customerID === e.id)[0]
                   );
                 }}
                 onSelectionModelChange={(e) => {
                   // console.log(
                   //   "change",
                   //   Rows.filter((i) => e.includes(i.customerID))[0]
-                  //   // Rows.filter((i) => i.id == e.id)[0]
+                  //   // Rows.filter((i) => i.id === e.id)[0]
                   //   // e
                   // );
                   setSelectedCust(
@@ -292,7 +292,7 @@ export default function CustomerPopup(props) {
             Cancel
           </Button>
           <Button
-            disabled={SelectedCust.length == 0}
+            disabled={SelectedCust.length === 0}
             onClick={() => {
               props.setOpenCust(false);
               // props.setTempCustomer(SelectedCust);

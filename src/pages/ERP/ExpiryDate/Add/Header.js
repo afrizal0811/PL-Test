@@ -203,7 +203,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data berhasil disimpan");
             setTimeout(() => {
               window.location.href = `/expiry-date/detail/${response.data.refNbr}`;
@@ -236,7 +236,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah diperbarui");
             getData(id);
             // setTimeout(() => {
@@ -269,7 +269,7 @@ export default function Header() {
     formData.append("CreatedByID", getEmployee());
     formData.append("CreatedByScreenID", "SAW200002");
     formData.append("DocDesc", Description);
-    if (id == undefined) {
+    if (id === undefined) {
       createData(formData);
     } else {
       editData(formData);
@@ -288,7 +288,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah dihapus");
             // getData();
             setTimeout(() => {
@@ -398,12 +398,12 @@ export default function Header() {
                 <TextField
                   label="Item"
                   value={
-                    Item == ""
+                    Item === ""
                       ? " "
                       : `${Item.inventoryID} - ${Item.description}`
                   }
-                  color={Item == "" || !ItemValid ? "warning" : ""}
-                  focused={Item == "" || !ItemValid ? true : false}
+                  color={Item === "" || !ItemValid ? "warning" : ""}
+                  focused={Item === "" || !ItemValid ? true : false}
                   disabled={Loading}
                   fullWidth
                   required
@@ -427,12 +427,12 @@ export default function Header() {
                   name="Customer"
                   label="Customer"
                   value={
-                    TempCustomer == ""
+                    TempCustomer === ""
                       ? " "
                       : `${TempCustomer.customerID} - ${TempCustomer.customerName}`
                   }
-                  color={TempCustomer == "" ? "warning" : ""}
-                  focused={TempCustomer == "" ? true : false}
+                  color={TempCustomer === "" ? "warning" : ""}
+                  focused={TempCustomer === "" ? true : false}
                   fullWidth
                   required
                   disabled={Loading}
@@ -467,8 +467,8 @@ export default function Header() {
                   </Select>
                 </FormControl> */}
                 <CbData
-                  value={UOM == "" ? " " : `${UOM}`}
-                  defaultValue={UOM == "" ? " " : `${UOM}`}
+                  value={UOM === "" ? " " : `${UOM}`}
+                  defaultValue={UOM === "" ? " " : `${UOM}`}
                   required
                   disabled={!Item?.inventoryID || Loading}
                   label="UOM"
@@ -482,9 +482,9 @@ export default function Header() {
               </Grid>
               <Grid item md={6} xs={12}>
                 {/* <CbLocation
-                  value={Location == "" ? " " : `${Location[0].locationName}`}
+                  value={Location === "" ? " " : `${Location[0].locationName}`}
                   defaultValue={
-                    Location == "" ? " " : `${Location[0].locationName}`
+                    Location === "" ? " " : `${Location[0].locationName}`
                   }
                   required
                   config={GetConfig()}
@@ -499,8 +499,8 @@ export default function Header() {
                   }}
                 /> */}
                 <CbData
-                  value={Location == "" ? " " : `${Location[0].text}`}
-                  defaultValue={Location == "" ? " " : `${Location[0].text}`}
+                  value={Location === "" ? " " : `${Location[0].text}`}
+                  defaultValue={Location === "" ? " " : `${Location[0].text}`}
                   required
                   config={GetConfig()}
                   disabled={!TempCustomer.customerID || Loading}
@@ -519,8 +519,8 @@ export default function Header() {
                   label="Qty"
                   disabled={Loading}
                   required
-                  color={Qty == "" ? "warning" : ""}
-                  focused={Qty == "" ? true : false}
+                  color={Qty === "" ? "warning" : ""}
+                  focused={Qty === "" ? true : false}
                   type="number"
                   inputProps={{
                     min: 0,
@@ -537,8 +537,8 @@ export default function Header() {
                   fullWidth
                   id="numb"
                   required
-                  color={Qty == "" ? "warning" : ""}
-                  focused={Qty == "" ? true : false}
+                  color={Qty === "" ? "warning" : ""}
+                  focused={Qty === "" ? true : false}
                   label="Qty"
                   value={Qty}
                   decimalScale={2}
@@ -632,7 +632,7 @@ export default function Header() {
               <Paper mt={4}>
                 <TextField
                   label="Description"
-                  value={Description == "" ? " " : Description}
+                  value={Description === "" ? " " : Description}
                   multiline
                   rows={5}
                   onChange={(e) => {

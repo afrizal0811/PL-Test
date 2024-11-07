@@ -119,7 +119,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/numbering-sequences/detail/${screenID}`;
@@ -158,7 +158,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/numbering-sequences/detail/${id}`;
@@ -178,7 +178,7 @@ export default function Header(props) {
   };
 
   const onSumbitHandler = async () => {
-    if (id == undefined) {
+    if (id === undefined) {
       createData();
     } else {
       editData();
@@ -213,7 +213,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.reload();

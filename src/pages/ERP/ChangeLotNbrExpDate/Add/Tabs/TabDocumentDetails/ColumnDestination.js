@@ -11,8 +11,8 @@ const columnsDestination = [
     renderCell: (params) =>
       !params.row.ToLotNbr ||
       !params.row.ToExpDate ||
-      params.row.ToExpDate == "" ||
-      params.row.ToLotNbr == "" ? (
+      params.row.ToExpDate === "" ||
+      params.row.ToLotNbr === "" ? (
         <>
           <Tooltip title="Data Inventory ini belum lengkap">
             <Typography sx={{ color: "red" }}>{params.value}</Typography>
@@ -30,8 +30,8 @@ const columnsDestination = [
     renderCell: (params) =>
       !params.row.ToLotNbr ||
       !params.row.ToExpDate ||
-      params.row.ToExpDate == "" ||
-      params.row.ToLotNbr == "" ? (
+      params.row.ToExpDate === "" ||
+      params.row.ToLotNbr === "" ? (
         <>
           <Tooltip title="Data Inventory ini belum lengkap">
             <Typography sx={{ color: "red" }}>{params.value}</Typography>

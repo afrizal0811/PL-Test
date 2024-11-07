@@ -151,7 +151,7 @@ function Header() {
               .then(function (responsedep) {
                 Object.keys(responsedep.data).forEach(function (key) {
                   if (vendor === "") {
-                    if (responsedep.data[key].VendorID == resdata.VendorID) {
+                    if (responsedep.data[key].VendorID === resdata.VendorID) {
                       setVendor({
                         vendorID: responsedep.data[key].VendorID,
                         vendorName: responsedep.data[key].VendorName,
@@ -320,17 +320,17 @@ function Header() {
               <Tab
                 label="General"
                 value="1"
-                style={{ color: value == 1 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 1 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Financial"
                 value="2"
-                style={{ color: value == 2 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 2 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Purchasing Settings"
                 value="3"
-                style={{ color: value == 3 ? "white" : "#a7d2f0" }}
+                style={{ color: value === 3 ? "white" : "#a7d2f0" }}
               />
             </TabList>
           </AppBar>

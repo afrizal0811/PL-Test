@@ -83,7 +83,7 @@ class QRScanner extends Component {
         <TextField
           id="outlined-number"
           // value={
-          //   this.state.result == null ? null : this.state.result[0].OrderNbr
+          //   this.state.result === null ? null : this.state.result[0].OrderNbr
           // }
           InputProps={{
             // endAdornment: (

@@ -106,8 +106,8 @@ export default function Header() {
                 name="Customer"
                 label="Customer"
                 value={TempCustomer}
-                color={TempCustomer.length == 0 ? "warning" : ""}
-                focused={TempCustomer.length == 0 ? true : false}
+                color={TempCustomer.length === 0 ? "warning" : ""}
+                focused={TempCustomer.length === 0 ? true : false}
                 fullWidth
                 disabled
                 // onClick={() => {

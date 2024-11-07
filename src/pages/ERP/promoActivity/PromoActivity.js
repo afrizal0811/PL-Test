@@ -131,7 +131,7 @@ function TablePromo() {
           `${
             process.env.REACT_APP_DOMAIN_API_BARU
           }/PromoActivity/Pagination2?page=${page}&rowsCount=${pageSize}&userId=${
-            getRoleName() == "CRM Admin" ? "" : getEmployee()
+            getRoleName() === "CRM Admin" ? "" : getEmployee()
           }${!!start ? "&sDate=" + moment(start).format("MM-DD-YYYY") : ""}${
             !!end ? "&eDate=" + moment(end).format("MM-DD-YYYY") : ""
           }&BranchID=${getBrach()}`,
@@ -172,7 +172,7 @@ function TablePromo() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             getData();
           }

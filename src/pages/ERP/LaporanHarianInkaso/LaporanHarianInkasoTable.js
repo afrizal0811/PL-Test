@@ -110,9 +110,9 @@ export default function LaporanHarianInkasoTable(props) {
           `${
             process.env.REACT_APP_DOMAIN_API
           }/LaporanHarianInkasoReps/FilterLaporanHarianInkaso?pages=${page}&rowsCount=${pageSize}${
-            Kolektor == "" ? "" : "&kolektor=" + Kolektor.employeeID
+            Kolektor === "" ? "" : "&kolektor=" + Kolektor.employeeID
           }${!!searchDebounceNomor ? "&nomorLHI=" + searchDebounceNomor : ""}${
-            Status == null || Status == ""
+            Status === null || Status === ""
               ? ""
               : "&ketStatusKembali=" + Status.id
           }${
@@ -263,7 +263,7 @@ export default function LaporanHarianInkasoTable(props) {
                     </InputAdornment>
                   ),
                 }}
-                value={Kolektor == "" ? "" : Kolektor.employeeName}
+                value={Kolektor === "" ? "" : Kolektor.employeeName}
                 onClick={() => {
                   if (!Kolektor) {
                     setOpenKolektor(true);
@@ -345,7 +345,7 @@ export default function LaporanHarianInkasoTable(props) {
                 setselectedLHI(Data.filter((i) => e.includes(i.nomerLHI)));
                 // setselectedLHI(
                 //   e.map((a) => {
-                //     Data.filter((aa) => aa.LaporanHarianInkasoGridRepID == a);
+                //     Data.filter((aa) => aa.LaporanHarianInkasoGridRepID === a);
                 //   })
                 // );
               }}

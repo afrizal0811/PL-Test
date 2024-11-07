@@ -263,7 +263,7 @@ export default function SourceEdit(props) {
           <Button
             onClick={EditRows}
             disabled={
-              srcQty == "" || srcLotnbr == "" || srcExpdate == "" || warning
+              srcQty === "" || srcLotnbr === "" || srcExpdate === "" || warning
             }
             color="primary"
           >

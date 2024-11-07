@@ -138,7 +138,7 @@ function Header() {
                 <TextField
                   name="Invoice Ref Nbr"
                   label="Invoice Ref Nbr"
-                  value={!refnbr || refnbr == "" ? " " : refnbr}
+                  value={!refnbr || refnbr === "" ? " " : refnbr}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{
@@ -152,7 +152,7 @@ function Header() {
                   name="Date"
                   label="Date"
                   value={
-                    !invdate || invdate == ""
+                    !invdate || invdate === ""
                       ? " "
                       : moment(invdate).format("DD/MM/YYYY")
                   }
@@ -169,7 +169,7 @@ function Header() {
                   name="Due Date"
                   label="Due Date"
                   value={
-                    !duedate || duedate == ""
+                    !duedate || duedate === ""
                       ? " "
                       : moment(duedate).format("DD/MM/YYYY")
                   }
@@ -185,7 +185,7 @@ function Header() {
                 <TextField
                   name="Invoice Status"
                   label="Invoice Status"
-                  value={!status || status == "" ? " " : status}
+                  value={!status || status === "" ? " " : status}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{
@@ -198,7 +198,7 @@ function Header() {
                 <TextField
                   name="Customer"
                   label="Customer"
-                  value={!customer || customer == "" ? " " : customer}
+                  value={!customer || customer === "" ? " " : customer}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{
@@ -211,7 +211,7 @@ function Header() {
                 <TextField
                   name="Amount"
                   label="Amount"
-                  value={!amount || amount == "" ? " " : amount}
+                  value={!amount || amount === "" ? " " : amount}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{
@@ -242,12 +242,12 @@ function Header() {
                       <Tab
                         label="Details"
                         value="1"
-                        style={{ color: tabPanel == 1 ? "white" : "#a7d2f0" }}
+                        style={{ color: tabPanel === 1 ? "white" : "#a7d2f0" }}
                       />
                       <Tab
                         label="Applications"
                         value="2"
-                        style={{ color: tabPanel == 2 ? "white" : "#a7d2f0" }}
+                        style={{ color: tabPanel === 2 ? "white" : "#a7d2f0" }}
                       />
                     </TabList>
                   </AppBar>

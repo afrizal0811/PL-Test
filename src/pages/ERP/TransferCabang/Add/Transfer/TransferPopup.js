@@ -67,7 +67,7 @@ export default function TransferPopup({
           id: value.MutasiKuotaID,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
 
         const ItemIndex = data.findIndex(
           (obj) => obj.MutasiKuotaID === params.id
@@ -295,7 +295,7 @@ export default function TransferPopup({
           id: value.MutasiKuotaID,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
         // const options = [...params.api.getRowModels()].map(
         //   ([id, value]) => value.OptionsUOM
         // );
@@ -445,7 +445,7 @@ export default function TransferPopup({
               fullWidth
               // disabled={
               //   [...refdata.current.getSelectedRows()].filter(
-              //     (ae) => ae.MutasiKuotaID == params.id
+              //     (ae) => ae.MutasiKuotaID === params.id
               //   ).length !== 1
               // }
               disabled={!selectionModel.includes(params.id)}
@@ -965,13 +965,14 @@ export default function TransferPopup({
                         selectedIDs.has(item.MutasiKuotaID)
                       );
                       console.log("unselect:", unselectedModel);
-                      if (selectedObj.length == 0) {
+                      if (selectedObj.length === 0) {
                         setSelectedObj(selectedModel);
                       }
                       selectedModel.map((select) => {
                         if (
                           !selectedObj.some(
-                            (item) => item.MutasiKuotaID == select.MutasiKuotaID
+                            (item) =>
+                              item.MutasiKuotaID === select.MutasiKuotaID
                           )
                         ) {
                           setSelectedObj(selectedObj.concat(select));
@@ -981,7 +982,7 @@ export default function TransferPopup({
                         if (
                           selectedObj.some(
                             (item) =>
-                              item.MutasiKuotaID == unselect.MutasiKuotaID
+                              item.MutasiKuotaID === unselect.MutasiKuotaID
                           )
                         ) {
                           setSelectedObj(

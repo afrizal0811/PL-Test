@@ -86,7 +86,7 @@ function CbBranch(props) {
         value={value}
         getOptionLabel={(option) => option}
         renderOption={(propss, option, { selected }) => {
-          let op = cbBranch.filter((item) => item.BranchID == option);
+          let op = cbBranch.filter((item) => item.BranchID === option);
           // console.log("op", op);
           if (props.multiple) {
             return (
@@ -119,13 +119,13 @@ function CbBranch(props) {
               required={required}
               color={
                 (required && Branch === undefined) ||
-                (required && Branch.length == 0)
+                (required && Branch.length === 0)
                   ? "warning"
                   : ""
               }
               focused={
                 (required && Branch === undefined) ||
-                (required && Branch.length == 0)
+                (required && Branch.length === 0)
                   ? true
                   : false
               }
@@ -143,7 +143,7 @@ function CbBranch(props) {
         }}
       />
       {(required && Branch === undefined) ||
-        (required && Branch.length == 0 && (
+        (required && Branch.length === 0 && (
           <FormHelperText style={{ color: "red" }}>Required</FormHelperText>
         ))}
     </>

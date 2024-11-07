@@ -138,7 +138,7 @@ const NewItemPopup = (props) => {
             onClick={handleSubmit}
             color="primary"
             variant="contained"
-            disabled={!data.inventoryID || qty == 0}
+            disabled={!data.inventoryID || qty === 0}
           >
             Add & Close
           </Button>

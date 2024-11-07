@@ -118,7 +118,7 @@ function Header() {
                 <TextField
                   name="Deskripsi"
                   label="Description"
-                  value={!Desc || Desc == "" ? " " : Desc}
+                  value={!Desc || Desc === "" ? " " : Desc}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{
@@ -132,7 +132,7 @@ function Header() {
                   name="Last Sync"
                   label="Last Sync"
                   value={
-                    !Sync || Sync == ""
+                    !Sync || Sync === ""
                       ? " "
                       : moment(Sync).format("DD/MM/YYYY HH:mm:ss")
                   }
@@ -148,7 +148,7 @@ function Header() {
                 <TextField
                   name="Asset Type"
                   label="Asset Type"
-                  value={!AssetType || AssetType == "" ? " " : AssetType}
+                  value={!AssetType || AssetType === "" ? " " : AssetType}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{

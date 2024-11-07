@@ -99,7 +99,7 @@ export default function Header(props) {
   // useEffect(() => {
   //   setSelectedRows(
   //     Data.filter((bo) =>
-  //       selectedObj.every((ao) => ao.IDListSOOtorisasi == bo.IDListSOOtorisasi)
+  //       selectedObj.every((ao) => ao.IDListSOOtorisasi === bo.IDListSOOtorisasi)
   //     )
   //   );
   // }, [selectedObj]);
@@ -310,14 +310,14 @@ export default function Header(props) {
             </Typography>
             <Button
               disabled={
-                SelectedSO.length == 0 ||
+                SelectedSO.length === 0 ||
                 SelectedSO?.filter(
                   (ae) =>
-                    ae.StatusOtorisasi == "Batal" ||
-                    ae.StatusOtorisasi == "Urgent" ||
-                    ae.StatusSO == "Di-posting" ||
-                    ae.StatusSO == "Ditindaklanjuti" ||
-                    ae.StatusSO == "Diajukan"
+                    ae.StatusOtorisasi === "Batal" ||
+                    ae.StatusOtorisasi === "Urgent" ||
+                    ae.StatusSO === "Di-posting" ||
+                    ae.StatusSO === "Ditindaklanjuti" ||
+                    ae.StatusSO === "Diajukan"
                 ).length > 0
               }
               onClick={() => {
@@ -331,7 +331,8 @@ export default function Header(props) {
             <Button
               disabled={
                 SelectedSO.length !== 1 ||
-                SelectedSO?.filter((ae) => ae.StatusSO == "Diajukan").length > 0
+                SelectedSO?.filter((ae) => ae.StatusSO === "Diajukan").length >
+                  0
               }
               onClick={() => {
                 setopenOtorisasi(true);
@@ -343,11 +344,11 @@ export default function Header(props) {
             <br />
             <Button
               disabled={
-                SelectedSO.length == 0 ||
+                SelectedSO.length === 0 ||
                 SelectedSO?.filter(
                   (ae) =>
-                    ae.StatusSO == "Di-posting" ||
-                    ae.StatusSO == "Ditindaklanjuti"
+                    ae.StatusSO === "Di-posting" ||
+                    ae.StatusSO === "Ditindaklanjuti"
                 ).length > 0
               }
               onClick={() => {
@@ -361,7 +362,7 @@ export default function Header(props) {
               Printing and Emailing
             </Typography>
             <Button
-              disabled={SelectedSO.length == 0}
+              disabled={SelectedSO.length === 0}
               onClick={() => {
                 setOpenRespon(true);
                 setMoreBtn(false);

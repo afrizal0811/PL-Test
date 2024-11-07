@@ -53,7 +53,7 @@ const MutasiKuotaPopup = (props) => {
           id: value.MutasiKuotaID,
         }));
         const isInEditModeZona =
-          filter.filter((row) => row.id == params.id).length > 0;
+          filter.filter((row) => row.id === params.id).length > 0;
 
         const ItemIndex = data.findIndex(
           (obj) => obj.MutasiKuotaID === params.id
@@ -182,7 +182,7 @@ const MutasiKuotaPopup = (props) => {
             ) {
               setSelectedRows(
                 selectionModel.filter((item) =>
-                  newData.some((i) => item == i.MutasiKuotaID)
+                  newData.some((i) => item === i.MutasiKuotaID)
                 )
               );
             }
@@ -402,7 +402,7 @@ const MutasiKuotaPopup = (props) => {
                     const diffPageSelectedModel = selectionModel.filter(
                       (item) =>
                         !e.includes(item) &&
-                        !data.some((e) => e.MutasiKuotaID == item)
+                        !data.some((e) => e.MutasiKuotaID === item)
                     );
                     const selection = [...diffPageSelectedModel, ...e];
                     setSelectionModel(selection);
@@ -415,13 +415,13 @@ const MutasiKuotaPopup = (props) => {
                       selectedIDs.has(item.MutasiKuotaID)
                     );
                     console.log("unselect:", unselectedModel);
-                    if (selectedObj.length == 0) {
+                    if (selectedObj.length === 0) {
                       setSelectedObj(selectedModel);
                     }
                     selectedModel.map((select) => {
                       if (
                         !selectedObj.some(
-                          (item) => item.MutasiKuotaID == select.MutasiKuotaID
+                          (item) => item.MutasiKuotaID === select.MutasiKuotaID
                         )
                       ) {
                         setSelectedObj(selectedObj.concat(select));
@@ -430,7 +430,8 @@ const MutasiKuotaPopup = (props) => {
                     unselectedModel.map((unselect) => {
                       if (
                         selectedObj.some(
-                          (item) => item.MutasiKuotaID == unselect.MutasiKuotaID
+                          (item) =>
+                            item.MutasiKuotaID === unselect.MutasiKuotaID
                         )
                       ) {
                         setSelectedObj(

@@ -195,7 +195,7 @@ export default function GantiKolektorDialog(props) {
                           </InputAdornment>
                         ),
                       }}
-                      value={Kolektor == "" ? "" : Kolektor.employeeName}
+                      value={Kolektor === "" ? "" : Kolektor.employeeName}
                       onClick={() => {
                         if (!Kolektor) {
                           setOpenKolektor(true);
@@ -215,7 +215,7 @@ export default function GantiKolektorDialog(props) {
               gantiKolektor();
             }}
             color="primary"
-            disabled={Kolektor == ""}
+            disabled={Kolektor === ""}
             variant="contained"
           >
             Pindah

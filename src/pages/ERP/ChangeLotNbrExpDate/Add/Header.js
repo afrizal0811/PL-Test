@@ -204,7 +204,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah dihapus!");
             setTimeout(() => {
               window.location.href = `/change-lot-nbr-exp-date`;
@@ -279,10 +279,10 @@ export default function Header(props) {
     };
     console.log("save triger", e);
 
-    if (id == undefined) {
+    if (id === undefined) {
       // console.log(payload);
       createData(payload);
-    } else if (e.Submit == true) {
+    } else if (e.Submit === true) {
       editData(payload, true);
     } else {
       editData(payload, false);
@@ -301,7 +301,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             let res = response.data;
             NotifySuccess("success", "Data telah ditambah!");
             setTimeout(() => {
@@ -332,9 +332,9 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log("edit", response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             setTimeout(() => {
-              if (submit == true) {
+              if (submit === true) {
                 handleSubmit();
               } else {
                 NotifySuccess("success", "Data telah disimpan!");
@@ -376,7 +376,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah di-submit!");
             getData(id);
             // setTimeout(() => {
@@ -407,7 +407,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah di-release!");
             getData(id);
             // setTimeout(() => {
@@ -441,7 +441,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             setreasonApprove("");
             NotifySuccess("success", "Data telah di-approve!");
             getData(id);
@@ -475,7 +475,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data telah di-reject!");
             getData(id);
             // setTimeout(() => {
@@ -558,23 +558,23 @@ export default function Header(props) {
                 disabled={
                   Status !== "On Hold" ||
                   loading ||
-                  Status == "Reject" ||
-                  DataDest.length == 0 ||
+                  Status === "Reject" ||
+                  DataDest.length === 0 ||
                   DataDest.filter(
                     (ao) =>
-                      ao.ToQty == 0 ||
-                      ao.ToExpDate == "" ||
-                      ao.ToExpDate == "Invalid date" ||
+                      ao.ToQty === 0 ||
+                      ao.ToExpDate === "" ||
+                      ao.ToExpDate === "Invalid date" ||
                       !ao.ToLocationID ||
                       !ao.ToSiteCD ||
                       !ao.ToLotNbr ||
-                      ao.ToLotNbr == ""
+                      ao.ToLotNbr === ""
                   ).length > 0 ||
                   DataSource.filter(
                     (ao) =>
-                      ao.Qty == 0 ||
-                      ao.SrcExpDate == "" ||
-                      ao.SrcExpDate == "Invalid date"
+                      ao.Qty === 0 ||
+                      ao.SrcExpDate === "" ||
+                      ao.SrcExpDate === "Invalid date"
                   ).length > 0
                 }
                 onClick={() => {
@@ -586,7 +586,7 @@ export default function Header(props) {
                 Submit
               </MenuItem>
               <MenuItem
-                disabled={!Approver || Status == "Reject" || loading}
+                disabled={!Approver || Status === "Reject" || loading}
                 onClick={() => {
                   setapprove(true);
                   closeMenu();
@@ -604,7 +604,7 @@ export default function Header(props) {
                 Release
               </MenuItem>
               <MenuItem
-                disabled={!Approver || Status == "Reject" || loading}
+                disabled={!Approver || Status === "Reject" || loading}
                 onClick={() => {
                   closeMenu();
                   setreject(true);
@@ -794,7 +794,7 @@ export default function Header(props) {
               Batal
             </Button>
             <Button
-              disabled={reasonApprove.trim() == ""}
+              disabled={reasonApprove.trim() === ""}
               onClick={(e) => {
                 if (reasonApprove.trim().length > 50) {
                   NotifyError("Panjang karakter melebihi batas");
@@ -846,7 +846,7 @@ export default function Header(props) {
               Batal
             </Button>
             <Button
-              disabled={reasonReject.trim() == ""}
+              disabled={reasonReject.trim() === ""}
               onClick={(e) => {
                 if (reasonReject.trim().length > 50) {
                   NotifyError("Panjang karakter melebihi batas");

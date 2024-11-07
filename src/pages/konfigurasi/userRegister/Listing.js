@@ -140,7 +140,7 @@ function TableUserReg() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "User Berhasil Didaftarkan");
             setTimeout(() => {
               window.location.reload();
@@ -412,7 +412,7 @@ function TableUserReg() {
               //   handleReject();
               //   setadd(false);
               // }
-              let user = dataReg.filter((e) => e.id == selectionReg[0]);
+              let user = dataReg.filter((e) => e.id === selectionReg[0]);
               handleReg(user[0]);
               // setadd(false);
             }}

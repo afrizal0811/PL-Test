@@ -57,7 +57,7 @@ export default function DaftarPengajuan(props) {
           `${
             process.env.REACT_APP_DOMAIN_API
           }/ApprovalList/GetDaftarPengajuan?page=${page}&rowsCount=${pageSize}&branch=${
-            branch == null ? "" : branch
+            branch === null ? "" : branch
           }&startDate=${moment(startDate).format(
             "MM-DD-YYYY"
           )}&endDate=${moment(endDate).format(
@@ -253,7 +253,7 @@ export default function DaftarPengajuan(props) {
                 id="combo-box-demo"
                 options={opsiStatus}
                 onChange={(e, value) => {
-                  setstatusOto(value == null ? "" : value.id);
+                  setstatusOto(value === null ? "" : value.id);
                   console.log("value", value);
                   setCurretPage(0);
                 }}

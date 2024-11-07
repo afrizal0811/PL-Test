@@ -80,8 +80,8 @@ export default function KolektorDetail(props) {
     //       // console.log("ini data NotificationTemplateReps = ", response);
     //       if (
     //         response.status === 200 ||
-    //         response.status == 201 ||
-    //         response.status == 204
+    //         response.status === 201 ||
+    //         response.status === 204
     //       ) {
     //         NotifySuccess("success", "Data telah di" + param);
     //         setTimeout(() => {
@@ -110,7 +110,7 @@ export default function KolektorDetail(props) {
           `${
             process.env.REACT_APP_DOMAIN_API
           }/LaporanHarianInkasoReps/FilterLaporanHarianInkaso?pages=${page}&rowsCount=10&kolektor=${getEmployee()}${
-            keterangan == null || keterangan == ""
+            keterangan === null || keterangan === ""
               ? ""
               : "&ketStatusKembali=" + keterangan.id
           }&tglPenagihan=${moment(LHIDocDate).format("YYYY-MM-DD")}`,

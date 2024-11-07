@@ -132,7 +132,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/master-data/approval/${ScreenID[0].ScreenID}`;
@@ -211,8 +211,8 @@ function Header() {
                 }}
               /> */}
               <CbData
-                value={ScreenID == "" ? " " : `${ScreenID[0].ScreenID}`}
-                defaultValue={ScreenID == "" ? " " : `${ScreenID[0].ScreenID}`}
+                value={ScreenID === "" ? " " : `${ScreenID[0].ScreenID}`}
+                defaultValue={ScreenID === "" ? " " : `${ScreenID[0].ScreenID}`}
                 required
                 // config={GetConfig()}
                 // disabled={Loading}
@@ -230,10 +230,10 @@ function Header() {
             {/* <Grid item md={3} xs={6}>
               <CbData
                 value={
-                  departement == "" ? " " : `${departement[0].DepartmentID}`
+                  departement === "" ? " " : `${departement[0].DepartmentID}`
                 }
                 defaultValue={
-                  departement == "" ? " " : `${departement[0].DepartmentID}`
+                  departement === "" ? " " : `${departement[0].DepartmentID}`
                 }
                 required
                 label="Departement"

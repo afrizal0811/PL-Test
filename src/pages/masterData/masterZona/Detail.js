@@ -119,7 +119,7 @@ function Header() {
                 <TextField
                   name="Deskripsi"
                   label="Description"
-                  value={!Desc || Desc == "" ? " " : Desc}
+                  value={!Desc || Desc === "" ? " " : Desc}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{
@@ -132,7 +132,7 @@ function Header() {
                 <TextField
                   name="Branch"
                   label="Branch"
-                  value={!Branch || Branch == "" ? " " : Branch}
+                  value={!Branch || Branch === "" ? " " : Branch}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{
@@ -145,7 +145,7 @@ function Header() {
                 <TextField
                   name="Status"
                   label="Status"
-                  value={!statusZona || statusZona == "" ? " " : statusZona}
+                  value={!statusZona || statusZona === "" ? " " : statusZona}
                   fullWidth
                   variant="outlined"
                   InputLabelProps={{

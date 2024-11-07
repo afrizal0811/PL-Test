@@ -292,12 +292,12 @@ export default function DetailApproval(props) {
                   <Grid item md={4} xs={4}>
                     <CbData
                       value={
-                        props.departement == ""
+                        props.departement === ""
                           ? " "
                           : `${props.departement[0].DepartmentID}`
                       }
                       defaultValue={
-                        props.departement == ""
+                        props.departement === ""
                           ? " "
                           : `${props.departement[0].DepartmentID}`
                       }
@@ -570,11 +570,11 @@ export default function DetailApproval(props) {
               color="primary"
               disabled={
                 name === "" ||
-                employeeName.length == 0 ||
-                toP1 == "" ||
-                toP2 == "" ||
-                limit2 == "" ||
-                limit1 == ""
+                employeeName.length === 0 ||
+                toP1 === "" ||
+                toP2 === "" ||
+                limit2 === "" ||
+                limit1 === ""
               }
             >
               Save
@@ -830,11 +830,11 @@ export default function DetailApproval(props) {
               color="primary"
               disabled={
                 name === "" ||
-                employeeName.length == 0 ||
-                toP1 == "" ||
-                toP2 == "" ||
-                limit2 == "" ||
-                limit1 == ""
+                employeeName.length === 0 ||
+                toP1 === "" ||
+                toP2 === "" ||
+                limit2 === "" ||
+                limit1 === ""
               }
             >
               Save

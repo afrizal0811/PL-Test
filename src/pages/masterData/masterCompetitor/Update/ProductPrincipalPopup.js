@@ -200,7 +200,7 @@ function PrincipalProdukPopup(props) {
                 props.setOpenModalPP(false);
                 props.setProductPrincipalID(
                   DataPincipal.filter(
-                    (i) => SelectedPrincipal.toString() == i.id
+                    (i) => SelectedPrincipal.toString() === i.id
                   )[0]
                 );
               }}
@@ -237,7 +237,7 @@ function PrincipalProdukPopup(props) {
             props.setProductPrincipalID(
               SelectedPrincipal.length > 0
                 ? DataPincipal.filter(
-                    (i) => SelectedPrincipal.toString() == i.id
+                    (i) => SelectedPrincipal.toString() === i.id
                   )[0]
                 : ""
             );

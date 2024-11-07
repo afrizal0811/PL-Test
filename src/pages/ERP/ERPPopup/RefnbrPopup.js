@@ -230,18 +230,18 @@ export default function RefnbrPopup(props) {
                   onRowDoubleClick={(params, event) => {
                     // console.log(
                     //   "doble",
-                    //   // Rows.filter((i) => i.id == e.id)[0]
+                    //   // Rows.filter((i) => i.id === e.id)[0]
                     //   e
                     // );
                     history(`/${props.href}/detail/${params.row[props.id]}`);
                     // props.setopen(false);
-                    // props.setTemp(Rows.filter((i) => e.id == i[props.id])[0]);
+                    // props.setTemp(Rows.filter((i) => e.id === i[props.id])[0]);
                   }}
                   onSelectionModelChange={(e) => {
                     console.log(
                       "change",
                       Rows.filter((i) => e.includes(i[props.id]))[0]
-                      // Rows.filter((i) => i.id == e.id)[0]
+                      // Rows.filter((i) => i.id === e.id)[0]
                       // e
                     );
                     setSelectedCust(

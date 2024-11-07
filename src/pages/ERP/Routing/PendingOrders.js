@@ -150,7 +150,7 @@ export default function PendingOrders(props) {
                   // }}
                   size="small"
                   fullWidth
-                  value={Vehicle == "" ? " " : Vehicle}
+                  value={Vehicle === "" ? " " : Vehicle}
                   onChange={(e) => {
                     setVehicle(e.target.value);
                   }}
@@ -158,8 +158,8 @@ export default function PendingOrders(props) {
               </Grid>
               <Grid item md={6}>
                 <CbDataPG
-                  value={Zona == "" ? " " : `${Zona}`}
-                  defaultValue={Zona == "" ? " " : `${Zona}`}
+                  value={Zona === "" ? " " : `${Zona}`}
+                  defaultValue={Zona === "" ? " " : `${Zona}`}
                   required
                   size="small"
                   // config={GetConfig()}
@@ -189,7 +189,7 @@ export default function PendingOrders(props) {
                   // }}
                   size="small"
                   fullWidth
-                  value={NoSO == "" ? " " : NoSO}
+                  value={NoSO === "" ? " " : NoSO}
                   onChange={(e) => {
                     setNoSO(e.target.value);
                   }}
@@ -213,7 +213,7 @@ export default function PendingOrders(props) {
                   // }}
                   size="small"
                   fullWidth
-                  value={SearchText == "" ? " " : SearchText}
+                  value={SearchText === "" ? " " : SearchText}
                   onChange={(e) => {
                     setSearchText(e.target.value);
                   }}
@@ -253,7 +253,7 @@ export default function PendingOrders(props) {
               console.log("selken", props.selKendaraan);
               // setselKendaraan(
               //   e.map((a) => {
-              //     Data.filter((aa) => aa.LaporanHarianInkasoGridRepID == a);
+              //     Data.filter((aa) => aa.LaporanHarianInkasoGridRepID === a);
               //   })
               // );
             }}

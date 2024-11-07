@@ -125,7 +125,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/set-key/${upKey}`;
@@ -159,7 +159,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiUbah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/set-key/${upKey}`;
@@ -179,7 +179,7 @@ function Header() {
   };
 
   const onSumbitHandler = async () => {
-    if (id == undefined) {
+    if (id === undefined) {
       createData();
     } else {
       editData();
@@ -227,7 +227,7 @@ function Header() {
               color="primary"
               size="medium"
               startIcon={<SaveIcon />}
-              disabled={upKey == "" || valueKey == ""}
+              disabled={upKey === "" || valueKey === ""}
               onClick={onSumbitHandler}
             >
               Save

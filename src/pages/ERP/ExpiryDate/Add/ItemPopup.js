@@ -117,7 +117,7 @@ export default function ItemPopup(props) {
 
   useEffect(() => {
     if (searchText.length > 3) getData();
-    if (searchText.length == 0) getData();
+    if (searchText.length === 0) getData();
   }, [searchText]);
 
   useEffect(() => {
@@ -214,17 +214,17 @@ export default function ItemPopup(props) {
                   onRowDoubleClick={(e) => {
                     // console.log(
                     //   "doble",
-                    //   // Rows.filter((i) => i.id == e.id)[0]
+                    //   // Rows.filter((i) => i.id === e.id)[0]
                     //   e
                     // );
                     props.setopen(false);
-                    props.setTemp(Rows.filter((i) => e.id == i[props.id])[0]);
+                    props.setTemp(Rows.filter((i) => e.id === i[props.id])[0]);
                   }}
                   onSelectionModelChange={(e) => {
                     console.log(
                       "change",
                       Rows.filter((i) => e.includes(i[props.id]))[0]
-                      // Rows.filter((i) => i.id == e.id)[0]
+                      // Rows.filter((i) => i.id === e.id)[0]
                       // e
                     );
                     setSelectedCust(

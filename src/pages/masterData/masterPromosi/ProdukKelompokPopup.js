@@ -120,7 +120,7 @@ function ProdukKelompokPopup(props) {
 
   useEffect(() => {
     getDataPrincipal();
-    if (props.PrincipalProdukEdit == true) {
+    if (props.PrincipalProdukEdit === true) {
       props.setProductKelompokID({ id: "", text: "" });
     }
   }, [props.ProductPrincipalID]);
@@ -228,7 +228,7 @@ function ProdukKelompokPopup(props) {
             props.setOpenModalPK(false);
             if (SelectedPrincipal.length > 0) {
               props.setProductKelompokID(
-                DataPincipal.filter((ae) => ae.id == SelectedPrincipal[0])[0]
+                DataPincipal.filter((ae) => ae.id === SelectedPrincipal[0])[0]
               );
             }
           }}

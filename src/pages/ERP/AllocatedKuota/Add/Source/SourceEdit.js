@@ -44,7 +44,7 @@ export default function SourceEdit(props) {
         item.UnAlloKuota =
           AlloKuota -
           props.DataAllo.filter(
-            (ab) => ab.InventoryID == item.InventoryID
+            (ab) => ab.InventoryID === item.InventoryID
           ).reduce((n, { DstAlloKuota }) => n + DstAlloKuota, 0);
         // item.MasterApprovalRepTransaksiID = menuID.transaksiID;
       }

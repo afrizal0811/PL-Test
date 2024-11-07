@@ -27,12 +27,12 @@ export default function Tabs(props) {
             <Tab
               label="Membership"
               value="1"
-              style={{ color: value == 1 ? "white" : "#a7d2f0" }}
+              style={{ color: value === 1 ? "white" : "#a7d2f0" }}
             />
             <Tab
               label="Access Rights"
               value="2"
-              style={{ color: value == 2 ? "white" : "#a7d2f0" }}
+              style={{ color: value === 2 ? "white" : "#a7d2f0" }}
             />
           </TabList>
         </AppBar>

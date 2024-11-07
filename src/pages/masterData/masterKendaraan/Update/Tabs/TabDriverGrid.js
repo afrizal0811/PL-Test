@@ -294,9 +294,9 @@ export default function TabDriver(props) {
                   }
                 }}
                 disabled={
-                  ((DriverTemp?.employeeID == "" || !DriverTemp.employeeID) &&
+                  ((DriverTemp?.employeeID === "" || !DriverTemp.employeeID) &&
                     !props.StatusMilik) ||
-                  (SewaDriverTemp == "" && props.StatusMilik)
+                  (SewaDriverTemp === "" && props.StatusMilik)
                     ? true
                     : false
                 }

@@ -248,7 +248,7 @@ function TableKendaraan() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status === 200 || response.status == 204) {
+          if (response.status === 200 || response.status === 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.reload();
@@ -330,7 +330,7 @@ function TableKendaraan() {
                 title="Clear"
                 aria-label="Clear"
                 size="small"
-                style={{ visibility: searchText == "" ? "visible" : "hidden" }}
+                style={{ visibility: searchText === "" ? "visible" : "hidden" }}
                 onClick={() => requestSearch("")}
               >
                 <ClearIcon fontSize="small" />

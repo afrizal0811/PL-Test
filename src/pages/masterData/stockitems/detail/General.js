@@ -48,7 +48,7 @@ export default function TabGeneral(props) {
                 name="itemClass"
                 label="Item Class"
                 value={
-                  !props.ItemClass || props.ItemClass == ""
+                  !props.ItemClass || props.ItemClass === ""
                     ? " "
                     : props.ItemClass
                 }
@@ -66,7 +66,9 @@ export default function TabGeneral(props) {
                 name="itemType"
                 label="Item Type"
                 value={
-                  !props.ItemType || props.ItemType == "" ? " " : props.ItemType
+                  !props.ItemType || props.ItemType === ""
+                    ? " "
+                    : props.ItemType
                 }
                 fullWidth
                 variant="outlined"
@@ -88,7 +90,7 @@ export default function TabGeneral(props) {
                 name="valuationMethod"
                 label="Valuation Method"
                 value={
-                  !props.ValuationMethod || props.ValuationMethod == ""
+                  !props.ValuationMethod || props.ValuationMethod === ""
                     ? " "
                     : props.ValuationMethod
                 }
@@ -106,7 +108,7 @@ export default function TabGeneral(props) {
                 name="taxCategory"
                 label="Tax Category"
                 value={
-                  !props.TaxCategory || props.TaxCategory == ""
+                  !props.TaxCategory || props.TaxCategory === ""
                     ? " "
                     : props.TaxCategory
                 }
@@ -124,7 +126,7 @@ export default function TabGeneral(props) {
                 name="postingClass"
                 label="posting Class"
                 value={
-                  !props.PostingClass || props.PostingClass == ""
+                  !props.PostingClass || props.PostingClass === ""
                     ? " "
                     : props.PostingClass
                 }
@@ -142,7 +144,7 @@ export default function TabGeneral(props) {
                 name="lot/serialclass"
                 label="Lot/Serial Class"
                 value={
-                  !props.LotSerialClass || props.LotSerialClass == ""
+                  !props.LotSerialClass || props.LotSerialClass === ""
                     ? " "
                     : props.LotSerialClass
                 }
@@ -165,7 +167,7 @@ export default function TabGeneral(props) {
                 name="defaultWarehouse"
                 label="Default Warehouse"
                 value={
-                  !props.DefaultWarehouseID || props.DefaultWarehouseID == ""
+                  !props.DefaultWarehouseID || props.DefaultWarehouseID === ""
                     ? " "
                     : props.DefaultWarehouseID
                 }
@@ -184,7 +186,7 @@ export default function TabGeneral(props) {
                 label="Default Issue From"
                 value={
                   !props.DefaultIssueLocationID ||
-                  props.DefaultIssueLocationID == ""
+                  props.DefaultIssueLocationID === ""
                     ? " "
                     : props.DefaultIssueLocationID
                 }
@@ -203,7 +205,7 @@ export default function TabGeneral(props) {
                 label="Default Receipt To"
                 value={
                   !props.DefaultReceiptLocationID ||
-                  props.DefaultReceiptLocationID == ""
+                  props.DefaultReceiptLocationID === ""
                     ? " "
                     : props.DefaultReceiptLocationID
                 }
@@ -225,7 +227,7 @@ export default function TabGeneral(props) {
               <TextField
                 name="group"
                 label="Group"
-                value={!props.Group || props.Group == "" ? " " : props.Group}
+                value={!props.Group || props.Group === "" ? " " : props.Group}
                 fullWidth
                 variant="outlined"
                 my={2}
@@ -240,7 +242,7 @@ export default function TabGeneral(props) {
                 name="principal"
                 label="Principal"
                 value={
-                  !props.Principal || props.Principal == ""
+                  !props.Principal || props.Principal === ""
                     ? " "
                     : props.Principal
                 }
@@ -258,7 +260,9 @@ export default function TabGeneral(props) {
                 name="kelompok"
                 label="Kelompok"
                 value={
-                  !props.Kelompok || props.Kelompok == "" ? " " : props.Kelompok
+                  !props.Kelompok || props.Kelompok === ""
+                    ? " "
+                    : props.Kelompok
                 }
                 fullWidth
                 variant="outlined"
@@ -274,7 +278,9 @@ export default function TabGeneral(props) {
                 name="f1Pallet"
                 label="1 Pallet"
                 value={
-                  !props.F1Pallet || props.F1Pallet == "" ? " " : props.F1Pallet
+                  !props.F1Pallet || props.F1Pallet === ""
+                    ? " "
+                    : props.F1Pallet
                 }
                 fullWidth
                 variant="outlined"
@@ -299,7 +305,7 @@ export default function TabGeneral(props) {
                 name="baseUnit"
                 label="Base Unit"
                 value={
-                  !props.BaseUOM || props.BaseUOM == "" ? " " : props.BaseUOM
+                  !props.BaseUOM || props.BaseUOM === "" ? " " : props.BaseUOM
                 }
                 fullWidth
                 variant="outlined"
@@ -315,7 +321,9 @@ export default function TabGeneral(props) {
                 name="salesUnit"
                 label="Sales Unit"
                 value={
-                  !props.SalesUOM || props.SalesUOM == "" ? " " : props.SalesUOM
+                  !props.SalesUOM || props.SalesUOM === ""
+                    ? " "
+                    : props.SalesUOM
                 }
                 fullWidth
                 variant="outlined"
@@ -331,7 +339,7 @@ export default function TabGeneral(props) {
                 name="purchaseUnit"
                 label="Purchase Unit"
                 value={
-                  !props.PurchaseUOM || props.PurchaseUOM == ""
+                  !props.PurchaseUOM || props.PurchaseUOM === ""
                     ? " "
                     : props.PurchaseUOM
                 }

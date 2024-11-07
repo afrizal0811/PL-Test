@@ -121,7 +121,7 @@ export default function DeskcallPopup(props) {
 
   useEffect(() => {
     setOpenDC(props.openDC);
-    if (props.openDC == true) {
+    if (props.openDC === true) {
       getData();
     }
   }, [props.openDC]);

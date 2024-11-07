@@ -230,7 +230,7 @@ function PrincipalProdukPopup(props) {
             console.log("SelectedPrincipal", SelectedPrincipal);
             if (SelectedPrincipal.length > 0) {
               props.setProductPrincipalID(
-                DataPincipal.filter((ae) => ae.id == SelectedPrincipal[0])[0]
+                DataPincipal.filter((ae) => ae.id === SelectedPrincipal[0])[0]
               );
             }
           }}

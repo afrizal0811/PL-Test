@@ -82,7 +82,7 @@ export default function HistApprovalPopup(props) {
   const [Loading, setLoading] = useState(false);
 
   React.useEffect(() => {
-    if (props.openHistApproval && props.SelectedSO.length == 1) {
+    if (props.openHistApproval && props.SelectedSO.length === 1) {
       getHistory(props.SelectedSO[0].IDListSOOtorisasi);
     }
     // console.log("selectedso", props.SelectedSO);

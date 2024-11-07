@@ -147,7 +147,7 @@ export default function TabZona(props) {
                   }
                 }}
                 disabled={
-                  ZonaTemp?.zoneID == "" || !ZonaTemp.zoneID ? true : false
+                  ZonaTemp?.zoneID === "" || !ZonaTemp.zoneID ? true : false
                 }
               >
                 Save

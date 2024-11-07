@@ -212,12 +212,12 @@ export default function AllocatedPopup(props) {
               <Grid item md={4}>
                 <CbData
                   value={
-                    Warehouse?.WarehouseID == undefined
+                    Warehouse?.WarehouseID === undefined
                       ? " "
                       : `${Warehouse.WarehouseID}`
                   }
                   defaultValue={
-                    Warehouse?.WarehouseID == undefined
+                    Warehouse?.WarehouseID === undefined
                       ? " "
                       : `${Warehouse.WarehouseID}`
                   }
@@ -265,8 +265,8 @@ export default function AllocatedPopup(props) {
                     );
                     console.log("double", e);
                     const isInEditModeZona =
-                      filter.filter((row) => row.id == e.id).length > 0;
-                    if (editmode == false && isInEditModeZona) {
+                      filter.filter((row) => row.id === e.id).length > 0;
+                    if (editmode === false && isInEditModeZona) {
                       setqtyTemp(e.value);
                       refdata.current.setRowMode(e.id, "edit");
                       seteditmode(true);
@@ -284,16 +284,16 @@ export default function AllocatedPopup(props) {
                     );
                     console.log("unselect:", unselectedModel);
                     console.log("select:", selectionModel);
-                    if (selectedObj.length == 0) {
+                    if (selectedObj.length === 0) {
                       setSelectedObj(selectedModel);
                     }
                     selectedModel.map((select) => {
-                      if (!selectedObj.some((item) => item.id == select.id)) {
+                      if (!selectedObj.some((item) => item.id === select.id)) {
                         setSelectedObj(selectedObj.concat(select));
                       }
                     });
                     unselectedModel.map((unselect) => {
-                      if (selectedObj.some((item) => item.id == unselect.id)) {
+                      if (selectedObj.some((item) => item.id === unselect.id)) {
                         setSelectedObj(
                           selectedObj.filter((obj) => obj.id !== unselect.id)
                         );

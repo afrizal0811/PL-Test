@@ -56,7 +56,7 @@ export default function DetailDialog(props) {
             "/DeskcallReps/getDetailDeskcall/" +
             id +
             `?filterStatusLHI=${
-              StatusLHI == null ? "All" : StatusLHI
+              StatusLHI === null ? "All" : StatusLHI
             }&BranchId=${getBrach()}`,
           GetConfig()
         )

@@ -385,7 +385,7 @@ function Header() {
         )
         .then(function (response) {
           console.log(response);
-          if (response.status === 200 || response.status == 201) {
+          if (response.status === 200 || response.status === 201) {
             NotifySuccess("success", "Data Telah Ditambah");
             setTimeout(() => {
               window.location.href = `/master-data/update-kendaraan/${response.data.IDKendaraan}`;
@@ -504,17 +504,17 @@ function Header() {
               <Tab
                 label="General"
                 value="1"
-                style={{ color: tabPanel == 1 ? "white" : "#a7d2f0" }}
+                style={{ color: tabPanel === 1 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Driver"
                 value="2"
-                style={{ color: tabPanel == 2 ? "white" : "#a7d2f0" }}
+                style={{ color: tabPanel === 2 ? "white" : "#a7d2f0" }}
               />
               <Tab
                 label="Zona"
                 value="3"
-                style={{ color: tabPanel == 3 ? "white" : "#a7d2f0" }}
+                style={{ color: tabPanel === 3 ? "white" : "#a7d2f0" }}
               />
             </TabList>
           </AppBar>
