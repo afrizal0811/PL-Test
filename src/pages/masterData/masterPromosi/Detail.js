@@ -80,7 +80,7 @@ function Header() {
   const [lastbranch, setlastbranch] = useState("");
 
   useEffect(() => {
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);

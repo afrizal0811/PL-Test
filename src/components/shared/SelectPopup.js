@@ -101,7 +101,7 @@ export default function SelectPopup(props) {
   }, [props.open]);
 
   useEffect(() => {
-    if (props.searchParam && searchText != "") {
+    if (props.searchParam && searchText !== "") {
       getDataSearch();
     }
   }, [searchText]);

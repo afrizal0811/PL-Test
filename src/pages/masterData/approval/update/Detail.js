@@ -206,7 +206,7 @@ export default function DetailApproval(props) {
     useEffect(() => {
       // console.log(dataEdit);
       // getData();
-      if (dataEdit != "") {
+      if (dataEdit !== "") {
         const selectedData = data.find((item) => item.id === dataEdit);
         setName(selectedData.levelling);
         setValueEmployee(selectedData);

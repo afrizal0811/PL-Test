@@ -143,7 +143,7 @@ export default function Header(props) {
   React.useEffect(() => {
     // console.log(id);
     getLast();
-    if (id != undefined) {
+    if (id !== undefined) {
       getData(id);
     } else {
       setStatus("On Hold");
@@ -152,7 +152,7 @@ export default function Header(props) {
 
   React.useEffect(() => {
     // console.log(id);
-    if (AnyChanges > 1 && Status != "Released") {
+    if (AnyChanges > 1 && Status !== "Released") {
       setIsBlocking(true);
     }
   }, [Status, AnyChanges]);
@@ -556,7 +556,7 @@ export default function Header(props) {
           <MenuItem
             disabled={
               DataSource.filter((aw) => aw.UnAlloKuota < 0).length > 0 ||
-              DataSource.filter((aw) => aw.UnAlloKuota != 0).length > 0 ||
+              DataSource.filter((aw) => aw.UnAlloKuota !== 0).length > 0 ||
               Data.Status === "Released" ||
               DataAllo.length == 0 ||
               isBlocking ||
@@ -586,7 +586,7 @@ export default function Header(props) {
               console.log("isBlocking", isBlocking);
               console.log(
                 "DataSource 2",
-                DataSource.filter((aw) => aw.UnAlloKuota != 0).length > 0
+                DataSource.filter((aw) => aw.UnAlloKuota !== 0).length > 0
               );
               // setopenMutasiKuota(true);
               // ConfirmReset(id);
@@ -755,13 +755,13 @@ export default function Header(props) {
               setLoading={(e) => setLoading(e)}
               loading={loading}
               setDataSource={(e) => {
-                // if (e.length != DataSource.length) {
+                // if (e.length !== DataSource.length) {
                 //   setAnyChanges(AnyChanges + 1);
                 // }
                 setDataSource(e);
               }}
               setDataAllo={(e) => {
-                if (e.length != DataAllo.length) {
+                if (e.length !== DataAllo.length) {
                   setAnyChanges(AnyChanges + 1);
                 }
                 setDataAllo(e);

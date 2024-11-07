@@ -39,7 +39,7 @@ export default function Header(props) {
 
   useEffect(() => {
     // console.log(id);
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);
@@ -320,7 +320,7 @@ export default function Header(props) {
                   fullWidth
                   variant="outlined"
                   my={2}
-                  // disabled={id != undefined}
+                  // disabled={id !== undefined}
                   onChange={(e) => setScreenID(e.target.value)}
                 />
               </Grid>

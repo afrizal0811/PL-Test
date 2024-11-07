@@ -89,7 +89,7 @@ export default function LHITabelDet(props) {
     if (!mounted.current) {
       mounted.current = true;
     }
-    if (id != undefined) {
+    if (id !== undefined) {
       getData(id);
     } else {
       // setstatus("Draft");
@@ -384,13 +384,14 @@ export default function LHITabelDet(props) {
           // disabled={Loading}
           disabled={
             status !== "On Progress" ||
-            Data.filter((ae) => ae.balance > 0 && !ae.keterangan).length != 0 ||
+            Data.filter((ae) => ae.balance > 0 && !ae.keterangan).length !==
+              0 ||
             Loading
           }
           style={{
             color:
               status !== "On Progress" ||
-              Data.filter((ae) => ae.balance > 0 && !ae.keterangan).length != 0
+              Data.filter((ae) => ae.balance > 0 && !ae.keterangan).length !== 0
                 ? grey[400]
                 : grey[700],
           }}
@@ -435,13 +436,13 @@ export default function LHITabelDet(props) {
                     setOpenOtomatis(true);
                     setMoreBtn(false);
                   }}
-                  disabled={status != "Draft"}
+                  disabled={status !== "Draft"}
                 >
                   Otomatis
                 </Button>
                 <br />
                 <Button
-                  disabled={status != "Draft"}
+                  disabled={status !== "Draft"}
                   onClick={() => {
                     setOpenTambah(true);
                     setMoreBtn(false);
@@ -465,7 +466,7 @@ export default function LHITabelDet(props) {
                   Modify
                 </Typography>
                 <Button
-                  disabled={selectedLHI.length == 0 || status != "Draft"}
+                  disabled={selectedLHI.length == 0 || status !== "Draft"}
                   onClick={() => {
                     notifyConfirmDelete();
                   }}
@@ -474,7 +475,7 @@ export default function LHITabelDet(props) {
                 </Button>
                 <br />
                 <Button
-                  disabled={selectedLHI.length === 0 || status != "Draft"}
+                  disabled={selectedLHI.length === 0 || status !== "Draft"}
                   onClick={() => {
                     setOpenGantiKolektor(true);
                     setMoreBtn(false);
@@ -715,7 +716,7 @@ export default function LHITabelDet(props) {
             Data.concat(
               e.map((value, index) => ({
                 ...value,
-                nomorLHI: id != undefined ? id : "",
+                nomorLHI: id !== undefined ? id : "",
                 tglPenagihan: TglPenagihan,
                 tglFaktur: value.date,
                 usrKolektor: value.kolektorTagih,
@@ -751,7 +752,7 @@ export default function LHITabelDet(props) {
               Data.concat(
                 e.map((value, index) => ({
                   ...value,
-                  nomorLHI: id != undefined ? id : "",
+                  nomorLHI: id !== undefined ? id : "",
                   tglPenagihan: TglPenagihan,
                   tglFaktur: value.date,
                   usrKolektor: value.kolektorTagih,

@@ -65,7 +65,7 @@ function Header() {
 
   useEffect(() => {
     // console.log(id);
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);
@@ -245,7 +245,7 @@ function Header() {
                 fullWidth
                 variant="outlined"
                 // mt={1}
-                disabled={id != undefined}
+                disabled={id !== undefined}
                 onChange={(e) => setreferenceNbr(e.target.value)}
               />
             </Grid>

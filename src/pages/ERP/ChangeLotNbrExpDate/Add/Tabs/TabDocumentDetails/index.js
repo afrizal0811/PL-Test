@@ -373,10 +373,10 @@ export default function TabDocumentDetails(props) {
       let merged = [];
 
       const result1 = props.DataSource.concat(
-        DataAdd.filter((bo) => props.DataSource.every((ao) => ao.id != bo.id))
+        DataAdd.filter((bo) => props.DataSource.every((ao) => ao.id !== bo.id))
       );
       const result2 = props.DataDest.concat(
-        DataAdd.filter((bo) => props.DataDest.every((ao) => ao.id != bo.id))
+        DataAdd.filter((bo) => props.DataDest.every((ao) => ao.id !== bo.id))
       );
       // console.log("arr3", arr3);
       // console.log("arr4", arr4);

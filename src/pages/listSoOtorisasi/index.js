@@ -829,7 +829,7 @@ function Detail(props) {
     };
     console.log("ini didalam handleSimpanKeterangan", selected);
     if (lanjut) {
-      if (selected != null) {
+      if (selected !== null) {
         dataKeteranganCall(selected);
       } else {
         sendKeterangan();

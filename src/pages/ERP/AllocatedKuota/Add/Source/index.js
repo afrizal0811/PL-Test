@@ -151,7 +151,7 @@ export default function SourceTable(props) {
   //             dataAllo.concat(
   //               newdata.filter((bo) =>
   //                 dataAllo.every(
-  //                   (ao) => ao.AllocatedKuotaSourceDetailAllocatedID != bo.id
+  //                   (ao) => ao.AllocatedKuotaSourceDetailAllocatedID !== bo.id
   //                 )
   //               )
   //             )
@@ -160,7 +160,7 @@ export default function SourceTable(props) {
   //             dataAllo.concat(
   //               newdata.filter((bo) =>
   //                 dataAllo.every(
-  //                   (ao) => ao.AllocatedKuotaSourceDetailAllocatedID != bo.id
+  //                   (ao) => ao.AllocatedKuotaSourceDetailAllocatedID !== bo.id
   //                 )
   //               )
   //             )
@@ -250,7 +250,7 @@ export default function SourceTable(props) {
       width: 110,
       sortable: false,
       renderCell: (params) =>
-        params.row.UnAlloKuota != 0 ? (
+        params.row.UnAlloKuota !== 0 ? (
           <>
             <Tooltip title="Check kembali Allocated Qty pada inventory ini">
               <Typography sx={{ color: "red" }}>{params.value}</Typography>
@@ -266,7 +266,7 @@ export default function SourceTable(props) {
       width: widthrow,
       sortable: false,
       renderCell: (params) =>
-        params.row.UnAlloKuota != 0 ? (
+        params.row.UnAlloKuota !== 0 ? (
           <>
             <Tooltip title="Check kembali Allocated Qty pada inventory ini">
               <Typography sx={{ color: "red" }}>{params.value}</Typography>
@@ -446,14 +446,14 @@ export default function SourceTable(props) {
             setData(
               data.concat(
                 e.filter((bo) =>
-                  data.every((ao) => ao.DetailSourceID != bo.DetailSourceID)
+                  data.every((ao) => ao.DetailSourceID !== bo.DetailSourceID)
                 )
               )
             );
             props.setDataSource(
               data.concat(
                 e.filter((bo) =>
-                  data.every((ao) => ao.DetailSourceID != bo.DetailSourceID)
+                  data.every((ao) => ao.DetailSourceID !== bo.DetailSourceID)
                 )
               )
             );

@@ -258,7 +258,7 @@ function Header() {
     useEffect(() => {
       // console.log(dataEdit);
       // getData();
-      if (dataEdit != "") {
+      if (dataEdit !== "") {
         const newList = data.filter((item) => item.id === dataEdit);
         setName(newList[0].levelling);
         setValueEmployee(newList[0]);

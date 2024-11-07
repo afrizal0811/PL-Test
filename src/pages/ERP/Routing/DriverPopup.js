@@ -27,7 +27,7 @@ export default function DriverPopup(props) {
     // getData();
     if (props.openEdit == true) {
       console.log("dataedit", props.dataEdit);
-      if (props.dataEdit != "") {
+      if (props.dataEdit !== "") {
         const newList = props.rowKend.filter(
           (item) => item.id === props.dataEdit
         );

@@ -277,7 +277,7 @@ export default function ListSOTable(props) {
         )
         .then(function (response) {
           if (response.status === 200) {
-            // if (totaldata != response.data[0].totalCountData) {
+            // if (totaldata !== response.data[0].totalCountData) {
             //   props.setSelectedObj([]);
             //   props.setSelectionModel([]);
             //   props.setSelectedRows([]);
@@ -391,7 +391,7 @@ export default function ListSOTable(props) {
             //       props.setSelectedObj(
             //         props.selectedObj.filter(
             //           (obj) =>
-            //             obj.IDListSOOtorisasi != unselect.IDListSOOtorisasi
+            //             obj.IDListSOOtorisasi !== unselect.IDListSOOtorisasi
             //         )
             //       );
             //     }

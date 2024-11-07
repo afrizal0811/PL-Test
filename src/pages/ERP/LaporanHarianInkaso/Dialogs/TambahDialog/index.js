@@ -158,7 +158,7 @@ export default function TambahDIalog(props) {
             });
             setData(
               newres.filter((bo) =>
-                props.Data.every((ao) => ao.referenceNbr != bo.referenceNbr)
+                props.Data.every((ao) => ao.referenceNbr !== bo.referenceNbr)
               )
             );
             let leng = 1;

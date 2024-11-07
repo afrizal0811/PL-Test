@@ -48,7 +48,7 @@ function Header() {
 
   useEffect(() => {
     console.log("id", id);
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);
@@ -182,7 +182,7 @@ function Header() {
               fullWidth
               variant="outlined"
               my={2}
-              disabled={id != undefined}
+              disabled={id !== undefined}
               onChange={(e) => setscreenID(e.target.value)}
             />
           </Grid>

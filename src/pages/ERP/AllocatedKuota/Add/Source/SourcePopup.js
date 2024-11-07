@@ -334,7 +334,8 @@ export default function SourcePopup(props) {
                       ) {
                         setSelectedObj(
                           selectedObj.filter(
-                            (obj) => obj.MutasiKuotaID != unselect.MutasiKuotaID
+                            (obj) =>
+                              obj.MutasiKuotaID !== unselect.MutasiKuotaID
                           )
                         );
                       }

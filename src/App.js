@@ -5,10 +5,10 @@ import { Provider } from "react-redux";
 import { useRoutes } from "react-router-dom";
 import { ThemeProvider } from "styled-components/macro";
 
-import { StyledEngineProvider } from "@mui/styled-engine-sc";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles";
+import { StyledEngineProvider } from "@mui/styled-engine-sc";
 import StylesProvider from "@mui/styles/StylesProvider";
 import jssPreset from "@mui/styles/jssPreset";
 

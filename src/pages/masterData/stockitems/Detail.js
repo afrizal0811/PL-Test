@@ -93,7 +93,7 @@ function Header() {
   const [cbStockItem, setCbStockItem] = useState([]);
 
   useEffect(() => {
-    if (stockItem != "") {
+    if (stockItem !== "") {
       getData(stockItem.inventoryID);
     } else {
       getData(id);

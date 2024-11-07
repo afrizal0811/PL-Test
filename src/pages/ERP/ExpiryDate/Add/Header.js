@@ -64,7 +64,7 @@ export default function Header() {
 
   useEffect(() => {
     // console.log(id);
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);

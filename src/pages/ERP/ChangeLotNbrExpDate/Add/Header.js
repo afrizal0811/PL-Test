@@ -75,7 +75,7 @@ export default function Header(props) {
   const { id } = useParams();
 
   useEffect(() => {
-    if (id != undefined) {
+    if (id !== undefined) {
       getData(id);
     }
   }, []);

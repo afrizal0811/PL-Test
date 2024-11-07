@@ -84,13 +84,13 @@ function Header() {
 
   useEffect(() => {
     // console.log(id);
-    if (id != undefined) {
+    if (id !== undefined) {
       getDataPrincipal();
     }
   }, []);
 
   useEffect(() => {
-    if (selection != "") {
+    if (selection !== "") {
       setdatakelompok(
         dataprincipal
           .filter((ao) => ao.tipe2Principal == selection[0])[0]

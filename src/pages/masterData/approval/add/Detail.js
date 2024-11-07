@@ -196,7 +196,7 @@ export default function DetailApproval(props) {
     const checkedIcon = <CheckBoxIcon fontSize="small" />;
     useEffect(() => {
       // getData();
-      if (dataEdit != "") {
+      if (dataEdit !== "") {
         const newList = data.filter((item) => item.id === dataEdit);
         setName(newList[0].levelling);
         // const dataEmployee = newList[0]?.employeeID?.split(",");

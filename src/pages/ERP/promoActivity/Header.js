@@ -82,7 +82,7 @@ function Header() {
 
   useEffect(() => {
     // getDataPrincipal();
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);

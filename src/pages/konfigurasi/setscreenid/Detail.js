@@ -83,7 +83,7 @@ function Header() {
 
   useEffect(() => {
     // console.log(id);
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);
@@ -254,7 +254,7 @@ function Header() {
                 fullWidth
                 variant="outlined"
                 my={2}
-                disabled={id != undefined}
+                disabled={id !== undefined}
                 onChange={(e) => setUpKey(e.target.value)}
               />
             </Grid>

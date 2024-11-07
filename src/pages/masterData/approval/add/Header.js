@@ -44,7 +44,7 @@ function Header() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    if (ScreenID != "") {
+    if (ScreenID !== "") {
       getData(ScreenID[0].ScreenID);
       console.log("scre", ScreenID);
     }

@@ -987,7 +987,7 @@ export default function TransferPopup({
                           setSelectedObj(
                             selectedObj.filter(
                               (obj) =>
-                                obj.MutasiKuotaID != unselect.MutasiKuotaID
+                                obj.MutasiKuotaID !== unselect.MutasiKuotaID
                             )
                           );
                         }

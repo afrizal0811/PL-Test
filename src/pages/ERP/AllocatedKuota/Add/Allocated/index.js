@@ -241,7 +241,7 @@ export default function SourceTable(props) {
                 color="error"
                 disabled={
                   props.DataSource.length < 1 ||
-                  props.Status != "On Hold" ||
+                  props.Status !== "On Hold" ||
                   // loading ||
                   props.Loading
                 }
@@ -390,7 +390,7 @@ export default function SourceTable(props) {
           color="primary"
           disabled={
             props.DataSource.length < 1 ||
-            props.Status != "On Hold" ||
+            props.Status !== "On Hold" ||
             // loading ||
             props.Loading
           }
@@ -455,7 +455,7 @@ export default function SourceTable(props) {
           //   data.concat(
           //     e.filter((bo) =>
           //       data.every(
-          //         (ao) => ao.AllocatedKuotaSourceDetailAllocatedID != bo.id
+          //         (ao) => ao.AllocatedKuotaSourceDetailAllocatedID !== bo.id
           //       )
           //     )
           //   )
@@ -464,7 +464,7 @@ export default function SourceTable(props) {
           //   data.concat(
           //     e.filter((bo) =>
           //       data.every(
-          //         (ao) => ao.AllocatedKuotaSourceDetailAllocatedID != bo.id
+          //         (ao) => ao.AllocatedKuotaSourceDetailAllocatedID !== bo.id
           //       )
           //     )
           //   )

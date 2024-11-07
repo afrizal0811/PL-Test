@@ -2,7 +2,7 @@ import faker from "faker";
 
 import mock from "./adapter";
 
-import { verify, sign } from "../utils/jwt";
+import { sign, verify } from "../utils/jwt";
 
 const JWT_SECRET = "super-secret-key";
 const JWT_EXPIRES_IN = "3 days";

@@ -295,7 +295,7 @@ export default function AllocatedPopup(props) {
                     unselectedModel.map((unselect) => {
                       if (selectedObj.some((item) => item.id == unselect.id)) {
                         setSelectedObj(
-                          selectedObj.filter((obj) => obj.id != unselect.id)
+                          selectedObj.filter((obj) => obj.id !== unselect.id)
                         );
                       }
                     });

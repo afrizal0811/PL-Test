@@ -58,7 +58,7 @@ export default function Header() {
   const history = useNavigate();
 
   useEffect(() => {
-    if (id != undefined) {
+    if (id !== undefined) {
       getData();
     }
   }, []);

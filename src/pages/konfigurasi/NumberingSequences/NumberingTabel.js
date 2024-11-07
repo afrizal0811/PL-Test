@@ -217,7 +217,7 @@ export default function NumberingTabel(props) {
 
     useEffect(() => {
       // getData();
-      if (dataEdit != "") {
+      if (dataEdit !== "") {
         const newList = data.filter((item) => item.id === dataEdit);
         setNumberingDetailID(newList[0].NumberingDetailID);
         setbranchID(newList[0].BranchID);

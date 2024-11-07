@@ -233,7 +233,7 @@ export default function GridReceiptDetail(props) {
     useEffect(() => {
       // getData();
       console.log("dataedit", dataEdit);
-      if (dataEdit != "") {
+      if (dataEdit !== "") {
         const newList = row.filter((item) => item.id === dataEdit);
         setContact(newList[0].contact);
         setKodeEmployee(newList[0].employeeID);

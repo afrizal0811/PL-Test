@@ -122,7 +122,7 @@ export default function FakturTabel(props) {
       sortable: false,
       width: 150,
       // renderCell: (params) => {
-      //   if (params.value != null) {
+      //   if (params.value !== null) {
       //     return <>{moment(params.value).format("DD-MM-YYYY HH:mm:ss")}</>;
       //   } else {
       //     return "";

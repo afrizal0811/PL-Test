@@ -391,7 +391,8 @@ export default function Table(props) {
           let newData = props.TableData.concat(
             e.filter((bo) =>
               props.TableData.every(
-                (ao) => ao.KuotaAdjustmentDetailID != bo.KuotaAdjustmentDetailID
+                (ao) =>
+                  ao.KuotaAdjustmentDetailID !== bo.KuotaAdjustmentDetailID
               )
             )
           );

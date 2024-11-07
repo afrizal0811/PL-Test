@@ -131,7 +131,7 @@ export default function TabDriver(props) {
     useEffect(() => {
       // getData();
       console.log("dataedit", dataEdit);
-      if (dataEdit != "") {
+      if (dataEdit !== "") {
         const newList = rowDriver.filter((item) => item.id === dataEdit);
         setContact(newList[0].contact);
         setKodeEmployee(newList[0].employeeID);

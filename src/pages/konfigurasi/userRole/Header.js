@@ -269,7 +269,7 @@ export default function Header() {
 
   useEffect(() => {
     console.log("id", id);
-    if (id != undefined) {
+    if (id !== undefined) {
       // getData();
       let roles = Cbrole.filter((data) => data.role == id);
       console.log("roles", roles);
@@ -451,7 +451,7 @@ export default function Header() {
               fullWidth
               variant="outlined"
               my={2}
-              disabled={id != undefined}
+              disabled={id !== undefined}
               onChange={(e) => setRoleName(e.target.value)}
             />
             {/* <Autocomplete

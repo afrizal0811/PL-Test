@@ -99,7 +99,7 @@ function Header() {
   const [cbVendor, setCbVendor] = useState([]);
 
   useEffect(() => {
-    if (vendor != "") {
+    if (vendor !== "") {
       getData(vendor.vendorID);
     } else {
       getData(id);
@@ -207,10 +207,10 @@ function Header() {
             setGeneral({
               accountName: resdata.VendorName,
             });
-            if (resdata.MainContact != undefined) {
+            if (resdata.MainContact !== undefined) {
               setMainContact(resdata.MainContact);
             }
-            if (resdata.MainContact.Address != undefined) {
+            if (resdata.MainContact.Address !== undefined) {
               setAccountAddress(resdata.MainContact.Address);
             }
             console.log(resdata.MainContact);
