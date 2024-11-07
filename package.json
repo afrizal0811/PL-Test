@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@auth0/auth0-spa-js": "1.17.0",
+    "@babel/preset-react": "^7.25.9",
     "@craco/craco": "6.2.0",
     "@date-io/date-fns": "2.11.0",
     "@emotion/react": "^11.13.3",
@@ -91,7 +92,7 @@
     "yup": "0.32.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.0",
+    "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.26.0",
     "craco-alias": "3.0.1",
     "eslint-config-prettier": "6.15.0",
