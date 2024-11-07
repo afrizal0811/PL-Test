@@ -27,9 +27,7 @@ import {
 const Button = styled(MuiButton)(spacing);
 
 export default function PopupImport(props) {
-  const [Data, setData] = useState([]);
-
-  // eslint-disable-next-line prettier/prettier
+  // const [Data, setData] = useState([]);
   const [file, setFile] = useState();
   const [buffer, setBuffer] = useState();
 
@@ -56,7 +54,7 @@ export default function PopupImport(props) {
         )
         .then(function (response) {
           // handle success
-          if (response.status == 200) {
+          if (response.status === 200) {
             console.log(response);
             var blob = new Blob([response.data], {
               type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
@@ -149,7 +147,7 @@ export default function PopupImport(props) {
       .then(function (response) {
         // handle success
         console.log("ress", response);
-        if (response.status == 200 || response.status == 201) {
+        if (response.status === 200 || response.status === 201) {
           NotifySuccess("success", "Data Telah Ditambah");
           setTimeout(() => {
             window.location.reload();
