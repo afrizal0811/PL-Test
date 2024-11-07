@@ -26,8 +26,6 @@ const Button = styled(MuiButton)(spacing);
 
 export default function PopupImport(props) {
   const [Data, setData] = useState([]);
-
-  // eslint-disable-next-line prettier/prettier
   const [file, setFile] = useState();
   const [buffer, setBuffer] = useState();
 
