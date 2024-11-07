@@ -4,7 +4,7 @@ import {
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
-  Paper as MuiPaper,
+  // Paper as MuiPaper,
   Typography,
 } from "@mui/material";
 import { spacing } from "@mui/system";
@@ -25,7 +25,7 @@ const Divider = styled(MuiDivider)(spacing);
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 
-const Paper = styled(MuiPaper)(spacing);
+// const Paper = styled(MuiPaper)(spacing);
 
 const columns = [
   // {
@@ -105,28 +105,29 @@ const columns = [
   },
 ];
 
-const datadummy = [
-  {
-    RefNbr: "pallet1",
-    BranchID: "product1",
-    Status: 10,
-    Date: 8,
-  },
-];
+// const datadummy = [
+//   {
+//     RefNbr: "pallet1",
+//     BranchID: "product1",
+//     Status: 10,
+//     Date: 8,
+//   },
+// ];
 
 function ListingTabel() {
-  const [warehouse, setwarehouse] = useState("");
-  const [location, setlocation] = useState("");
-  const [selection, setSelection] = useState(0);
+  // const [warehouse, setwarehouse] = useState("");
+  // const [location, setlocation] = useState("");
+  // const [selection, setSelection] = useState(0);
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [pageSize, setPageSize] = useState(5);
+  // const [pageSize, setPageSize] = useState(5);
   const [curretPage, setcurretPage] = React.useState(0);
   const [totalPage, settotalPage] = React.useState(1);
   const history = useNavigate();
 
   useEffect(() => {
     getData();
+    // eslint-disable-next-line
   }, []);
 
   // Ini untuk pengaturan alamat API
@@ -143,7 +144,7 @@ function ListingTabel() {
         )
         .then(function (response) {
           // handle success
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data[0];
             console.log("res", resdata);
             setData(resdata.record);

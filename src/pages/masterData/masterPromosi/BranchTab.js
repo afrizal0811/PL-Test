@@ -74,7 +74,7 @@ function BranchTab(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             setDataPincipal(response.data);
             // setDataPincipal(response.data);
           }

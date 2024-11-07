@@ -120,7 +120,7 @@ export default function Header(props) {
         )
         .then(function (response) {
           // handle success
-          if (response.status == 200) {
+          if (response.status === 200) {
             // const resdata = response.data[0];
             // console.log("res", resdata);
             // setData(resdata.record);

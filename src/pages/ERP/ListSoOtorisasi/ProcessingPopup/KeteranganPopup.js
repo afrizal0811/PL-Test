@@ -435,7 +435,7 @@ export default function KeteranganPopup(props) {
   //         `${process.env.REACT_APP_DOMAIN_API}/ListSOOtorisasi/GetKetFBL?CustomerID=${cust}`
   //       )
   //       .then(function (response) {
-  //         if (response.status == 200) {
+  //         if (response.status === 200) {
   //           const resdata = response.data;
   //           console.log("res", resdata);
   //           // setData(resdata);

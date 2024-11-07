@@ -106,7 +106,7 @@ export default function LHITabelDet(props) {
         )
         .then(async function (response) {
           console.log("res", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data.record;
             setBranchID(resdata.branchID);
             // const adminPiutangName = ;
@@ -191,7 +191,7 @@ export default function LHITabelDet(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah Disimpan");
             setTimeout(() => {
               window.location.href = `/laporan-harian-inkaso/detail/${response.data.NomorLHI}`;
@@ -225,7 +225,7 @@ export default function LHITabelDet(props) {
           // handle success
           console.log(response);
           if (
-            response.status == 200 ||
+            response.status === 200 ||
             response.status == 201 ||
             response.status == 204
           ) {

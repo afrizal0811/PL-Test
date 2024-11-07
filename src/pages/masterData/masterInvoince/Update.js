@@ -246,7 +246,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data.ZonaLineRep;
             setNamaZona(response.data.NamaZona);
             setIDZona(response.data.IDZona);
@@ -326,7 +326,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             // .then
             // // window.location.href = `/master-data/update-zona/${menuID.transaksiID}`;

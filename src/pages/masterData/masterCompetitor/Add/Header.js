@@ -161,7 +161,7 @@ export default function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             setDataProductGroup(response.data);
             setRowTipe1Group(response.data);
           }
@@ -186,7 +186,7 @@ export default function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             setDataProductPrincipal(response.data);
             setRowTipe2Principal(response.data);
           }
@@ -211,7 +211,7 @@ export default function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             setDataProductKelompok(response.data);
             setRowTipe3Kelompok(response.data);
           }

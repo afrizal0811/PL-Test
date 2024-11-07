@@ -73,32 +73,32 @@ class QRScanner extends Component {
 
     const rowsScan = [];
 
-    const openScanner = this.state;
+    // const openScanner = this.state;
     const previewStyle = {
       height: 240,
       width: 320,
     };
 
-    const textStyle = {
-      fontSize: "30px",
-      textAlign: "center",
-      marginTop: "-50px",
-    };
+    // const textStyle = {
+    //   fontSize: "30px",
+    //   textAlign: "center",
+    //   marginTop: "-50px",
+    // };
     const QrReaderOpen = () => {
-      const [qrReaderOpen, setQRReaderOpen] = useState(false);
-      const onShowQr = () => setQRReaderOpen((value) => !value);
-      console.log(this.state.openScanner);
+      const [qrReaderOpen, setQRReaderOpen] = useState(this.state.openScanner);
+      setQRReaderOpen((value) => !value);
+      console.log(qrReaderOpen);
       return <></>;
     };
 
-    const Results = () => (
-      <QrReader
-        delay={this.state.delay}
-        style={previewStyle}
-        onError={this.handleError}
-        onScan={this.handleScan}
-      />
-    );
+    // const Results = () => (
+    //   <QrReader
+    //     delay={this.state.delay}
+    //     style={previewStyle}
+    //     onError={this.handleError}
+    //     onScan={this.handleScan}
+    //   />
+    // );
 
     // this.state.result[0]
 

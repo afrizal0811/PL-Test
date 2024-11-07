@@ -58,7 +58,7 @@ export default function Header(props) {
             "ini data NumberingSequenceReps = ",
             response.data.NumberingSequenceDetailRep
           );
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             console.log("res", response.data);
             const newdata = [];
@@ -119,7 +119,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/numbering-sequences/detail/${screenID}`;
@@ -158,7 +158,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/numbering-sequences/detail/${id}`;
@@ -213,7 +213,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.reload();

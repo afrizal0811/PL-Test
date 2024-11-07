@@ -105,7 +105,7 @@ export default function OtomatisDialog(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             props.setDataTambah(
               response.data.filter((bo) =>
                 props.Data.every((ao) => ao.referenceNbr != bo.referenceNbr)

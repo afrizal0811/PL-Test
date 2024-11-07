@@ -85,7 +85,7 @@ import Page500 from "./pages/auth/Page500";
 import ProtectedPage from "./pages/protected/ProtectedPage";
 import ListSOOtorisasi from "./pages/ERP/ListSoOtorisasi/index";
 import DashboardApproval from "./pages/dashboardApproval";
-import DashboardApprovalDetail from "./pages/dashboardApproval/detail";
+// import DashboardApprovalDetail from "./pages/dashboardApproval/detail";
 import SerahTerimaHistory from "./pages/serahTerimaHistory";
 import ProcessOrder from "./pages/ERP/ProcessOrder";
 import Routing from "./pages/ERP/Routing";
@@ -98,7 +98,7 @@ import LaporanHarianInkaso from "./pages/ERP/LaporanHarianInkaso";
 import DeskCall from "./pages/ERP/DeskCall";
 import CompetitorPriceInfo from "./pages/ERP/CompetitorPriceInfo";
 import AddCompetitorPriceInfo from "./pages/ERP/CompetitorPriceInfo/Add";
-import UpdateCompetitorPriceInfo from "./pages/ERP/CompetitorPriceInfo/Update";
+// import UpdateCompetitorPriceInfo from "./pages/ERP/CompetitorPriceInfo/Update";
 import CustomerPriceInfo from "./pages/ERP/CustomerPriceInfo";
 import DetailCustomerPriceInfo from "./pages/ERP/CustomerPriceInfo/detail/index";
 import TransferCabang from "./pages/ERP/TransferCabang";
@@ -185,7 +185,7 @@ import NumberingSequenceDetail from "./pages/konfigurasi/NumberingSequences/deta
 import MasterInvoice from "./pages/masterData/masterInvoince/MasterInvoice";
 import DetailInvoice from "./pages/masterData/masterInvoince/Detail";
 import Scheduller from "./pages/konfigurasi/scheduller/SchedullerTable";
-import DetailMutationAllocatedKuota from "./pages/ERP/MutationAllocatedKuota/Detail";
+// import DetailMutationAllocatedKuota from "./pages/ERP/MutationAllocatedKuota/Detail";
 import TransferKuota from "./pages/ERP/TransferKuota";
 import AddTransferKuota from "./pages/ERP/TransferKuota/Add";
 

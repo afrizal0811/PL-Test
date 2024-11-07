@@ -143,7 +143,7 @@ function ProductGroupPopup(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             setDataProductGroup(response.data);
             setRows(response.data);
           }

@@ -237,7 +237,7 @@ export default function AdjustmentKuotaTable(props) {
           console.log("response", response);
 
           // handle success
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             console.log("res", resdata);
             setData(resdata.record);
@@ -266,7 +266,7 @@ export default function AdjustmentKuotaTable(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah dihapus");
             setTimeout(() => {
               window.location.href = `/adjustment-kuota`;

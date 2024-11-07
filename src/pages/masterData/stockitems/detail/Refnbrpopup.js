@@ -129,7 +129,7 @@ export default function RefnbrPopup(props) {
       const res = await axios
         .get(props.api, !props.config ? GetConfig() : props.config)
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setDataCust(resdata);
             setRows(resdata);

@@ -71,7 +71,7 @@ export default function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setCPDate(resdata.docDate);
             setCPDesc(resdata.cpDesc);

@@ -279,7 +279,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log("ini data Driver = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             const newres = [];
             Object.keys(resdata).forEach(function (key) {
@@ -320,7 +320,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log("ini data Zona = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             const newdata = resdata.map((item, key) => {
               item.id = key;
@@ -385,7 +385,7 @@ function Header() {
         )
         .then(function (response) {
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah Ditambah");
             setTimeout(() => {
               window.location.href = `/master-data/update-kendaraan/${response.data.IDKendaraan}`;

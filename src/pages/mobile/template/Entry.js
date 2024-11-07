@@ -7,7 +7,7 @@ import {
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
-  Paper as MuiPaper,
+  // Paper as MuiPaper,
   Pagination,
   PaginationItem,
   TextField,
@@ -16,7 +16,7 @@ import {
 import { spacing } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 
 const Card = styled(MuiCard)(spacing);
@@ -27,46 +27,46 @@ const Divider = styled(MuiDivider)(spacing);
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 
-const Paper = styled(MuiPaper)(spacing);
+// const Paper = styled(MuiPaper)(spacing);
 
-const columns = [
-  // {
-  //   field: "pallet",
-  //   headerName: "Pallet",
-  //   flex: 1,
-  //   minWidth: 100,
-  // },
-  {
-    field: "product",
-    headerName: "Product",
-    width: 115,
-    minWidth: 100,
-    render: (e) => {
-      console.log("product", e);
-      return <>product</>;
-    },
-  },
-  {
-    field: "qty",
-    headerName: "Qty On Hand",
-    width: 15,
-    minWidth: 100,
-    render: (e) => {
-      console.log("product", e);
-      return <>product</>;
-    },
-  },
-  {
-    field: "qtyAvail",
-    headerName: "Qty Available",
-    width: 15,
-    minWidth: 100,
-    render: (e) => {
-      console.log("product", e);
-      return <>product</>;
-    },
-  },
-];
+// const columns = [
+//   // {
+//   //   field: "pallet",
+//   //   headerName: "Pallet",
+//   //   flex: 1,
+//   //   minWidth: 100,
+//   // },
+//   {
+//     field: "product",
+//     headerName: "Product",
+//     width: 115,
+//     minWidth: 100,
+//     render: (e) => {
+//       console.log("product", e);
+//       return <>product</>;
+//     },
+//   },
+//   {
+//     field: "qty",
+//     headerName: "Qty On Hand",
+//     width: 15,
+//     minWidth: 100,
+//     render: (e) => {
+//       console.log("product", e);
+//       return <>product</>;
+//     },
+//   },
+//   {
+//     field: "qtyAvail",
+//     headerName: "Qty Available",
+//     width: 15,
+//     minWidth: 100,
+//     render: (e) => {
+//       console.log("product", e);
+//       return <>product</>;
+//     },
+//   },
+// ];
 
 const datadummy = [
   {
@@ -109,16 +109,16 @@ const datadummy = [
 
 function ListingTabel() {
   const [Data, setData] = useState([]);
-  const [location, setlocation] = useState("");
-  const [selection, setSelection] = useState(0);
+  // const [location, setlocation] = useState("");
+  // const [selection, setSelection] = useState(0);
   const [page, setpage] = useState(1);
   const [pallet, setpallet] = useState("");
   const [product, setproduct] = useState("");
   const [qty, setqty] = useState("");
   const [qtyavail, setqtyavail] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [pageSize, setPageSize] = useState(5);
-  const history = useNavigate();
+  // const [loading, setLoading] = useState(false);
+  // const [pageSize, setPageSize] = useState(5);
+  // const history = useNavigate();
 
   const handleChangePage = (event, newPage) => {
     setpage(newPage);
@@ -145,6 +145,7 @@ function ListingTabel() {
         qtyAvail: qtyavail,
       })
     );
+    // eslint-disable-next-line
   }, [product, qty, qtyavail]);
 
   return (
@@ -171,7 +172,7 @@ function ListingTabel() {
               value={product}
               onChange={(e) => {
                 setproduct(e.target.value);
-                setData(Data.filter((ea) => ea.pallet == pallet)[0]);
+                setData(Data.filter((ea) => ea.pallet === pallet)[0]);
               }}
             />
           </Grid>

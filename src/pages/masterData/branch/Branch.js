@@ -102,7 +102,7 @@ function TableBranch() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const newdata = response.data.map((item, i) => {
               item.id = i;
               item.LastSync = moment(item.LastSync).format(
@@ -136,7 +136,7 @@ function TableBranch() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             NotifySuccess("success", "Data Telah DiSinkronisasi");
             setTimeout(() => {
               window.location.reload();

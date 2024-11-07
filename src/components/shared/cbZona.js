@@ -51,7 +51,7 @@ function CbZona(props) {
       .then(function (response) {
         // handle success
         console.log(response);
-        if (response.status == 200 || response.status == 201) {
+        if (response.status === 200 || response.status == 201) {
           const resdata = response.data;
           const newres = [];
           Object.keys(resdata).forEach(function (key) {

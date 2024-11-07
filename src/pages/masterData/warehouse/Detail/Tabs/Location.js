@@ -56,7 +56,7 @@ export default function Location(props) {
         )
         .then(function (res) {
           console.log(res);
-          if (res.status == 200) {
+          if (res.status === 200) {
             let resdata = res.data[0];
             settotalpage(resdata.totalCountData);
             // setdata(resdata.record);

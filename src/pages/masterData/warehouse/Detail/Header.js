@@ -43,7 +43,7 @@ export default function Header(props) {
   //     .then(function (response) {
   //       // handle success
   //       // console.log(response);
-  //       if (response.status == 200 || response.status == 201) {
+  //       if (response.status === 200 || response.status === 201) {
   //         const resdata = response.data;
   //         const newres = [];
   //         Object.keys(resdata).forEach(function (key) {
@@ -67,7 +67,7 @@ export default function Header(props) {
         )
         .then(function (res) {
           console.log(res);
-          if (res.status == 200) {
+          if (res.status === 200) {
             let resdata = res.data[0];
             settotalpage(resdata.totalCountData);
             // setdata(resdata.record);
@@ -91,7 +91,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             // getLocation(1);
             // console.log(resdata);

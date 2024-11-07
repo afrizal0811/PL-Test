@@ -61,7 +61,7 @@ export default function DetailDialog(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setDetail(resdata);
           }
@@ -85,7 +85,7 @@ export default function DetailDialog(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setjumlahJT(resdata.jumlahJT);
             settotalNominalJT(resdata.totalNominalJT);
@@ -113,7 +113,7 @@ export default function DetailDialog(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             const newdata = resdata.map((item, i) => {
               item.id = i;

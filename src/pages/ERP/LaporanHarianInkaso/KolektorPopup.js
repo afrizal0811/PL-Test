@@ -125,7 +125,7 @@ export default function KolektorPopup(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             // console.log("res", resdata);
             const newres = [];

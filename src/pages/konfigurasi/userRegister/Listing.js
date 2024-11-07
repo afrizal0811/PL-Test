@@ -140,7 +140,7 @@ function TableUserReg() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "User Berhasil Didaftarkan");
             setTimeout(() => {
               window.location.reload();
@@ -191,7 +191,7 @@ function TableUserReg() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data.map((item, i) => {
               item.id = i;
               return item;
@@ -221,7 +221,7 @@ function TableUserReg() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data.map((item, i) => {
               item.id = i;
               return item;

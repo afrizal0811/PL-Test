@@ -1,5 +1,5 @@
-import CheckBoxIcon from "@mui/icons-material/CheckBox";
-import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
+// import CheckBoxIcon from "@mui/icons-material/CheckBox";
+// import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import SaveIcon from "@mui/icons-material/Save";
 import {
   Button,
@@ -11,15 +11,15 @@ import {
 } from "@mui/material";
 import * as React from "react";
 
-const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
-const checkedIcon = <CheckBoxIcon fontSize="small" />;
+// const icon = <CheckBoxOutlineBlankIcon fontSize="small" />;
+// const checkedIcon = <CheckBoxIcon fontSize="small" />;
 
 export default function ErrorInput() {
-  const [employee, setEmployee] = React.useState("");
+  // const [employee, setEmployee] = React.useState("");
+  const employee = "";
   const [branch, setBranch] = React.useState("");
   const [branchName, setBranchName] = React.useState("");
   const [save, setSave] = React.useState(0);
-
   React.useEffect(() => {
     console.log(employee);
   }, [employee]);
@@ -94,9 +94,9 @@ export default function ErrorInput() {
 }
 
 // Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
-const top100Films = [
-  { title: "The Shawshank Redemption", year: 1994 },
-  { title: "The Godfather", year: 1972 },
-  { title: "The Godfather: Part II", year: 1974 },
-  { title: "The Dark Knight", year: 2008 },
-];
+// const top100Films = [
+//   { title: "The Shawshank Redemption", year: 1994 },
+//   { title: "The Godfather", year: 1972 },
+//   { title: "The Godfather: Part II", year: 1974 },
+//   { title: "The Dark Knight", year: 2008 },
+// ];

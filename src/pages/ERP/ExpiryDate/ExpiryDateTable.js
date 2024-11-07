@@ -201,7 +201,7 @@ export default function ExpiryDateTable() {
         .then(function (response) {
           // handle success
           console.log("ini data ExpiryDate = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data[0];
             console.log("res", resdata);
             setData(resdata.record);
@@ -231,7 +231,7 @@ export default function ExpiryDateTable() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             // getData();
             setTimeout(() => {

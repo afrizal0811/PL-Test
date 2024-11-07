@@ -61,7 +61,7 @@ export default function GantiKolektorDialog(props) {
         .put(endpoint, payload, GetConfig())
         .then(function (response) {
           console.log("ini res", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             NotifySuccess("success", "Kolektor telah diganti");
             setTimeout(() => {
               window.location.reload();

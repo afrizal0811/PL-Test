@@ -63,7 +63,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const res = response.data;
             setDesc(res.Type);
             setinvdate(res.Date);

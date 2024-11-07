@@ -120,7 +120,7 @@ export default function NumberingSequenceTable() {
         .then(function (response) {
           // handle success
           console.log("ini data NumberingSequenceReps = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             const newdata = [];
             Object.keys(resdata).forEach(function (key) {
@@ -157,7 +157,7 @@ export default function NumberingSequenceTable() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.reload();

@@ -53,7 +53,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             setDesc(response.data.Description);
             setIDZona(response.data.ZoneID);
             setstatusZona(response.data.Status);

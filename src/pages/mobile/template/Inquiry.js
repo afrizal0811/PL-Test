@@ -5,14 +5,14 @@ import {
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
-  Paper as MuiPaper,
+  // Paper as MuiPaper,
   TextField,
   Typography,
 } from "@mui/material";
 import { spacing } from "@mui/system";
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 import MobileTable from "../../../components/shared/MobileTable";
 
@@ -24,7 +24,7 @@ const Divider = styled(MuiDivider)(spacing);
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 
-const Paper = styled(MuiPaper)(spacing);
+// const Paper = styled(MuiPaper)(spacing);
 
 const columns = [
   // {
@@ -89,11 +89,11 @@ const datadummy = [
 function ListingTabel() {
   const [warehouse, setwarehouse] = useState("");
   const [location, setlocation] = useState("");
-  const [selection, setSelection] = useState(0);
+  // const [selection, setSelection] = useState(0);
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [pageSize, setPageSize] = useState(5);
-  const history = useNavigate();
+  // const [loading, setLoading] = useState(false);
+  // const [pageSize, setPageSize] = useState(5);
+  // const history = useNavigate();
 
   useEffect(() => {
     if (warehouse.length > 0 && location.length > 0) {

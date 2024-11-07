@@ -63,7 +63,7 @@ function Header() {
           // handle success
           console.log("ini seberapa banyak datanya", response.data?.length);
           console.log("ini datanya", response.data);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             const lastIndex = resdata?.length - 1;
             setMailID(resdata[lastIndex]?.MailID);
@@ -128,7 +128,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             setIsEdited(false);
             NotifySuccess("success", "Data Telah DiUbah");
             setTimeout(() => {
@@ -167,7 +167,7 @@ function Header() {
   //       .then(function (response) {
   //         // handle success
   //         console.log(response);
-  //         if (response.status == 200 || response.status == 201) {
+  //         if (response.status === 200 || response.status == 201) {
   //           setIsEdited(false);
   //           NotifySuccess("success", "Data Telah DiUpdate");
   //           setTimeout(() => {

@@ -65,7 +65,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log("ini data NotificationTemplateReps = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setNotificationID(resdata.NotificationID);
             setDescription(resdata.Description);
@@ -137,7 +137,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             history("/konfigurasi/notifikasi-template");
           }

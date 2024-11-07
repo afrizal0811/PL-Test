@@ -4,13 +4,13 @@ import {
   Card as MuiCard,
   CardContent as MuiCardContent,
   Divider as MuiDivider,
-  Paper as MuiPaper,
+  // Paper as MuiPaper,
   Typography,
 } from "@mui/material";
 import { spacing } from "@mui/system";
-import React, { useState } from "react";
+import React from "react";
 import { Helmet } from "react-helmet-async";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components/macro";
 import MobileTable from "../../../components/shared/MobileTable";
 
@@ -22,7 +22,7 @@ const Divider = styled(MuiDivider)(spacing);
 
 const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 
-const Paper = styled(MuiPaper)(spacing);
+// const Paper = styled(MuiPaper)(spacing);
 
 const columns = [
   // {
@@ -85,13 +85,13 @@ const datadummy = [
 ];
 
 function ListingTabel() {
-  const [warehouse, setwarehouse] = useState("");
-  const [location, setlocation] = useState("");
-  const [selection, setSelection] = useState(0);
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [pageSize, setPageSize] = useState(5);
-  const history = useNavigate();
+  // const [warehouse, setwarehouse] = useState("");
+  // const [location, setlocation] = useState("");
+  // const [selection, setSelection] = useState(0);
+  // const [data, setData] = useState([]);
+  // const [loading, setLoading] = useState(false);
+  // const [pageSize, setPageSize] = useState(5);
+  // const history = useNavigate();
 
   return (
     <Card mb={6} sx={{ height: "90%" }}>

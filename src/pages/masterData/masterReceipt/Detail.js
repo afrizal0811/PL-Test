@@ -81,7 +81,7 @@ function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setDataDetail(resdata.receiptDetails);
             setreferenceNbr(resdata.referenceNbr);
@@ -133,7 +133,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/master-data/receipt/detail/${Data.referenceNbr}`;
@@ -167,7 +167,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiUbah");
             setTimeout(() => {
               window.location.href = `/master-data/receipt/detail/${Data.referenceNbr}`;

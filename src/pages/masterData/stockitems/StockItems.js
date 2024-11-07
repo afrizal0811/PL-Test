@@ -92,7 +92,7 @@ function TableStockItems() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             let i = 0;
             const resdata = response.data;
             const newres = [];
@@ -133,7 +133,7 @@ function TableStockItems() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             NotifySuccess("success", "Data Telah DiSinkronisasi");
             setTimeout(() => {
               window.location.reload();

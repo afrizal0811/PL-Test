@@ -94,7 +94,7 @@ function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setPromoID(resdata.promoID);
             setDescription(resdata.promoDescr);
@@ -154,7 +154,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data telah ditambah");
             setTimeout(() => {
               // window.location.href = `/master-data/master-promo`;
@@ -204,7 +204,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data telah disimpan");
             setTimeout(() => {
               window.location.href = `/master-data/master-promo/detail/${id}`;
@@ -245,7 +245,7 @@ function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah dihapus");
             setTimeout(() => {
               window.location.href = `/master-data/master-promo`;

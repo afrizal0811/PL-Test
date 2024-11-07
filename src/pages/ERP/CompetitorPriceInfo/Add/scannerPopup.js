@@ -49,7 +49,7 @@ export default function QRScanner(props) {
         )
         .then(function (response) {
           // alert(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setData(resdata);
           }

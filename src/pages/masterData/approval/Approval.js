@@ -108,7 +108,7 @@ function TableApproval() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             const newdata = resdata.map((item, i) => {
               item.id = i;
@@ -139,7 +139,7 @@ function TableApproval() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             getData();
           }

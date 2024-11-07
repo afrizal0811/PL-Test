@@ -276,7 +276,7 @@ export default function ListSOTable(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             // if (totaldata != response.data[0].totalCountData) {
             //   props.setSelectedObj([]);
             //   props.setSelectionModel([]);

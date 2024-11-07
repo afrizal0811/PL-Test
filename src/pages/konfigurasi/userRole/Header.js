@@ -294,7 +294,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setRoleName(resdata.RoleName);
             setscreenNo(resdata.RoleName);
@@ -330,7 +330,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/screen-number/detail/${RoleName}`;
@@ -366,7 +366,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiUbah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/screen-number/detail/${RoleName}`;

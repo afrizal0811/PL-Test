@@ -91,7 +91,7 @@ export default function DetailPopup(props) {
   //           `?filterStatusLHI=${StatusLHI == null ? "All" : StatusLHI}`
   //       )
   //       .then(function (response) {
-  //         if (response.status == 200) {
+  //         if (response.status === 200) {
   //           const resdata = response.data;
   //           // setDetail(resdata);
   //         }
@@ -121,7 +121,7 @@ export default function DetailPopup(props) {
           // handle success
           console.log(response);
           if (
-            response.status == 200 ||
+            response.status === 200 ||
             response.status == 201 ||
             response.status == 204
           ) {
@@ -156,7 +156,7 @@ export default function DetailPopup(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiUbah");
             // setTimeout(() => {
             //   window.location.href = `/konfigurasi/set-key/${upKey}`;

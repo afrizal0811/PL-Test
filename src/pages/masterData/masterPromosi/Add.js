@@ -138,7 +138,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data telah ditambah");
             // setTimeout(() => {
             //   window.location.href = `/master-data/approval/${menuID.transaksiID}`;

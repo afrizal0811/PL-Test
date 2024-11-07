@@ -147,7 +147,7 @@ function PrincipalProdukPopup(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             setDataPincipal(response.data);
             setRows(response.data);
           }

@@ -155,7 +155,7 @@ export default function DetailApproval(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data Telah DiHapus");
             setTimeout(() => {
               window.location.href = `/promo-activity}`;
@@ -213,7 +213,7 @@ export default function DetailApproval(props) {
   //       .then(function (response) {
   //         // handle success
   //         console.log(response);
-  //         if (response.status == 200 || response.status == 201) {
+  //         if (response.status === 200 || response.status == 201) {
   //           let newData = imgData.filter(
   //             (item) => item.promoFile !== e.target.value
   //           );

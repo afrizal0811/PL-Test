@@ -147,7 +147,7 @@ export default function TambahDIalog(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data[0];
             const newres = [];
             Object.keys(resdata.record).forEach(function (key) {

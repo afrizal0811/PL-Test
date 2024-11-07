@@ -1,10 +1,10 @@
 import {
   Grid,
-  Breadcrumbs as MuiBreadcrumbs,
+  // Breadcrumbs as MuiBreadcrumbs,
   Card as MuiCard,
   CardContent as MuiCardContent,
-  Divider as MuiDivider,
-  Paper as MuiPaper,
+  // Divider as MuiDivider,
+  // Paper as MuiPaper,
   Typography,
 } from "@mui/material";
 import { spacing } from "@mui/system";
@@ -17,11 +17,11 @@ const Card = styled(MuiCard)(spacing);
 
 const CardContent = styled(MuiCardContent)(spacing);
 
-const Divider = styled(MuiDivider)(spacing);
+// const Divider = styled(MuiDivider)(spacing);
 
-const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
+// const Breadcrumbs = styled(MuiBreadcrumbs)(spacing);
 
-const Paper = styled(MuiPaper)(spacing);
+// const Paper = styled(MuiPaper)(spacing);
 
 function MobileMenu() {
   const history = useNavigate();

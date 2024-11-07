@@ -91,7 +91,7 @@ export default function SourcePopup(props) {
         .then(function (response) {
           // handle success
           console.log("ini data stockitem = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data[0].record;
             const newdata = resdata.map((item, i) => {
               item.id = i;
@@ -312,7 +312,7 @@ export default function SourcePopup(props) {
         .then(function (response) {
           // handle success
           // console.log("ini data stockitem = ", response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             const resdata = response.data;
             // const newres = [];
             // Object.keys(resdata).forEach(function (key) {

@@ -143,7 +143,7 @@ export default function DialogRefNbr(props) {
         .then(function (response) {
           // handle success
           console.log("ini data ChangeLotNbrExpDateReps = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             let sort = resdata.sort(
               (a, b) => parseFloat(b.RefNbr) - parseFloat(a.RefNbr)

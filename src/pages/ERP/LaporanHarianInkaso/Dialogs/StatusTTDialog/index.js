@@ -88,7 +88,7 @@ export default function StatusTTDialog(props) {
         )
         .then(function (response) {
           if (
-            response.status == 200 ||
+            response.status === 200 ||
             response.status == 201 ||
             response.status == 204
           ) {

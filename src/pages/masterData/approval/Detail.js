@@ -106,7 +106,7 @@ function Header() {
           // handle success
           console.log(response);
           if (
-            response.status == 200 ||
+            response.status === 200 ||
             response.status == 201 ||
             response.status == 204
           ) {
@@ -146,7 +146,7 @@ function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             settransaksiID(resdata.TransaksiID);
             setBranch(resdata.BranchID);

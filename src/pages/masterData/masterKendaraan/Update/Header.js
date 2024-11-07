@@ -78,7 +78,7 @@ function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setStatusKendaraan(resdata.StatusKendaraan);
             setIDKendaraan(resdata.IDKendaraan);

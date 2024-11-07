@@ -114,7 +114,7 @@ function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setdataprincipal(resdata[0].masterKategoriPrincipalRep);
             settypeKategori(resdata[0].typeKategori);

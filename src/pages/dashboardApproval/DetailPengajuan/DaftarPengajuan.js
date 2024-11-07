@@ -115,7 +115,7 @@ export default function DaftarPengajuan() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             console.log("ini didalam getData, resdata => ", resdata);
             const newres = [];

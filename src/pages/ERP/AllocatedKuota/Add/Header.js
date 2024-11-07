@@ -309,7 +309,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah disimpan");
             // props.getDataSource();
             // setcounter(counter + 1);
@@ -380,7 +380,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah disimpan");
             // props.getDataSource();
             // setcounter(counter + 1);

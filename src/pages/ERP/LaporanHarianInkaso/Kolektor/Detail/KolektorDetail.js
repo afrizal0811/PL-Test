@@ -79,7 +79,7 @@ export default function KolektorDetail(props) {
     //       // handle success
     //       // console.log("ini data NotificationTemplateReps = ", response);
     //       if (
-    //         response.status == 200 ||
+    //         response.status === 200 ||
     //         response.status == 201 ||
     //         response.status == 204
     //       ) {
@@ -117,7 +117,7 @@ export default function KolektorDetail(props) {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data[0];
             // console.log("res", resdata);
             // setData(resdata.record);

@@ -125,7 +125,7 @@ export default function NumberingTabel(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/konfigurasi/numbering-sequences`;
@@ -239,7 +239,7 @@ export default function NumberingTabel(props) {
             GetConfig()
           )
           .then(function (response) {
-            if (response.status == 200) {
+            if (response.status === 200) {
               const resdata = response.data;
             }
           })

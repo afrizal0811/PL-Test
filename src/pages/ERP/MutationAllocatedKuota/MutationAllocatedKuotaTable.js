@@ -164,7 +164,7 @@ export default function MutationAllocatedKuotaTable(props) {
       )
       .then(function (response) {
         // handle success
-        if (response.status == 200) {
+        if (response.status === 200) {
           // console.log("res", response);
           const resdata = response.data[0];
           arrData = resdata.record;
@@ -259,7 +259,7 @@ export default function MutationAllocatedKuotaTable(props) {
         )
         .then(function (response) {
           // handle success
-          if (response.status == 200) {
+          if (response.status === 200) {
             // console.log("res", response);
             const resdata = response.data[0];
             setData(resdata.record);

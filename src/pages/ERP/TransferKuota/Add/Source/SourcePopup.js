@@ -84,7 +84,7 @@ export default function SourcePopup(props) {
         .then(function (response) {
           // handle success
           console.log("ini data stockitem = ", response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data[0].record;
             setDefaultDataRows(
               response.data[0].record.map((item) => ({

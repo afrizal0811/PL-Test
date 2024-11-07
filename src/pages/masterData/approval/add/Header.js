@@ -59,7 +59,7 @@ function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200) {
+          if (response.status === 200) {
             history(`/master-data/approval/${id}`);
             // window.location.reload();
           }
@@ -132,7 +132,7 @@ function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             NotifySuccess("success", "Data Telah DiTambah");
             setTimeout(() => {
               window.location.href = `/master-data/approval/${ScreenID[0].ScreenID}`;

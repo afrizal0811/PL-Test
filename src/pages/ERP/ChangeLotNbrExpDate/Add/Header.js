@@ -99,7 +99,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setDate(resdata.Date);
             setRefNbr(resdata.RefNbr);
@@ -204,7 +204,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah dihapus!");
             setTimeout(() => {
               window.location.href = `/change-lot-nbr-exp-date`;
@@ -301,7 +301,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             let res = response.data;
             NotifySuccess("success", "Data telah ditambah!");
             setTimeout(() => {
@@ -332,7 +332,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           console.log("edit", response);
-          if (response.status == 200 || response.status == 201) {
+          if (response.status === 200 || response.status == 201) {
             setTimeout(() => {
               if (submit == true) {
                 handleSubmit();
@@ -376,7 +376,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah di-submit!");
             getData(id);
             // setTimeout(() => {
@@ -407,7 +407,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah di-release!");
             getData(id);
             // setTimeout(() => {
@@ -441,7 +441,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             setreasonApprove("");
             NotifySuccess("success", "Data telah di-approve!");
             getData(id);
@@ -475,7 +475,7 @@ export default function Header(props) {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah di-reject!");
             getData(id);
             // setTimeout(() => {

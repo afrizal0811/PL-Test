@@ -311,7 +311,7 @@ export default function Table(props) {
         )
         .then(function (response) {
           // handle success
-          if (response.status == 200) {
+          if (response.status === 200) {
             console.log("res", response.data[0].record);
             const resdata = response.data[0].record;
             resdata.map((item) => {

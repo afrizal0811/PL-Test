@@ -98,7 +98,7 @@ export default function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200 && response.data.refNbr !== id) {
+          if (response.status === 200 && response.data.refNbr !== id) {
             setItemValid(false);
           }
         })
@@ -127,7 +127,7 @@ export default function Header() {
           GetConfig()
         )
         .then(function (response) {
-          if (response.status == 200 && response.data.refNbr !== id) {
+          if (response.status === 200 && response.data.refNbr !== id) {
             setExpValid(false);
           }
         })
@@ -152,7 +152,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200) {
+          if (response.status === 200) {
             const resdata = response.data;
             setLocation([
               {
@@ -203,7 +203,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data berhasil disimpan");
             setTimeout(() => {
               window.location.href = `/expiry-date/detail/${response.data.refNbr}`;
@@ -236,7 +236,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah diperbarui");
             getData(id);
             // setTimeout(() => {
@@ -288,7 +288,7 @@ export default function Header() {
         .then(function (response) {
           // handle success
           // console.log(response);
-          if (response.status == 200 || response.status == 204) {
+          if (response.status === 200 || response.status == 204) {
             NotifySuccess("success", "Data telah dihapus");
             // getData();
             setTimeout(() => {
